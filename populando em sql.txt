@@ -1,0 +1,123 @@
+-- Popular banco.
+
+--Inserindo tuplas na tabela "rede".
+INSERT INTO rede (cnpj, nome_real, nome_fantasia)
+VALUES
+	('12.345.678/9012-34', 'Turismo Company SA', 'Viver para Sonhar');
+
+-- Inserindo tuplas na tabela "rede_social".
+INSERT INTO rede_social (nome, perfil, numero_seguidores, media_curtidas, youtube, instagram, cnpj)
+VALUES
+	('Instagram', 'Rede Sonhar para Viver', 10547, 687, 'False', 'True', '12.345.678/9012-34'),
+	('Youtube', 'Veja Sonhar para Viver', 8412, 157, 'True', 'False', '12.345.678/9012-34');
+
+-- Inserindo tuplas na tabela "youtube".
+INSERT INTO youtube(nome, frequencia_videos)
+VALUES
+	('Youtube', 'Diário');
+
+-- Inserindo tuplas na tabela "instagram"
+INSERT INTO instagram(
+	nome, frequencia_stories, frequencia_postagens)
+	VALUES ('Instagram', 'Diário', 'Diário');
+
+-- Inserindo tuplas na tabela "campanha"
+INSERT INTO campanha(
+	id, nome, periodo, objetivo, verba, pro_nome)
+	VALUES ('0000000001', 'Recordar é Viver', 'jan-fev 2025', 'aumentar fidelidade', 4000.00, 'Instagram');
+
+INSERT INTO campanha(
+	id, nome, periodo, objetivo, verba, pro_nome)
+	VALUES ('0000000002', 'Descubra a Sonhar', 'abr-jun 2025', 'captar novos clientes', 7000.00, 'Youtube');
+
+INSERT INTO campanha(
+	id, nome, periodo, objetivo, verba, pro_nome)
+	VALUES ('0000000003', 'Trabalho dos Sonhos', 'nov-dez 2025', 'contratar novos funcionários', 4000.00, 'Instagram');
+
+INSERT INTO campanha(
+	id, nome, periodo, objetivo, verba, pro_nome)
+	VALUES ('0000000004', 'Novo Hotel Dream', 'nov-dez 2024', 'divulgar novo hotel', 6000.00, 'Instagram');
+
+INSERT INTO campanha(
+	id, nome, periodo, objetivo, verba, pro_nome)
+	VALUES ('0000000005', 'Sorte dos Sonhos', 'jan-fev 2025', 'divulgar sorteio 1', 3000.00, 'Youtube');
+
+-- Inserindo tuplas na tabela "influenciador parceiro"
+INSERT INTO influenciador_parceiro(
+	cpf, nome, numero_seguidores, remuneracao)
+	VALUES ('111.111.111-11', 'Arthur Assis', 100000.00 , 1500.00);
+
+INSERT INTO influenciador_parceiro(
+	cpf, nome, numero_seguidores, remuneracao)
+	VALUES ('222.222.222-22', 'Bruno Barreto', 500000.00 , 2000.00);
+
+INSERT INTO influenciador_parceiro(
+	cpf, nome, numero_seguidores, remuneracao)
+	VALUES ('333.333.333-33', 'Carol Cardoso', 1500000.00 , 4000.00);
+
+INSERT INTO influenciador_parceiro(
+	cpf, nome, numero_seguidores, remuneracao)
+	VALUES ('444.444.444-44', 'Daniela Dias', 800000.00 , 3000.00);
+
+INSERT INTO influenciador_parceiro(
+	cpf, nome, numero_seguidores, remuneracao)
+	VALUES ('555.555.555-55', 'Emma Espinoza', 900000.00 , 3100.00);
+
+-- inserindo tuplas na tabela "e_divulgada_por"
+INSERT INTO e_divulgada_por(
+	cpf, nome)
+	VALUES ('111.111.111-11', 'Instagram');
+
+INSERT INTO e_divulgada_por(
+	cpf, nome)
+	VALUES ('222.222.222-22', 'Youtube');
+
+INSERT INTO e_divulgada_por(
+	cpf, nome)
+	VALUES ('333.333.333-33', 'Youtube');
+
+INSERT INTO public.e_divulgada_por(
+	cpf, nome)
+	VALUES ('333.333.333-33', 'Instagram');
+	
+
+INSERT INTO e_divulgada_por(
+	cpf, nome)
+	VALUES ('444.444.444-44', 'Instagram');
+
+INSERT INTO e_divulgada_por(
+	cpf, nome)
+	VALUES ('555.555.555-55', 'Instagram');
+
+INSERT INTO public.e_divulgada_por(
+	cpf, nome)
+	VALUES ('555.555.555-55', 'Youtube');
+
+-- inserindo tuplas na tabela "seguidor"
+INSERT INTO seguidor(
+	e_mail, perfil, nome)
+	VALUES ('ziraldocorr@gmail.com', 'zir_corr', 'Ziraldo Correia');
+
+INSERT INTO seguidor(
+	e_mail, perfil, nome)
+	VALUES ('yasbarreto@gmail.com', 'y_barreto', 'Yasmim Barreto');
+
+INSERT INTO seguidor(
+	e_mail, perfil, nome)
+	VALUES ('xavierbentes@gmail.com', 'xavi_b', 'Xavier Bentes');
+
+INSERT INTO seguidor(
+	e_mail, perfil, nome)
+	VALUES ('wilsonmatias@gmail.com', 'wil_mat', 'Wilson Matias');
+
+INSERT INTO seguidor(
+	e_mail, perfil, nome)
+	VALUES ('viniciusj@gmail.com', 'vini_jorge', 'Vinicius Jorge');
+
+INSERT INTO seguidor(
+	e_mail, perfil, nome)
+	VALUES ('tatimarques@gmail.com', 'tati_mar', 'Tatiana Marques');
+
+INSERT INTO seguidor(
+	e_mail, perfil, nome)
+	VALUES ('rosasamira@gmail.com', 'samirosa', 'Samira Rosa');
