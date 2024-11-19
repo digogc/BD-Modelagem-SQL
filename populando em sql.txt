@@ -627,3 +627,24 @@ INSERT INTO consome(
 INSERT INTO consome(
 	numero, id, dia, horario, quantidade)
 	VALUES (66, '0000000006', '24-11-2024', '16:00h', 1);
+
+-- inserindo tuplas na tabela "empresa_turismo"
+INSERT INTO empresa_turismo(
+	numero, nome, especialidade)
+	VALUES (6, 'Viagem Viva', 'turismo cultural e histórico');
+
+INSERT INTO empresa_turismo(
+	numero, nome, especialidade)
+	VALUES (20, 'Rota dos Sonhos', 'viagens românticas');
+
+INSERT INTO empresa_turismo(
+	numero, nome, especialidade)
+	VALUES (36, 'Pé na Estrada', 'road trips');
+
+INSERT INTO empresa_turismo(
+	numero, nome, especialidade)
+	VALUES (50, 'Viajar é Viver', 'roteiros de imersão cultural');
+
+INSERT INTO empresa_turismo(
+	numero, nome, especialidade)
+	VALUES (62, 'Expresso Aventuras', 'tours rápidos');
