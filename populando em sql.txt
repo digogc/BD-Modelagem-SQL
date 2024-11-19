@@ -76,7 +76,7 @@ INSERT INTO e_divulgada_por(
 	cpf, nome)
 	VALUES ('333.333.333-33', 'Youtube');
 
-INSERT INTO public.e_divulgada_por(
+INSERT INTO e_divulgada_por(
 	cpf, nome)
 	VALUES ('333.333.333-33', 'Instagram');
 	
@@ -89,7 +89,7 @@ INSERT INTO e_divulgada_por(
 	cpf, nome)
 	VALUES ('555.555.555-55', 'Instagram');
 
-INSERT INTO public.e_divulgada_por(
+INSERT INTO e_divulgada_por(
 	cpf, nome)
 	VALUES ('555.555.555-55', 'Youtube');
 
@@ -648,3 +648,101 @@ INSERT INTO empresa_turismo(
 INSERT INTO empresa_turismo(
 	numero, nome, especialidade)
 	VALUES (62, 'Expresso Aventuras', 'tours rápidos');
+
+-- inserindo tuplas na tabela "piscina"
+INSERT INTO piscina(
+	numero, tipo, profundidade, data_ultima_limpeza)
+	VALUES (4, 'Infantil', 0.6, '2024-11-01');
+
+INSERT INTO piscina(
+	numero, tipo, profundidade, data_ultima_limpeza)
+	VALUES (5, 'Hidromassagem', 1.2, '2024-11-04');
+
+INSERT INTO piscina(
+	numero, tipo, profundidade, data_ultima_limpeza)
+	VALUES (17, 'Cascata', 1.5, '2024-10-28');
+
+INSERT INTO piscina(
+	numero, tipo, profundidade, data_ultima_limpeza)
+	VALUES (18, 'Coberta', 1.6, '2024-11-02');
+
+INSERT INTO piscina(
+	numero, tipo, profundidade, data_ultima_limpeza)
+	VALUES (19, 'Infantil', 0.6, '2024-11-05');
+
+INSERT INTO piscina(
+	numero, tipo, profundidade, data_ultima_limpeza)
+	VALUES (32, 'Hidromassagem', 1.2, '2024-10-30');
+
+INSERT INTO piscina(
+	numero, tipo, profundidade, data_ultima_limpeza)
+	VALUES (33, 'Hidromassagem', 1.2, '2024-10-27');
+
+INSERT INTO piscina(
+	numero, tipo, profundidade, data_ultima_limpeza)
+	VALUES (34, 'Cascata', 1.5, '2024-11-03');
+
+INSERT INTO piscina(
+	numero, tipo, profundidade, data_ultima_limpeza)
+	VALUES (35, 'Coberta', 1.6, '2024-11-06');
+
+INSERT INTO piscina(
+	numero, tipo, profundidade, data_ultima_limpeza)
+	VALUES (47, 'Infantil', 0.6, '2024-11-01');
+
+INSERT INTO piscina(
+	numero, tipo, profundidade, data_ultima_limpeza)
+	VALUES (48, 'Hidromassagem', 1.2, '2024-10-25');
+
+INSERT INTO piscina(
+	numero, tipo, profundidade, data_ultima_limpeza)
+	VALUES (49, 'Cascata', 1.5, '2024-10-29');
+
+INSERT INTO piscina(
+	numero, tipo, profundidade, data_ultima_limpeza)
+	VALUES (60, 'Coberta', 1.6, '2024-10-31');
+
+INSERT INTO piscina(
+	numero, tipo, profundidade, data_ultima_limpeza)
+	VALUES (61, 'Hidromassagem', 1.2, '2024-11-04');
+
+-- inserindo tuplas na tabela 'restaurante'
+INSERT INTO restaurante(
+	numero, capacidade_maxima, status)
+	VALUES (2, 150, 'Aberto');
+
+INSERT INTO restaurante(
+	numero, capacidade_maxima, status)
+	VALUES (3, 110, 'Fechado');
+
+INSERT INTO restaurante(
+	numero, capacidade_maxima, status)
+	VALUES (15, 100, 'Aberto');
+
+INSERT INTO restaurante(
+	numero, capacidade_maxima, status)
+	VALUES (16, 160, 'Aberto');
+
+INSERT INTO restaurante(
+	numero, capacidade_maxima, status)
+	VALUES (30, 90, 'Aberto');
+
+INSERT INTO restaurante(
+	numero, capacidade_maxima, status)
+	VALUES (31, 95, 'Aberto');
+
+INSERT INTO restaurante(
+	numero, capacidade_maxima, status)
+	VALUES (45, 120, 'Fechado');
+
+INSERT INTO restaurante(
+	numero, capacidade_maxima, status)
+	VALUES (46, 130, 'Aberto');
+
+INSERT INTO restaurante(
+	numero, capacidade_maxima, status)
+	VALUES (58, 80, 'Aberto');
+
+INSERT INTO restaurante(
+	numero, capacidade_maxima, status)
+	VALUES (59, 85, 'Aberto');
