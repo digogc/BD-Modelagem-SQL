@@ -450,3 +450,134 @@ INSERT INTO dependencia(
 INSERT INTO dependencia(
 	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
 	VALUES (68, '15-11-2024', '0000000005', 0, 0, 0, 0, 0, 1);
+
+-- inserindo tuplas na tabela 'acomodação'
+-- acomodações no hotel 1
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (7, 'casal', 300.00, '26-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (8, 'individual', 180.00, '25-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (9, 'casal', 300.00, '25-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (10, 'individual', 180.00, '26-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (11, 'família', 400.00, '26-11-2024');
+
+-- acomodações no hotel 2
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (21, 'casal', 340.00, '26-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (22, 'família', 420.00, '25-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (23, 'individual', 200.00, '25-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (24, 'casal', 340.00, '26-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (25, 'casal', 340.00, '25-11-2024');
+
+-- acomodações no hotel 3
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (37, 'família', 400.00, '25-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (38, 'individual', 150.00, '25-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (39, 'individual', 150.00, '26-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (40, 'casal', 250.00, '25-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (41, 'família', 400.00, '26-11-2024');
+
+-- acomodações no hotel 4
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (51, 'família', 420.00, '25-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (52, 'casal', 350.00, '25-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (53, 'casal', 350.00, '26-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (54, 'família', 420.00, '24-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (55, 'individual', 200.00, '25-11-2024');
+
+-- acomodações no hotel 5
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (63, 'família', 480.00, '25-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (64, 'casal', 380.00, '26-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (65, 'casal', 380.00, '24-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (66, 'família', 480.00, '25-11-2024');
+
+INSERT INTO acomodacao(
+	numero, tipo, valor, ultima_limpeza)
+	VALUES (67, 'individual', 280.00, '25-11-2024');
+
+-- inserindo tuplas na tabela "produto_frigobar"
+INSERT INTO produto_frigobar(
+	id, nome, valor_unidade)
+	VALUES ('0000000001', 'Água 500ml', '5.00');
+
+INSERT INTO produto_frigobar(
+	id, nome, valor_unidade)
+	VALUES ('0000000002', 'Refrigerante 350ml', '7.00');
+
+INSERT INTO produto_frigobar(
+	id, nome, valor_unidade)
+	VALUES ('0000000003', 'Cerveja 350ml', '8.00');
+
+INSERT INTO produto_frigobar(
+	id, nome, valor_unidade)
+	VALUES ('0000000004', 'Chocolate 200g', '15.00');
+
+INSERT INTO produto_frigobar(
+	id, nome, valor_unidade)
+	VALUES ('0000000005', 'Sanduíche 300g', '20.00');
+
+INSERT INTO produto_frigobar(
+	id, nome, valor_unidade)
+	VALUES ('0000000006', 'Picolé', '7.00');
