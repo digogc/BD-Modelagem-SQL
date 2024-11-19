@@ -767,3 +767,27 @@ INSERT INTO refeicao(
 INSERT INTO refeicao(
 	nome, horario, valor)
 	VALUES ('Lanche-N', '22:00h', 30.00);
+
+--inserindo tuplas na tabela "oferece"
+-- hotel 1
+-- restaurante 1
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (2, 'Almoço');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (2, 'Janta');
+
+-- restaurante 2
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (3, 'Lanche-M');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (3, 'Lanche-T');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (3, 'Lanche-N');
