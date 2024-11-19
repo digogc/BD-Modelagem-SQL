@@ -746,3 +746,24 @@ INSERT INTO restaurante(
 INSERT INTO restaurante(
 	numero, capacidade_maxima, status)
 	VALUES (59, 85, 'Aberto');
+
+-- inserindo tuplas na tabela "refeicao"
+INSERT INTO refeicao(
+	nome, horario, valor)
+	VALUES ('Lanche-M', '10:00h', 30.00);
+
+INSERT INTO refeicao(
+	nome, horario, valor)
+	VALUES ('Almoço', '13:00h', 40.00);
+
+INSERT INTO refeicao(
+	nome, horario, valor)
+	VALUES ('Lanche-T', '16:00h', 30.00);
+
+INSERT INTO refeicao(
+	nome, horario, valor)
+	VALUES ('Janta', '19:00h', 40.00);
+
+INSERT INTO refeicao(
+	nome, horario, valor)
+	VALUES ('Lanche-N', '22:00h', 30.00);
