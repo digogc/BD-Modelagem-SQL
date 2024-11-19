@@ -581,3 +581,49 @@ INSERT INTO produto_frigobar(
 INSERT INTO produto_frigobar(
 	id, nome, valor_unidade)
 	VALUES ('0000000006', 'Picolé', '7.00');
+
+-- inserindo tuplas na tabela "consome"
+-- hotel 1
+INSERT INTO consome(
+	numero, id, dia, horario, quantidade)
+	VALUES (7, '0000000001', '24-11-2024', '20:30h', 3);
+
+INSERT INTO consome(
+	numero, id, dia, horario, quantidade)
+	VALUES (10, '0000000004', '25-11-2024', '16:00h', 1);
+
+-- hotel 2
+INSERT INTO consome(
+	numero, id, dia, horario, quantidade)
+	VALUES (22, '0000000003', '25-11-2024', '22:00h', 2);
+
+INSERT INTO consome(
+	numero, id, dia, horario, quantidade)
+	VALUES (23, '0000000005', '26-11-2024', '19:00h', 1);
+
+-- hotel 3
+INSERT INTO consome(
+	numero, id, dia, horario, quantidade)
+	VALUES (38, '0000000006', '24-11-2024', '14:00h', 2);
+
+INSERT INTO consome(
+	numero, id, dia, horario, quantidade)
+	VALUES (40, '0000000001', '25-11-2024', '15:00h', 3);
+
+-- hotel 4
+INSERT INTO consome(
+	numero, id, dia, horario, quantidade)
+	VALUES (55, '0000000002', '24-11-2024', '15:30h', 2);
+
+INSERT INTO consome(
+	numero, id, dia, horario, quantidade)
+	VALUES (54, '0000000003', '26-11-2024', '17:00h', 1);
+
+-- hotel 5
+INSERT INTO consome(
+	numero, id, dia, horario, quantidade)
+	VALUES (64, '0000000001', '25-11-2024', '22:00h', 2);
+
+INSERT INTO consome(
+	numero, id, dia, horario, quantidade)
+	VALUES (66, '0000000006', '24-11-2024', '16:00h', 1);
