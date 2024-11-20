@@ -899,3 +899,126 @@ INSERT INTO oferece(
 INSERT INTO oferece(
 	numero, nome)
 	VALUES (59, 'Almoço');
+
+-- inserindo tuplas na tabela "sala_eventos"
+INSERT INTO sala_eventos(
+	numero, capacidade_maxima)
+	VALUES (1, 190);
+
+INSERT INTO sala_eventos(
+	numero, capacidade_maxima)
+	VALUES (13, 150);
+
+INSERT INTO sala_eventos(
+	numero, capacidade_maxima)
+	VALUES (14, 220);
+
+INSERT INTO sala_eventos(
+	numero, capacidade_maxima)
+	VALUES (28, 170);
+
+INSERT INTO sala_eventos(
+	numero, capacidade_maxima)
+	VALUES (29, 160);
+
+INSERT INTO sala_eventos(
+	numero, capacidade_maxima)
+	VALUES (43, 200);
+
+INSERT INTO sala_eventos(
+	numero, capacidade_maxima)
+	VALUES (44, 180);
+
+INSERT INTO sala_eventos(
+	numero, capacidade_maxima)
+	VALUES (57, 210);
+
+-- inserindo tuplas na tabela "evento"
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000001','Concerto de Música', '123.456.789-00', 'Pago', 50.00, '2024-12-01', '19:00h', 'L', 1);
+
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000002','Festival de Dança', '987.654.321-00', 'Aberto ao Público', 00.00, '2024-12-05', '18:00h', 'L', 1);
+
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000003','Palestra sobre Tecnologia', '123.789.456-00', 'Pago', 30.00, '2024-12-07', '15:00h', '10', 13);
+
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000004','Feira de Artesanato', '987.321.654-00', 'Aberto ao Público', 00.00, '2024-12-09', '10:00h', 'L', 13);
+
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000005','Espetáculo de Magia', '456.123.789-00', 'Pago', 20.00, '2024-12-12', '16:00h', 'L', 14);
+
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000006','Exposição de Arte', '321.654.987-00', 'Aberto ao Público', 00.00, '2024-12-14', '09:00h', 'L', 14);
+
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000007','Workshop de Fotografia', '789.123.456-00', 'Pago', 40.00, '2024-12-16', '14:00h', '10', 28);
+
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000008','Aula de Yoga', '654.987.321-00', 'Aberto ao Público', 00.00, '2024-12-18', '07:00h', 'L', 28);
+
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000009','Show de Stand-up', '123.456.789-00', 'Pago', 60.00, '2024-12-20', '21:00h', '16', 29);
+
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000010','Festa de Aniversário', '987.654.321-00', 'Aberto ao Público', 00.00, '2024-12-22', '22:00h', 'L', 29);
+
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000011','Festa Temática', '456.123.789-00', 'Pago', 25.00, '2024-12-24', '20:00h', 'L', 43);
+
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000012','Festival de Comida', '321.654.987-00', 'Aberto ao Público', 00.00, '2024-12-26', '11:00h', 'L', 43);
+
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000013','Concerto de Orquestra', '789.123.456-00', 'Pago', 80.00, '2024-12-28', '18:00h', 'L', 44);
+
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000014','Festival de Música Eletrônica', '654.987.321-00', 'Aberto ao Público', 00.00, '2024-12-30', '23:00h', '18', 44);
+
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000015','Exposição de Esculturas', '123.789.456-00', 'Pago', 15.00, '2024-12-31', '09:00h', 'L', 57);
+
+INSERT INTO evento(
+	id, nome, cpf_responsavel, acesso, valor, dia, horario, classificacao_indicativa, numero)
+	VALUES ('0000000016','Curso de Pintura', '987.321.654-00', 'Aberto ao Público', 00.00, '2024-12-03', '10:00h', 'L', 57);
+
+-- inserindo tuplas na tabela "academia"
+INSERT INTO academia(
+	numero, quantidade_equipamentos, ultima_manutencao_bebedouro, quantidade_chuveiros)
+	VALUES (12, 15, '2024-10-15', 5);
+
+INSERT INTO academia(
+	numero, quantidade_equipamentos, ultima_manutencao_bebedouro, quantidade_chuveiros)
+	VALUES (26, 20, '2024-09-25', 6);
+
+INSERT INTO academia(
+	numero, quantidade_equipamentos, ultima_manutencao_bebedouro, quantidade_chuveiros)
+	VALUES (27, 18, '2024-11-10', 7);
+
+INSERT INTO academia(
+	numero, quantidade_equipamentos, ultima_manutencao_bebedouro, quantidade_chuveiros)
+	VALUES (42, 22, '2024-08-30', 6);
+
+INSERT INTO academia(
+	numero, quantidade_equipamentos, ultima_manutencao_bebedouro, quantidade_chuveiros)
+	VALUES (56, 25, '2024-07-20', 8);
+
+INSERT INTO academia(
+	numero, quantidade_equipamentos, ultima_manutencao_bebedouro, quantidade_chuveiros)
+	VALUES (68, 30, '2024-10-05', 9);
