@@ -2044,3 +2044,111 @@ INSERT INTO dispoe_de(
 INSERT INTO dispoe_de(
 	numero, tipo)
 	VALUES (67, 'Lavanderia');
+
+-- inserindo tuplas na tabela hospede
+-- hospede principal (25)
+-- Inserindo hóspedes principais
+-- hotel 1
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('126.734.510-13', 'Ana Clara Oliveira', 'ana.clara@gmail.com', '1985-06-12', 'F', NULL, 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('282.303.600-81', 'Lucas Martins', 'lucas.martins@gmail.com', '1990-04-23', 'M', '227.193.860-06', 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('843.488.170-57', 'Maria Eduarda Silva', 'maria.eduarda@gmail.com', '1988-09-14', 'F', NULL, 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('113.611.030-51', 'Gabriel Santos', 'gabriel.santos@gmail.com', '1995-11-03', 'M', '969.292.610-92', 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('598.004.440-09', 'Isabella Lima', 'isabella.lima@gmail.com', '1992-01-27', 'F', NULL, 1, 0, '12.345.678/9012-34');
+
+-- hotel 2
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('864.192.400-00', 'Rafael Almeida', 'rafael.almeida@gmail.com', '1983-08-15', 'M', NULL, 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('406.355.020-62', 'Sophia Costa', 'sophia.costa@gmail.com', '1998-03-09', 'F', NULL, 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('781.718.920-00', 'João Pedro Rocha', 'joao.pedro@gmail.com', '1987-12-05', 'M', '178.934.670-37', 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('070.515.070-44', 'Fernanda Barros', 'fernanda.barros@gmail.com', '1994-07-16', 'F', '875.375.910-91', 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('436.052.300-91', 'Carlos Henrique Mendes', 'carlos.henrique@gmail.com', '1989-05-19', 'M', NULL, 1, 0, '12.345.678/9012-34');
+
+-- hotel 3
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('140.347.620-98', 'Lara Moreira', 'lara.moreira@gmail.com', '1996-02-11', 'F', '966.738.450-07', 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('262.047.650-00', 'Miguel Fernandes', 'miguel.fernandes@gmail.com', '1984-10-30', 'M', '966.738.450-07', 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('732.504.950-18', 'Camila Ribeiro', 'camila.ribeiro@gmail.com', '1991-09-25', 'F', NULL, 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('624.076.300-41', 'Thiago Azevedo', 'thiago.azevedo@gmail.com', '1993-06-21', 'M', NULL, 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('541.037.770-28', 'Alice Cunha', 'alice.cunha@gmail.com', '1999-12-14', 'F', NULL, 1, 0, '12.345.678/9012-34');
+
+-- hotel 4
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('191.078.770-13', 'Pedro Lucas Vieira', 'pedro.lucas@gmail.com', '1986-03-04', 'M', '820.738.090-06', 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('428.775.360-76', 'Helena Figueiredo', 'helena.figueiredo@gmail.com', '1982-07-02', 'F', NULL, 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('011.573.640-98', 'Victor Nascimento', 'victor.nascimento@gmail.com', '1981-11-11', 'M', NULL, 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('533.698.280-65', 'Mariana Santos', 'mariana.santos@gmail.com', '1997-04-29', 'F', '820.738.090-06', 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('267.540.010-62', 'Diego Rocha', 'diego.rocha@gmail.com', '1980-08-10', 'M', NULL, 1, 0, '12.345.678/9012-34');
+
+-- hotel 5
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('511.950.800-69', 'Juliana Ferreira', 'juliana.ferreira@gmail.com', '1990-03-18', 'F', '384.930.440-08', 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('424.807.890-20', 'André Costa', 'andre.costa@gmail.com', '1985-12-08', 'M', '021.754.780-09', 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('135.856.450-70', 'Renata Souza', 'renata.souza@gmail.com', '1993-10-25', 'F', NULL, 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('206.112.430-59', 'Bruno Mendes', 'bruno.mendes@gmail.com', '1989-06-14', 'M', NULL, 1, 0, '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('804.794.340-50', 'Vanessa Cardoso', 'vanessa.cardoso@gmail.com', '1996-09-30', 'F', NULL, 1, 0, '12.345.678/9012-34');
