@@ -1168,3 +1168,654 @@ INSERT INTO permite(
 INSERT INTO permite(
 	numero, cpf)
 	VALUES (68, '384.930.440-08');
+
+-- inserindo tuplas na tabela 'amenidade'
+INSERT INTO amenidade(
+	tipo)
+	VALUES ('Wi-Fi grátis');
+
+INSERT INTO amenidade(
+	tipo)
+	VALUES ('Lavanderia');
+
+INSERT INTO amenidade(
+	tipo)
+	VALUES ('Fogão');
+
+INSERT INTO amenidade(
+	tipo)
+	VALUES ('Ar-condicionado');
+
+INSERT INTO amenidade(
+	tipo)
+	VALUES ('TV a cabo');
+
+INSERT INTO amenidade(
+	tipo)
+	VALUES ('Micro-ondas');
+
+INSERT INTO amenidade(
+	tipo)
+	VALUES ('Varanda');
+
+INSERT INTO amenidade(
+	tipo)
+	VALUES ('Banheira');
+
+INSERT INTO amenidade(
+	tipo)
+	VALUES ('Cofre');
+
+INSERT INTO amenidade(
+	tipo)
+	VALUES ('Máquina de café');
+
+INSERT INTO amenidade(
+	tipo)
+	VALUES ('Frigobar');
+
+INSERT INTO amenidade(
+	tipo)
+	VALUES ('Itens de higiene');
+
+-- inserindo tuplas na tabela "dispoe_de"
+-- inserindo as amenidades obrigatórias em todas as acomodações
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (7, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (7, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (7, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (7, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (7, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (7, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (8, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (8, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (8, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (8, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (8, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (8, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (9, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (9, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (9, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (9, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (9, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (9, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (10, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (10, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (10, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (10, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (10, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (10, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (11, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (11, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (11, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (11, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (11, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (11, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (21, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (21, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (21, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (21, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (21, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (21, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (22, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (22, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (22, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (22, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (22, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (22, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (23, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (23, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (23, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (23, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (23, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (23, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (24, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (24, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (24, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (24, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (24, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (24, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (25, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (25, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (25, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (25, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (25, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (25, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (37, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (37, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (37, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (37, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (37, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (37, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (38, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (38, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (38, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (38, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (38, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (38, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (39, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (39, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (39, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (39, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (39, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (39, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (40, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (40, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (40, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (40, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (40, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (40, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (41, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (41, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (41, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (41, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (41, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (41, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (51, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (51, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (51, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (51, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (51, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (51, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (52, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (52, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (52, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (52, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (52, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (52, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (53, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (53, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (53, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (53, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (53, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (53, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (54, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (54, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (54, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (54, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (54, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (54, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (55, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (55, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (55, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (55, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (55, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (55, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (63, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (63, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (63, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (63, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (63, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (63, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (64, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (64, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (64, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (64, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (64, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (64, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (65, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (65, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (65, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (65, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (65, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (65, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (66, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (66, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (66, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (66, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (66, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (66, 'Cofre');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (67, 'Wi-Fi grátis');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (67, 'Ar-condicionado');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (67, 'TV a cabo');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (67, 'Frigobar');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (67, 'Itens de higiene');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (67, 'Cofre');
