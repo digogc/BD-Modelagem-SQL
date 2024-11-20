@@ -1022,3 +1022,149 @@ INSERT INTO academia(
 INSERT INTO academia(
 	numero, quantidade_equipamentos, ultima_manutencao_bebedouro, quantidade_chuveiros)
 	VALUES (68, 30, '2024-10-05', 9);
+
+-- inserindo tuplas na tabela "personal_trainer"
+INSERT INTO personal_trainer(
+	cpf, nome, formacao, valorhora)
+	VALUES ('227.193.860-06', 'João Silva', 'Educação Física', 80.00);
+
+INSERT INTO personal_trainer(
+	cpf, nome, formacao, valorhora)
+	VALUES ('820.738.090-06', 'Maria Oliveira', 'Fisioterapia', 90.00);
+
+INSERT INTO personal_trainer(
+	cpf, nome, formacao, valorhora)
+	VALUES ('384.930.440-08', 'Carlos Souza', 'Treinamento Esportivo', 75.00);
+
+INSERT INTO personal_trainer(
+	cpf, nome, formacao, valorhora)
+	VALUES ('875.375.910-91', 'Ana Costa', 'Nutrição e Fitness', 85.00);
+
+INSERT INTO personal_trainer(
+	cpf, nome, formacao, valorhora)
+	VALUES ('969.292.610-92', 'Lucas Fernandes', 'Educação Física', 70.00);
+
+INSERT INTO personal_trainer(
+	cpf, nome, formacao, valorhora)
+	VALUES ('966.738.450-07', 'Fernanda Lima', 'Fisioterapia', 95.00);
+
+INSERT INTO personal_trainer(
+	cpf, nome, formacao, valorhora)
+	VALUES ('178.934.670-37', 'Roberto Alves', 'Treinamento Funcional', 78.00);
+
+INSERT INTO personal_trainer(
+	cpf, nome, formacao, valorhora)
+	VALUES ('021.754.780-09', 'Juliana Pereira', 'Yoga e Pilates', 88.00);
+
+-- inserindo tuplas na tabela "permite"
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (12, '227.193.860-06');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (12, '820.738.090-06');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (12, '384.930.440-08');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (12, '875.375.910-91');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (26, '969.292.610-92');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (26, '966.738.450-07');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (26, '178.934.670-37');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (26, '021.754.780-09');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (27, '227.193.860-06');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (27, '820.738.090-06');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (27, '384.930.440-08');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (27, '875.375.910-91');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (42, '969.292.610-92');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (42, '966.738.450-07');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (42, '178.934.670-37');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (42, '021.754.780-09');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (56, '227.193.860-06');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (56, '820.738.090-06');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (56, '384.930.440-08');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (56, '875.375.910-91');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (68, '969.292.610-92');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (68, '966.738.450-07');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (68, '178.934.670-37');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (68, '021.754.780-09');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (12, '969.292.610-92');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (26, '227.193.860-06');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (42, '820.738.090-06');
+
+INSERT INTO permite(
+	numero, cpf)
+	VALUES (68, '384.930.440-08');
