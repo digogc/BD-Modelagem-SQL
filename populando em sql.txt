@@ -1819,3 +1819,228 @@ INSERT INTO dispoe_de(
 INSERT INTO dispoe_de(
 	numero, tipo)
 	VALUES (67, 'Cofre');
+
+-- Inserindo mais duas amenidades para as acomodações
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (7, 'Lavanderia');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (7, 'Banheira');
+
+-- Acomodação 8
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (8, 'Fogão');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (8, 'Máquina de café');
+
+-- Acomodação 9
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (9, 'Varanda');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (9, 'Micro-ondas');
+
+-- Acomodação 10
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (10, 'Fogão');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (10, 'Banheira');
+
+-- Acomodação 11
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (11, 'Máquina de café');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (11, 'Lavanderia');
+
+-- Acomodação 21
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (21, 'Micro-ondas');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (21, 'Varanda');
+
+-- Acomodação 22
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (22, 'Máquina de café');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (22, 'Lavanderia');
+
+-- Acomodação 23
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (23, 'Fogão');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (23, 'Banheira');
+
+-- Acomodação 24
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (24, 'Máquina de café');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (24, 'Micro-ondas');
+
+-- Acomodação 25
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (25, 'Varanda');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (25, 'Fogão');
+
+-- Acomodação 37
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (37, 'Lavanderia');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (37, 'Máquina de café');
+
+-- Acomodação 38
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (38, 'Banheira');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (38, 'Varanda');
+
+-- Acomodação 39
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (39, 'Micro-ondas');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (39, 'Fogão');
+
+-- Acomodação 40
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (40, 'Máquina de café');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (40, 'Banheira');
+
+-- Acomodação 41
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (41, 'Lavanderia');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (41, 'Fogão');
+
+-- Acomodação 51
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (51, 'Varanda');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (51, 'Máquina de café');
+
+-- Acomodação 52
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (52, 'Micro-ondas');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (52, 'Banheira');
+
+-- Acomodação 53
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (53, 'Fogão');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (53, 'Lavanderia');
+
+-- Acomodação 54
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (54, 'Máquina de café');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (54, 'Varanda');
+
+-- Acomodação 55
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (55, 'Micro-ondas');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (55, 'Fogão');
+
+-- Acomodação 63
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (63, 'Banheira');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (63, 'Máquina de café');
+
+-- Acomodação 64
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (64, 'Lavanderia');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (64, 'Fogão');
+
+-- Acomodação 65
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (65, 'Varanda');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (65, 'Micro-ondas');
+
+-- Acomodação 66
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (66, 'Máquina de café');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (66, 'Banheira');
+
+-- Acomodação 67
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (67, 'Fogão');
+
+INSERT INTO dispoe_de(
+	numero, tipo)
+	VALUES (67, 'Lavanderia');
