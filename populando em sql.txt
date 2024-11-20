@@ -791,3 +791,111 @@ INSERT INTO oferece(
 INSERT INTO oferece(
 	numero, nome)
 	VALUES (3, 'Lanche-N');
+
+-- hotel 2
+-- restaurante 3
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (15, 'Lanche-M');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (15, 'Almoço');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (15, 'Lanche-T');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (15, 'Janta');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (15, 'Lanche-N');
+
+-- restaurante 4
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (16, 'Almoço');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (16, 'Janta');
+
+-- hotel 3
+-- restaurante 5
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (30, 'Almoço');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (30, 'Janta');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (30, 'Lanche-T');
+
+-- restaurante 6
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (31, 'Lanche-M');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (31, 'Lanche-N');
+
+-- hotel 4
+-- restaurante 7
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (45, 'Janta');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (45, 'Lanche-N');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (45, 'Lanche-M');
+
+-- restaurante 8
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (46, 'Almoço');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (46, 'Lanche-T');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (46, 'Janta');
+
+-- hotel 5
+-- restaurante 9
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (58, 'Almoço');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (58, 'Lanche-M');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (58, 'Lanche-T');
+
+-- restaurante 10
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (59, 'Janta');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (59, 'Lanche-N');
+
+INSERT INTO oferece(
+	numero, nome)
+	VALUES (59, 'Almoço');
