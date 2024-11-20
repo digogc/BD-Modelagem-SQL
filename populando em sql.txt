@@ -559,27 +559,27 @@ INSERT INTO acomodacao(
 
 -- inserindo tuplas na tabela "produto_frigobar"
 INSERT INTO produto_frigobar(
-	id, nome, valor_unidade)
+	id, nome, valorunidade)
 	VALUES ('0000000001', 'Água 500ml', '5.00');
 
 INSERT INTO produto_frigobar(
-	id, nome, valor_unidade)
+	id, nome, valorunidade)
 	VALUES ('0000000002', 'Refrigerante 350ml', '7.00');
 
 INSERT INTO produto_frigobar(
-	id, nome, valor_unidade)
+	id, nome, valorunidade)
 	VALUES ('0000000003', 'Cerveja 350ml', '8.00');
 
 INSERT INTO produto_frigobar(
-	id, nome, valor_unidade)
+	id, nome, valorunidade)
 	VALUES ('0000000004', 'Chocolate 200g', '15.00');
 
 INSERT INTO produto_frigobar(
-	id, nome, valor_unidade)
+	id, nome, valorunidade)
 	VALUES ('0000000005', 'Sanduíche 300g', '20.00');
 
 INSERT INTO produto_frigobar(
-	id, nome, valor_unidade)
+	id, nome, valorunidade)
 	VALUES ('0000000006', 'Picolé', '7.00');
 
 -- inserindo tuplas na tabela "consome"
