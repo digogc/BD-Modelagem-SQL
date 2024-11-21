@@ -2575,3 +2575,61 @@ INSERT INTO public.beneficiados(
 INSERT INTO public.beneficiados(
     cpf, numero, cpf_beneficiado)
     VALUES ('135.856.450-70', 63, '316.502.700-54');
+
+-- inserindo tuplas na tabela "compra"
+INSERT INTO compra(
+    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
+    VALUES ('0000000001', 150.00, '08:00', '0', '1', 7);
+
+INSERT INTO compra(
+    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
+    VALUES ('0000000002', 180.00, '08:00', '0', '1', 11);
+
+INSERT INTO compra(
+    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
+    VALUES ('0000000003', 200.00, '08:00', '0', '1', 25);
+
+INSERT INTO compra(
+    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
+    VALUES ('0000000004', 250.00, '08:00', '0', '1', 40);
+
+INSERT INTO compra(
+    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
+    VALUES ('0000000005', 160.00, '08:00', '0', '1', 51);
+
+INSERT INTO compra(
+    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
+    VALUES ('0000000006', 210.00, '08:00', '0', '1', 54);
+
+-- Serviço de quarto (id 7 a 14)
+INSERT INTO compra(
+    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
+    VALUES ('0000000007', 120.00, '13:00', '1', '0', 8);
+
+INSERT INTO compra(
+    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
+    VALUES ('0000000008', 220.00, '14:00', '1', '0', 21);
+
+INSERT INTO compra(
+    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
+    VALUES ('0000000009', 110.00, '10:00', '1', '0', 22);
+
+INSERT INTO compra(
+    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
+    VALUES ('0000000010', 170.00, '23:00', '1', '0', 37);
+
+INSERT INTO compra(
+    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
+    VALUES ('0000000011', 230.00, '13:00', '1', '0', 38);
+
+INSERT INTO compra(
+    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
+    VALUES ('0000000012', 250.00, '21:00', '1', '0', 52);
+
+INSERT INTO compra(
+    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
+    VALUES ('0000000013', 130.00, '19:00', '1', '0', 53);
+
+INSERT INTO compra(
+    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
+    VALUES ('0000000014', 140.00, '22:00', '1', '0', 64);
