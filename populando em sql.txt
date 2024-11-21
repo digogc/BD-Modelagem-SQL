@@ -2120,67 +2120,67 @@ INSERT INTO hospede(
 -- inserindo tuplas na tabela nota fiscal
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000001', 850.00, 50.00, 0, '2024-11-28', '1', '12.345.678/9012-34');
+	VALUES ('0000000001', 1700.00, 50.00, 0, '2024-11-28', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000002', 920.00, 20.00, 10.00, '2024-12-01', '0', '12.345.678/9012-34');
+	VALUES ('0000000002', 1840.00, 20.00, 10.00, '2024-12-01', '0', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000003', 1030.50, 80.00, 0, '2024-12-05', '1', '12.345.678/9012-34');
+	VALUES ('0000000003', 2061.00, 80.00, 0, '2024-12-05', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000004', 1500.00, 100.00, 300.00, '2024-11-30', '0', '12.345.678/9012-34');
+	VALUES ('0000000004', 3000.00, 100.00, 300.00, '2024-11-30', '0', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000005', 880.00, 0, 0, '2024-12-02', '1', '12.345.678/9012-34');
+	VALUES ('0000000005', 1760.00, 0, 0, '2024-12-02', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000006', 1120.00, 0, 0, '2024-12-06', '1', '12.345.678/9012-34');
+	VALUES ('0000000006', 2240.00, 0, 0, '2024-12-06', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000007', 990.00, 50.00, 15.00, '2024-12-04', '0', '12.345.678/9012-34');
+	VALUES ('0000000007', 1980.00, 50.00, 15.00, '2024-12-04', '0', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000008', 850.00, 30.00, 0, '2024-11-29', '1', '12.345.678/9012-34');
+	VALUES ('0000000008', 1700.00, 30.00, 0, '2024-11-29', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000009', 1230.00, 70.00, 10.00, '2024-12-07', '0', '12.345.678/9012-34');
+	VALUES ('0000000009', 2460.00, 70.00, 10.00, '2024-12-07', '0', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000010', 1350.00, 50.00, 0, '2024-12-03', '1', '12.345.678/9012-34');
+	VALUES ('0000000010', 2700.00, 50.00, 0, '2024-12-03', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000011', 880.00, 20.00, 5.00, '2024-12-01', '1', '12.345.678/9012-34');
+	VALUES ('0000000011', 1760.00, 20.00, 5.00, '2024-12-01', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000012', 1200.00, 40.00, 0, '2024-11-28', '0', '12.345.678/9012-34');
+	VALUES ('0000000012', 2400.00, 40.00, 0, '2024-11-28', '0', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000013', 870.00, 0, 0, '2024-12-05', '1', '12.345.678/9012-34');
+	VALUES ('0000000013', 1740.00, 0, 0, '2024-12-05', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000014', 1300.00, 100.00, 0, '2024-12-02', '1', '12.345.678/9012-34');
+	VALUES ('0000000014', 2600.00, 100.00, 0, '2024-12-02', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000015', 1050.00, 80.00, 210.00, '2024-11-30', '0', '12.345.678/9012-34');
+	VALUES ('0000000015', 2100.00, 80.00, 210.00, '2024-11-30', '0', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000016', 900.00, 10.00, 0, '2024-12-06', '1', '12.345.678/9012-34');
+	VALUES ('0000000016', 4000.00, 10.00, 0, '2024-12-06', '1', '12.345.678/9012-34');
 
 -- Inserindo dependentes
 -- criando dependentes do hospede 1
@@ -2372,3 +2372,80 @@ INSERT INTO principal(
 INSERT INTO principal(
 	cpf, id, forma_pagamento)
 	VALUES ('135.856.450-70', '0000000016', 'Cartão de Crédito');
+
+-- inserindo tuplas na tabela "reserva"
+-- o fato do principal possuir ou não um dependente está sendo respeitado na hora de escolher um tipo de acomodação
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (7, '282.303.600-81', '2024-11-20', '2024-11-27', 100);
+
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (8, '113.611.030-51', '2024-11-19', '2024-11-26', 120);
+
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (11, '598.004.440-09', '2024-11-21', '2024-11-28', 80);
+
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (21, '781.718.920-00', '2024-11-22', '2024-11-29', 110);
+
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (22, '070.515.070-44', '2024-11-20', '2024-11-27', 150);
+
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (25, '436.052.300-91', '2024-11-19', '2024-11-26', 90);
+
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (37, '140.347.620-98', '2024-11-23', '2024-11-30', 130);
+
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (38, '262.047.650-00', '2024-11-21', '2024-11-28', 140);
+
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (40, '541.037.770-28', '2024-11-18', '2024-11-25', 200);
+
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (51, '191.078.770-13', '2024-11-19', '2024-11-26', 50);
+
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (52, '011.573.640-98', '2024-11-20', '2024-11-27', 160);
+
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (53, '533.698.280-65', '2024-11-22', '2024-11-29', 70);
+
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (54, '267.540.010-62', '2024-11-21', '2024-11-28', 110);
+
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (64, '511.950.800-69', '2024-11-23', '2024-11-30', 180);
+
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (65, '424.807.890-20', '2024-11-19', '2024-11-26', 90);
+
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (66, '135.856.450-70', '2024-11-20', '2024-11-27', 150);
+
+-- o hospede 1 gosta de reservar um quarto para seus filhos e um quarto para ele e sua esposa
+-- portanto, ele possuirá mais de uma reserva em seu nome
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (9, '282.303.600-81', '2024-11-20', '2024-11-27', 100);
+
+-- a hospede 16 também
+INSERT INTO reserva(
+	numero, cpf, data_check_in, data_check_out, pontos_gerados)
+	VALUES (63, '135.856.450-70', '2024-11-20', '2024-11-27', 150);
