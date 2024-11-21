@@ -12681,3 +12681,177 @@ VALUES
     (67, 30, 12, 'livre'),
     (67, 31, 12, 'livre');
 
+-- tornando ocupado os dias das reservas que estão sendo utilizadas atualmente
+UPDATE public.data_status
+SET status = 'ocupado'
+WHERE (numero = 7 AND dia BETWEEN 20 AND 27 AND mes = 11)
+   OR (numero = 8 AND dia BETWEEN 19 AND 26 AND mes = 11)
+   OR (numero = 11 AND dia BETWEEN 21 AND 28 AND mes = 11)
+   OR (numero = 21 AND dia BETWEEN 22 AND 29 AND mes = 11)
+   OR (numero = 22 AND dia BETWEEN 20 AND 27 AND mes = 11)
+   OR (numero = 25 AND dia BETWEEN 19 AND 26 AND mes = 11)
+   OR (numero = 37 AND dia BETWEEN 23 AND 30 AND mes = 11)
+   OR (numero = 38 AND dia BETWEEN 21 AND 28 AND mes = 11)
+   OR (numero = 40 AND dia BETWEEN 18 AND 25 AND mes = 11)
+   OR (numero = 51 AND dia BETWEEN 19 AND 26 AND mes = 11)
+   OR (numero = 52 AND dia BETWEEN 20 AND 27 AND mes = 11)
+   OR (numero = 53 AND dia BETWEEN 22 AND 29 AND mes = 11)
+   OR (numero = 54 AND dia BETWEEN 21 AND 28 AND mes = 11)
+   OR (numero = 64 AND dia BETWEEN 23 AND 30 AND mes = 11)
+   OR (numero = 65 AND dia BETWEEN 19 AND 26 AND mes = 11)
+   OR (numero = 66 AND dia BETWEEN 20 AND 27 AND mes = 11)
+   OR (numero = 9 AND dia BETWEEN 20 AND 27 AND mes = 11)
+   OR (numero = 63 AND dia BETWEEN 20 AND 27 AND mes = 11);
+
+-- inserindo periodos aleatórios do ano como ocupados nas acomodações
+UPDATE public.data_status
+SET status = 'ocupado'
+WHERE (numero = 7 AND 
+    ((dia BETWEEN 5 AND 10 AND mes = 1) 
+    OR (dia BETWEEN 15 AND 20 AND mes = 3) 
+    OR (dia BETWEEN 1 AND 5 AND mes = 6) 
+    OR (dia BETWEEN 10 AND 15 AND mes = 9)))
+   
+   OR (numero = 8 AND 
+    ((dia BETWEEN 12 AND 18 AND mes = 2) 
+    OR (dia BETWEEN 1 AND 6 AND mes = 5) 
+    OR (dia BETWEEN 8 AND 12 AND mes = 7) 
+    OR (dia BETWEEN 20 AND 25 AND mes = 11)))
+    
+   OR (numero = 9 AND 
+    ((dia BETWEEN 1 AND 7 AND mes = 1) 
+    OR (dia BETWEEN 5 AND 10 AND mes = 3) 
+    OR (dia BETWEEN 12 AND 17 AND mes = 6) 
+    OR (dia BETWEEN 20 AND 25 AND mes = 10)))
+   
+   OR (numero = 10 AND 
+    ((dia BETWEEN 15 AND 20 AND mes = 4) 
+    OR (dia BETWEEN 1 AND 5 AND mes = 6) 
+    OR (dia BETWEEN 7 AND 12 AND mes = 8) 
+    OR (dia BETWEEN 14 AND 18 AND mes = 11)))
+   
+   OR (numero = 11 AND 
+    ((dia BETWEEN 2 AND 7 AND mes = 1) 
+    OR (dia BETWEEN 10 AND 15 AND mes = 4) 
+    OR (dia BETWEEN 15 AND 19 AND mes = 7) 
+    OR (dia BETWEEN 21 AND 25 AND mes = 10)))
+   
+   OR (numero = 21 AND 
+    ((dia BETWEEN 5 AND 10 AND mes = 2) 
+    OR (dia BETWEEN 18 AND 22 AND mes = 5) 
+    OR (dia BETWEEN 1 AND 6 AND mes = 8) 
+    OR (dia BETWEEN 10 AND 15 AND mes = 11)))
+    
+   OR (numero = 22 AND 
+    ((dia BETWEEN 15 AND 20 AND mes = 3) 
+    OR (dia BETWEEN 6 AND 11 AND mes = 5) 
+    OR (dia BETWEEN 10 AND 14 AND mes = 9) 
+    OR (dia BETWEEN 1 AND 5 AND mes = 12)))
+    
+   OR (numero = 23 AND 
+    ((dia BETWEEN 8 AND 12 AND mes = 1) 
+    OR (dia BETWEEN 15 AND 19 AND mes = 4) 
+    OR (dia BETWEEN 5 AND 10 AND mes = 6) 
+    OR (dia BETWEEN 20 AND 25 AND mes = 9)))
+   
+   OR (numero = 24 AND 
+    ((dia BETWEEN 12 AND 16 AND mes = 2) 
+    OR (dia BETWEEN 1 AND 6 AND mes = 5) 
+    OR (dia BETWEEN 5 AND 9 AND mes = 7) 
+    OR (dia BETWEEN 17 AND 21 AND mes = 10)))
+   
+   OR (numero = 25 AND 
+    ((dia BETWEEN 3 AND 7 AND mes = 1) 
+    OR (dia BETWEEN 8 AND 12 AND mes = 4) 
+    OR (dia BETWEEN 20 AND 24 AND mes = 7) 
+    OR (dia BETWEEN 2 AND 6 AND mes = 10)))
+   
+   OR (numero = 37 AND 
+    ((dia BETWEEN 1 AND 5 AND mes = 2) 
+    OR (dia BETWEEN 12 AND 15 AND mes = 5) 
+    OR (dia BETWEEN 6 AND 10 AND mes = 8) 
+    OR (dia BETWEEN 22 AND 26 AND mes = 11)))
+   
+   OR (numero = 38 AND 
+    ((dia BETWEEN 3 AND 8 AND mes = 3) 
+    OR (dia BETWEEN 5 AND 9 AND mes = 6) 
+    OR (dia BETWEEN 12 AND 16 AND mes = 9) 
+    OR (dia BETWEEN 18 AND 22 AND mes = 11)))
+   
+   OR (numero = 39 AND 
+    ((dia BETWEEN 14 AND 18 AND mes = 4) 
+    OR (dia BETWEEN 1 AND 4 AND mes = 7) 
+    OR (dia BETWEEN 8 AND 12 AND mes = 9) 
+    OR (dia BETWEEN 15 AND 18 AND mes = 12)))
+   
+   OR (numero = 40 AND 
+    ((dia BETWEEN 5 AND 10 AND mes = 2) 
+    OR (dia BETWEEN 15 AND 20 AND mes = 4) 
+    OR (dia BETWEEN 1 AND 5 AND mes = 7) 
+    OR (dia BETWEEN 10 AND 14 AND mes = 10)))
+   
+   OR (numero = 41 AND 
+    ((dia BETWEEN 10 AND 14 AND mes = 3) 
+    OR (dia BETWEEN 18 AND 22 AND mes = 6) 
+    OR (dia BETWEEN 5 AND 9 AND mes = 8) 
+    OR (dia BETWEEN 20 AND 25 AND mes = 11)))
+   
+   OR (numero = 51 AND 
+    ((dia BETWEEN 15 AND 20 AND mes = 2) 
+    OR (dia BETWEEN 10 AND 15 AND mes = 5) 
+    OR (dia BETWEEN 2 AND 7 AND mes = 8) 
+    OR (dia BETWEEN 17 AND 21 AND mes = 10)))
+   
+   OR (numero = 52 AND 
+    ((dia BETWEEN 6 AND 10 AND mes = 3) 
+    OR (dia BETWEEN 5 AND 10 AND mes = 6) 
+    OR (dia BETWEEN 9 AND 14 AND mes = 9) 
+    OR (dia BETWEEN 20 AND 25 AND mes = 11)))
+   
+   OR (numero = 53 AND 
+    ((dia BETWEEN 2 AND 5 AND mes = 1) 
+    OR (dia BETWEEN 18 AND 22 AND mes = 4) 
+    OR (dia BETWEEN 9 AND 13 AND mes = 7) 
+    OR (dia BETWEEN 15 AND 19 AND mes = 10)))
+   
+   OR (numero = 54 AND 
+    ((dia BETWEEN 10 AND 14 AND mes = 3) 
+    OR (dia BETWEEN 18 AND 22 AND mes = 6) 
+    OR (dia BETWEEN 7 AND 12 AND mes = 9) 
+    OR (dia BETWEEN 12 AND 16 AND mes = 11)))
+   
+   OR (numero = 55 AND 
+    ((dia BETWEEN 5 AND 10 AND mes = 2) 
+    OR (dia BETWEEN 7 AND 11 AND mes = 5) 
+    OR (dia BETWEEN 1 AND 5 AND mes = 8) 
+    OR (dia BETWEEN 17 AND 21 AND mes = 10)))
+   
+   OR (numero = 63 AND 
+    ((dia BETWEEN 3 AND 7 AND mes = 1) 
+    OR (dia BETWEEN 10 AND 15 AND mes = 4) 
+    OR (dia BETWEEN 18 AND 22 AND mes = 7) 
+    OR (dia BETWEEN 13 AND 17 AND mes = 9)))
+   
+   OR (numero = 64 AND 
+    ((dia BETWEEN 2 AND 7 AND mes = 3) 
+    OR (dia BETWEEN 15 AND 19 AND mes = 5) 
+    OR (dia BETWEEN 5 AND 10 AND mes = 8) 
+    OR (dia BETWEEN 17 AND 21 AND mes = 11)))
+   
+   OR (numero = 65 AND 
+    ((dia BETWEEN 8 AND 13 AND mes = 2) 
+    OR (dia BETWEEN 7 AND 12 AND mes = 5) 
+    OR (dia BETWEEN 1 AND 4 AND mes = 8) 
+    OR (dia BETWEEN 20 AND 24 AND mes = 10)))
+   
+   OR (numero = 66 AND 
+    ((dia BETWEEN 12 AND 17 AND mes = 3) 
+    OR (dia BETWEEN 1 AND 5 AND mes = 6) 
+    OR (dia BETWEEN 7 AND 12 AND mes = 9) 
+    OR (dia BETWEEN 18 AND 22 AND mes = 11)))
+   
+   OR (numero = 67 AND 
+    ((dia BETWEEN 15 AND 20 AND mes = 4) 
+    OR (dia BETWEEN 3 AND 7 AND mes = 7) 
+    OR (dia BETWEEN 14 AND 19 AND mes = 9) 
+    OR (dia BETWEEN 6 AND 10 AND mes = 12)));
