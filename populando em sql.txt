@@ -2194,7 +2194,7 @@ INSERT INTO hospede(
 
 INSERT INTO hospede(
 	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('503.022.220-06', 'Lucas Martins', 'lucas.martins@gmail.com', '2010-08-15', 'M', NULL, '0', '1', '12.345.678/9012-34');
+	VALUES ('503.022.220-06', 'Lucas Junior', 'lucas.junior@gmail.com', '2010-08-15', 'M', NULL, '0', '1', '12.345.678/9012-34');
 
 -- inserindo a dependencia na tabela
 INSERT INTO dependente(
@@ -2449,3 +2449,69 @@ INSERT INTO reserva(
 INSERT INTO reserva(
 	numero, cpf, data_check_in, data_check_out, pontos_gerados)
 	VALUES (63, '135.856.450-70', '2024-11-20', '2024-11-27', 150);
+
+-- inserindo hospedes principais na tabela beneficiados
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('282.303.600-81', 7, 'Lucas Martins');
+
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('113.611.030-51', 8, 'Gabriel Santos');
+
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('598.004.440-09', 11, 'Isabella Lima');
+
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('781.718.920-00', 21, 'João Pedro Rocha');
+
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('070.515.070-44', 22, 'Fernanda Barros');
+
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('436.052.300-91', 25, 'Carlos Henrique Mendes');
+
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('140.347.620-98', 37, 'Lara Moreira');
+
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('262.047.650-00', 38, 'Miguel Fernandes');
+
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('541.037.770-28', 40, 'Alice Cunha');
+
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('191.078.770-13', 51, 'Pedro Lucas Vieira');
+
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('011.573.640-98', 52, 'Victor Nascimento');
+
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('533.698.280-65', 53, 'Mariana Santos');
+
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('267.540.010-62', 54, 'Diego Rocha');
+
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('511.950.800-69', 64, 'Juliana Ferreira');
+
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('424.807.890-20', 65, 'André Costa');
+
+INSERT INTO beneficiados(
+    cpf, numero, nome)
+    VALUES ('135.856.450-70', 66, 'Renata Souza');
+
