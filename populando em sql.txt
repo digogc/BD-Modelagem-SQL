@@ -13317,3 +13317,28 @@ SELECT cpf,
        FLOOR(1500 + (RANDOM() * 1000))::int AS salario_mensal -- Salário mensal entre 1500 e 2500
 FROM public.funcionario
 WHERE assalariado = '1';
+
+INSERT INTO public.autonomo (cpf, valorhora)
+SELECT cpf,
+       FLOOR(20 + (RANDOM() * 30))::numeric(10,2) AS valorhora -- Gera valor por hora entre 20 e 50
+FROM public.funcionario
+WHERE autonomo = '1';
+
+INSERT INTO public.beneficio (nome, valor)
+VALUES
+    ('Vale Transporte', 150.00),
+    ('Vale Alimentação', 200.00),
+    ('Plano de Saúde', 300.00),
+    ('Vale Refeição', 180.00),
+    ('Plano Odontológico', 100.00),
+    ('Auxílio Creche', 250.00),
+    ('Seguro de Vida', 50.00),
+    ('Bônus de Performance', 500.00),
+    ('Vale Cultura', 75.00),
+    ('Auxílio Educação', 400.00),
+    ('Vale Combustível', 120.00),
+    ('Bônus de Férias', 600.00),
+    ('Desconto em Produtos', 20.00),
+    ('Aposentadoria Privada', 350.00),
+    ('Auxílio Paternidade', 200.00);
+
