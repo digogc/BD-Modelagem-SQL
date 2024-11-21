@@ -13141,3 +13141,11 @@ VALUES
     (17, 'Manutenção', '0000000005'),
     (18, 'Cozinha', '0000000005');
 
+-- inserindo tuplas na tabela "garagem"
+INSERT INTO public.garagem(numero, tipo, capacidade_maxima, valordia, id)
+VALUES 
+    (1, 'coberta', 30, 15.00, '0000000001'),
+    (2, 'ao ar livre', 20, 10.00, '0000000002'),
+    (3, 'subterrânea', 25, 20.00, '0000000003'),
+    (4, 'coberta', 35, 18.00, '0000000004'),
+    (5, 'subterrânea', 40, 22.00, '0000000005');
