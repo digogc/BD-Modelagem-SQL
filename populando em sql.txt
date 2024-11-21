@@ -2515,3 +2515,40 @@ INSERT INTO beneficiados(
     cpf, numero, cpf_beneficiado)
     VALUES ('135.856.450-70', 66, '135.856.450-70');
 
+-- inserindo tuplas na tabela beneficiados
+-- dependentes que estão no mesmo quarto do principal
+INSERT INTO beneficiados(
+    cpf, numero, cpf_beneficiado)
+    VALUES ('282.303.600-81', 7, '813.421.560-21');
+
+INSERT INTO beneficiados(
+    cpf, numero, cpf_beneficiado)
+    VALUES ('598.004.440-09', 11, '188.660.940-30');
+
+INSERT INTO beneficiados(
+    cpf, numero, cpf_beneficiado)
+    VALUES ('070.515.070-44', 22, '117.572.290-19');
+
+INSERT INTO beneficiados(
+    cpf, numero, cpf_beneficiado)
+    VALUES ('070.515.070-44', 22, '639.188.290-81');
+
+INSERT INTO beneficiados(
+    cpf, numero, cpf_beneficiado)
+    VALUES ('070.515.070-44', 22, '683.866.450-08');
+
+INSERT INTO beneficiados(
+    cpf, numero, cpf_beneficiado)
+    VALUES ('541.037.770-28', 40, '085.619.640-14');
+
+INSERT INTO beneficiados(
+    cpf, numero, cpf_beneficiado)
+    VALUES ('267.540.010-62', 54, '112.722.370-44');
+
+INSERT INTO beneficiados(
+    cpf, numero, cpf_beneficiado)
+    VALUES ('267.540.010-62', 54, '083.042.220-00');
+
+INSERT INTO beneficiados(
+    cpf, numero, cpf_beneficiado)
+    VALUES ('135.856.450-70', 66, '101.561.170-29');
