@@ -12855,3 +12855,289 @@ WHERE (numero = 7 AND
     OR (dia BETWEEN 3 AND 7 AND mes = 7) 
     OR (dia BETWEEN 14 AND 19 AND mes = 9) 
     OR (dia BETWEEN 6 AND 10 AND mes = 12)));
+
+-- Inserir tuplas em Sorteio.
+
+INSERT INTO public.sorteio(
+    id, item, quantidade, data, horario, nome)
+VALUES
+    ('0000000001', 'Smartphone', 2, '2024-10-25', '12:30h', 'Youtube'),
+    ('0000000002', 'Tablet', 1, '2024-11-26', '15:00h', 'Instagram'),
+    ('0000000003', 'Notebook', 1, '2024-11-01', '18:45h', 'Youtube'),
+    ('0000000004', 'Fone de Ouvido', 3, '2024-11-14', '10:00h', 'Instagram'),
+    ('0000000005', 'Smartwatch', 2, '2024-11-29', '14:30h', 'Youtube'),
+    ('0000000006', 'Câmera', 1, '2024-05-30', '09:15h', 'Instagram'),
+    ('0000000007', 'Gift Card', 5, '2024-12-01', '20:00h', 'Youtube'),
+    ('0000000008', 'Drone', 1, '2024-12-02', '16:30h', 'Instagram'),
+    ('0000000009', 'TV 4K', 1, '2024-12-03', '19:00h', 'Youtube'),
+    ('0000000010', 'Console', 1, '2024-12-04', '13:45h', 'Instagram');
+
+-- Inserindo tuplas em Ganhador.
+
+INSERT INTO public.ganhador(
+    id, cpf, nome)
+VALUES
+    -- Sorteio 0000000001 - 2 ganhadores
+    ('0000000001', '546.224.150-03', 'Carlos Silva'),
+    ('0000000001', '956.827.510-00', 'Ana Pereira'),
+
+    -- Sorteio 0000000002 - 1 ganhador
+    ('0000000002', '854.649.510-67', 'João Mendes'),
+
+    -- Sorteio 0000000003 - 1 ganhador
+    ('0000000003', '269.390.380-78', 'Ricardo Almeida'),
+
+    -- Sorteio 0000000004 - 3 ganhadores
+    ('0000000004', '981.685.000-16', 'Paula Castro'),
+    ('0000000004', '992.413.300-58', 'Mariana Lopes'),
+    ('0000000004', '171.218.380-01', 'Fernanda Costa'),
+
+    -- Sorteio 0000000005 - 2 ganhadores
+    ('0000000005', '269.390.380-78', 'Ricardo Almeida'),
+    ('0000000005', '185.206.780-25', 'Luciana Lima'),
+
+    -- Sorteio 0000000006 - 1 ganhador
+    ('0000000006', '186.155.030-87', 'Tiago Carvalho'),
+
+    -- Sorteio 0000000007 - 5 ganhadores
+    ('0000000007', '185.206.780-25', 'Luciana Lima'),
+    ('0000000007', '459.228.280-96', 'Bruno Souza'),
+    ('0000000007', '854.649.510-67', 'João Mendes'),
+    ('0000000007', '697.710.400-73', 'Mariana Torres'),
+    ('0000000007', '096.518.960-00', 'Juliana Ramos'),
+
+    -- Sorteio 0000000008 - 1 ganhador
+    ('0000000008', '171.218.380-01', 'Fernanda Costa'),
+
+    -- Sorteio 0000000009 - 1 ganhador
+    ('0000000009', '992.413.300-58', 'Mariana Lopes'),
+
+    -- Sorteio 0000000010 - 1 ganhador
+    ('0000000010', '697.710.400-73', 'Mariana Torres');
+
+-- Inserindo tuplas em Lobby.
+
+INSERT INTO public.lobby(
+    numero, id)
+VALUES
+    (001, '0000000001'),
+    (002, '0000000003'),
+    (003, '0000000004'),
+    (004, '0000000005');
+
+-- Inserindo tuplas em Estabelecimento.
+
+INSERT INTO public.estabelecimento(
+    id, nome, faturamento_mensal, numero, teatro, loja, local_alimentacao)
+VALUES
+    -- Teatros
+    ('0000000001', 'Teatro Central', 15000.00, 001, 1, 0, 0),
+    ('0000000002', 'Teatro Elegance', 12000.00, 002, 1, 0, 0),
+    ('0000000003', 'Teatro Sunset', 18000.00, 003, 1, 0, 0),
+    ('0000000004', 'Teatro Broadway', 20000.00, 004, 1, 0, 0),
+    ('0000000005', 'Teatro Majestic', 17000.00, 001, 1, 0, 0),
+
+    -- Lojas
+    ('0000000006', 'Loja Fashion', 25000.00, 002, 0, 1, 0),
+    ('0000000007', 'Loja Tech', 30000.00, 003, 0, 1, 0),
+    ('0000000008', 'Loja Gourmet', 28000.00, 004, 0, 1, 0),
+    ('0000000009', 'Loja Décor', 22000.00, 001, 0, 1, 0),
+    ('0000000010', 'Loja Books', 26000.00, 002, 0, 1, 0),
+
+    -- Locais de alimentação
+    ('0000000011', 'Restaurante Delícia', 35000.00, 003, 0, 0, 1),
+    ('0000000012', 'Cafeteria Aroma', 15000.00, 004, 0, 0, 1),
+    ('0000000013', 'Sorveteria Ice', 14000.00, 001, 0, 0, 1),
+    ('0000000014', 'Churrascaria Grill', 40000.00, 002, 0, 0, 1),
+    ('0000000015', 'Pizzaria Italiana', 32000.00, 003, 0, 0, 1);
+
+-- Inserindo tuplas de teatro.
+
+INSERT INTO public.teatro(
+    id, capacidade_maxima)
+VALUES
+    ('0000000001', 300),
+    ('0000000002', 250),
+    ('0000000003', 400),
+    ('0000000004', 500),
+    ('0000000005', 350);
+
+-- Inserindo tuplas em "loja"
+
+INSERT INTO public.loja(
+    id, nicho)
+VALUES
+    ('0000000006', 'Moda'),
+    ('0000000007', 'Tecnologia'),
+    ('0000000008', 'Gastronomia'),
+    ('0000000009', 'Decoração'),
+    ('0000000010', 'Livraria');
+
+-- Inserindo tuplas em local_alimentacao.
+
+INSERT INTO public.local_alimentacao(
+    id, nicho)
+VALUES
+    ('0000000011', 'Restaurante_geral'),
+    ('0000000012', 'Cafeteria'),
+    ('0000000013', 'Sorveteria'),
+    ('0000000014', 'Churrascaria'),
+    ('0000000015', 'Pizzaria');
+
+INSERT INTO public.peca(
+    nome, valor, data, horario, id)
+VALUES
+    -- Peças no Teatro 0000000001
+    ('Hamlet', 50.00, '2024-12-01', '20:00h', '0000000001'),
+    ('O Rei Leão', 60.00, '2024-12-02', '18:00h', '0000000001'),
+
+    -- Peças no Teatro 0000000002
+    ('Caminhos da Liberdade', 40.00, '2024-12-05', '19:30h', '0000000002'),
+    ('A Mágica de Oz', 45.00, '2024-12-06', '21:00h', '0000000002'),
+
+    -- Peças no Teatro 0000000003
+    ('Romeu e Julieta', 55.00, '2024-12-10', '20:30h', '0000000003'),
+    ('O Fantasma da Ópera', 65.00, '2024-12-12', '19:00h', '0000000003'),
+
+    -- Peças no Teatro 0000000004
+    ('O Amor no Campo', 50.00, '2024-12-15', '16:00h', '0000000004'),
+    ('Os Miseráveis', 70.00, '2024-12-17', '18:30h', '0000000004'),
+    ('O Grande Circo', 45.00, '2024-12-18', '20:00h', '0000000004'),
+
+    -- Peças no Teatro 0000000005
+    ('O Império', 60.00, '2024-12-20', '17:00h', '0000000005'),
+    ('A Noite dos Vampiros', 50.00, '2024-12-22', '19:30h', '0000000005');
+
+-- Inserindo tuplas em 'aluguel'
+
+INSERT INTO public.aluguel(
+    id, pag_id, valor_total, valor_base, multa, data_pagamento, cnpj)
+VALUES
+    -- Aluguel para o Teatro 0000000001 (com multa)
+    ('0000000001', '0000000001', 2000.00, 1800.00, 200, '2024-12-01', '12.345.678/9012-34'),
+
+    -- Aluguel para o Teatro 0000000002 (com multa)
+    ('0000000002', '0000000002', 2200.00, 2000.00, 200, '2024-12-05', '12.345.678/9012-34'),
+
+    -- Aluguel para o Teatro 0000000003 (com multa)
+    ('0000000003', '0000000003', 2400.00, 2200.00, 200, '2024-12-10', '12.345.678/9012-34'),
+
+    -- Aluguel para o Teatro 0000000004 (sem multa)
+    ('0000000004', '0000000004', 2400.00, 2400.00, 0, '2024-12-15', '12.345.678/9012-34'),
+
+    -- Aluguel para o Teatro 0000000005 (com multa)
+    ('0000000005', '0000000005', 2800.00, 2600.00, 200, '2024-12-20', '12.345.678/9012-34'),
+
+    -- Aluguel para a Loja 0000000006 (com multa)
+    ('0000000006', '0000000006', 1500.00, 1300.00, 200, '2024-12-01', '12.345.678/9012-34'),
+
+    -- Aluguel para a Loja 0000000007 (sem multa)
+    ('0000000007', '0000000007', 1700.00, 1700.00, 0, '2024-12-05', '12.345.678/9012-34'),
+
+    -- Aluguel para a Loja 0000000008 (com multa)
+    ('0000000008', '0000000008', 1900.00, 1700.00, 200, '2024-12-10', '12.345.678/9012-34'),
+
+    -- Aluguel para a Loja 0000000009 (com multa)
+    ('0000000009', '0000000009', 2100.00, 1900.00, 200, '2024-12-15', '12.345.678/9012-34'),
+
+    -- Aluguel para a Loja 0000000010 (sem multa)
+    ('0000000010', '0000000010', 2300.00, 2300.00, 0, '2024-12-20', '12.345.678/9012-34'),
+
+    -- Aluguel para o Local de Alimentação 0000000011 (com multa)
+    ('0000000011', '0000000011', 3000.00, 2700.00, 300, '2024-12-01', '12.345.678/9012-34'),
+
+    -- Aluguel para o Local de Alimentação 0000000012 (sem multa)
+    ('0000000012', '0000000012', 3200.00, 3200.00, 0, '2024-12-05', '12.345.678/9012-34'),
+
+    -- Aluguel para o Local de Alimentação 0000000013 (com multa)
+    ('0000000013', '0000000013', 3400.00, 3100.00, 300, '2024-12-10', '12.345.678/9012-34'),
+
+    -- Aluguel para o Local de Alimentação 0000000014 (com multa)
+    ('0000000014', '0000000014', 3600.00, 3300.00, 300, '2024-12-15', '12.345.678/9012-34'),
+
+    -- Aluguel para o Local de Alimentação 0000000015 (sem multa)
+    ('0000000015', '0000000015', 3800.00, 3800.00, 0, '2024-12-20', '12.345.678/9012-34');
+
+-- inserindo tuplas em "autorizacao"
+
+INSERT INTO public.autorizacao(
+    id, nec_id, validade, cnpj)
+VALUES
+    -- Autorização para o Teatro 0000000001
+    ('0000000001', '0000000001', '2025-01-15', '12.345.678/9012-34'),
+
+    -- Autorização para o Teatro 0000000002
+    ('0000000002', '0000000002', '2025-03-20', '12.345.678/9012-34'),
+
+    -- Autorização para o Teatro 0000000003
+    ('0000000003', '0000000003', '2025-05-25', '12.345.678/9012-34'),
+
+    -- Autorização para o Teatro 0000000004
+    ('0000000004', '0000000004', '2025-07-10', '12.345.678/9012-34'),
+
+    -- Autorização para o Teatro 0000000005
+    ('0000000005', '0000000005', '2025-09-05', '12.345.678/9012-34'),
+
+    -- Autorização para a Loja 0000000006
+    ('0000000006', '0000000006', '2025-02-28', '12.345.678/9012-34'),
+
+    -- Autorização para a Loja 0000000007
+    ('0000000007', '0000000007', '2025-04-18', '12.345.678/9012-34'),
+
+    -- Autorização para a Loja 0000000008
+    ('0000000008', '0000000008', '2025-06-22', '12.345.678/9012-34'),
+
+    -- Autorização para a Loja 0000000009
+    ('0000000009', '0000000009', '2025-08-17', '12.345.678/9012-34'),
+
+    -- Autorização para a Loja 0000000010
+    ('0000000010', '0000000010', '2025-10-12', '12.345.678/9012-34'),
+
+    -- Autorização para o Local de Alimentação 0000000011
+    ('0000000011', '0000000011', '2025-01-01', '12.345.678/9012-34'),
+
+    -- Autorização para o Local de Alimentação 0000000012
+    ('0000000012', '0000000012', '2025-03-15', '12.345.678/9012-34'),
+
+    -- Autorização para o Local de Alimentação 0000000013
+    ('0000000013', '0000000013', '2025-05-05', '12.345.678/9012-34'),
+
+    -- Autorização para o Local de Alimentação 0000000014
+    ('0000000014', '0000000014', '2025-07-30', '12.345.678/9012-34'),
+
+    -- Autorização para o Local de Alimentação 0000000015
+    ('0000000015', '0000000015', '2025-09-22', '12.345.678/9012-34');
+
+-- Inserindo tuplas em "departamento"
+
+INSERT INTO public.departamento(
+    numero, nome, id)
+VALUES
+    -- Departamentos do Hotel 0000000001
+    (01, 'Recepção', '0000000001'),
+    (02, 'Limpeza', '0000000001'),
+    (03, 'Manutenção', '0000000001'),
+
+    -- Departamentos do Hotel 0000000002
+    (04, 'Recepção', '0000000002'),
+    (05, 'Segurança', '0000000002'),
+    (06, 'Manutenção', '0000000002'),
+    (07, 'Cozinha', '0000000002'),
+
+    -- Departamentos do Hotel 0000000003
+    (08, 'Recepção', '0000000003'),
+    (09, 'Limpeza', '0000000003'),
+    (10, 'Manutenção', '0000000003'),
+    (11, 'Cozinha', '0000000003'),
+    (12, 'Estacionamento', '0000000003'),
+
+    -- Departamentos do Hotel 0000000004
+    (13, 'Recepção', '0000000004'),
+    (14, 'Segurança', '0000000004'),
+    (15, 'Limpeza', '0000000004'),
+
+    -- Departamentos do Hotel 0000000005
+    (16, 'Recepção', '0000000005'),
+    (17, 'Manutenção', '0000000005'),
+    (18, 'Cozinha', '0000000005');
+
