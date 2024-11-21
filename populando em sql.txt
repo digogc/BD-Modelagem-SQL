@@ -2307,3 +2307,68 @@ INSERT INTO dependente(
 INSERT INTO dependente(
 	cpf, hospede_principal_responsavel)
 	VALUES ('101.561.170-29', '135.856.450-70');
+
+-- inserindo tuplas na tabela "principal"
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('282.303.600-81', '0000000001', 'Cartão de Crédito');
+
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('113.611.030-51', '0000000002', 'Boleto Bancário');
+
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('598.004.440-09', '0000000003', 'Cartão de Débito');
+
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('781.718.920-00', '0000000004', 'Cartão de Crédito');
+
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('070.515.070-44', '0000000005', 'Transferência Bancária');
+
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('436.052.300-91', '0000000006', 'Cartão de Crédito');
+
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('140.347.620-98', '0000000007', 'Boleto Bancário');
+
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('262.047.650-00', '0000000008', 'Cartão de Débito');
+
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('541.037.770-28', '0000000009', 'Transferência Bancária');
+
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('191.078.770-13', '0000000010', 'Cartão de Crédito');
+
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('011.573.640-98', '0000000011', 'Boleto Bancário');
+
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('533.698.280-65', '0000000012', 'Transferência Bancária');
+
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('267.540.010-62', '0000000013', 'Cartão de Crédito');
+
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('511.950.800-69', '0000000014', 'Boleto Bancário');
+
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('424.807.890-20', '0000000015', 'Cartão de Débito');
+
+INSERT INTO principal(
+	cpf, id, forma_pagamento)
+	VALUES ('135.856.450-70', '0000000016', 'Cartão de Crédito');
