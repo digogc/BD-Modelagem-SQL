@@ -2181,3 +2181,129 @@ INSERT INTO nota_fiscal(
 INSERT INTO nota_fiscal(
 	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
 	VALUES (16, 900.00, 10.00, 0, '2024-12-06', '1', '12.345.678/9012-34');
+
+-- Inserindo dependentes
+-- criando dependentes do hospede 1
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('222.652.340-52', 'Gabriel Almeida', 'gabriel.almeida@gmail.com', '2012-05-10', 'M', NULL, '0', '1', '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('813.421.560-21', 'Ana Clara Silva', 'ana.clara@gmail.com', '1990-11-22', 'F', '227.193.860-06', '0', '1', '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('503.022.220-06', 'Lucas Martins', 'lucas.martins@gmail.com', '2010-08-15', 'M', NULL, '0', '1', '12.345.678/9012-34');
+
+-- inserindo a dependencia na tabela
+INSERT INTO dependente(
+	cpf, hospede_principal_responsavel)
+	VALUES ('222.652.340-52', '282.303.600-81');
+
+INSERT INTO dependente(
+	cpf, hospede_principal_responsavel)
+	VALUES ('813.421.560-21', '282.303.600-81');
+
+INSERT INTO dependente(
+	cpf, hospede_principal_responsavel)
+	VALUES ('503.022.220-06', '282.303.600-81');
+
+-- criando dependente do hospede 3
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('188.660.940-30', 'Ana Souza', 'ana.souza@example.com', '1993-08-15', 'F', NULL, '0', '1', '12.345.678/9012-34');
+
+-- criando relação de dependencia
+INSERT INTO dependente(
+	cpf, hospede_principal_responsavel)
+	VALUES ('188.660.940-30', '598.004.440-09');
+
+-- criando dependente do hospede 5
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('683.866.450-08', 'Lucas Almeida', 'lucas.almeida@example.com', '2012-03-21', 'M', NULL, '0', '1', '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('639.188.290-81', 'Mariana Oliveira', 'mariana.oliveira@example.com', '2011-07-05', 'F', NULL, '0', '1', '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('117.572.290-19', 'Pedro Santos', 'pedro.santos@example.com', '1997-10-18', 'M', '875.375.910-91', '0', '1', '12.345.678/9012-34');
+
+-- criando a relação de dependencia
+INSERT INTO dependente(
+	cpf, hospede_principal_responsavel)
+	VALUES ('683.866.450-08', '070.515.070-44');
+
+INSERT INTO dependente(
+	cpf, hospede_principal_responsavel)
+	VALUES ('639.188.290-81', '070.515.070-44');
+
+INSERT INTO dependente(
+	cpf, hospede_principal_responsavel)
+	VALUES ('117.572.290-19', '070.515.070-44');
+
+-- criando dependente do hospede 9
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('085.619.640-14', 'Beatriz Ferreira', 'beatriz.ferreira@example.com', '2014-01-30', 'F', NULL, '0', '1', '12.345.678/9012-34');
+
+-- criando relação de dependencia
+INSERT INTO dependente(
+	cpf, hospede_principal_responsavel)
+	VALUES ('085.619.640-14', '541.037.770-28');
+
+-- criando dependentes do hospede 13
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('083.042.220-00', 'Felipe Costa', 'felipe.costa@example.com', '2015-06-12', 'M', NULL, '0', '1', '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('112.722.370-44', 'Carolina Rocha', 'carolina.rocha@example.com', '1984-09-23', 'F', NULL, '0', '1', '12.345.678/9012-34');
+
+-- criando relação de dependência
+INSERT INTO dependente(
+	cpf, hospede_principal_responsavel)
+	VALUES ('083.042.220-00', '267.540.010-62');
+
+-- criando relação de dependencia
+INSERT INTO dependente(
+	cpf, hospede_principal_responsavel)
+	VALUES ('112.722.370-44', '267.540.010-62');
+
+-- criando dependentes do hospede 16
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('316.502.700-54', 'Gabriel Almeida', 'gabriel.almeida@example.com', '2016-02-18', 'M', NULL, '0', '1', '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('468.797.810-04', 'Isabela Martins', 'isabela.martins@example.com', '1994-11-04', 'F', NULL, '0', '1', '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('867.154.530-04', 'Rafael Souza', 'rafael.souza@example.com', '2000-05-27', 'M', NULL, '0', '1', '12.345.678/9012-34');
+
+INSERT INTO hospede(
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
+	VALUES ('101.561.170-29', 'Julia Lima', 'julia.lima@example.com', '2017-12-09', 'F', NULL, '0', '1', '12.345.678/9012-34');
+
+-- criando a relação de dependência
+INSERT INTO dependente(
+	cpf, hospede_principal_responsavel)
+	VALUES ('316.502.700-54', '135.856.450-70');
+
+INSERT INTO dependente(
+	cpf, hospede_principal_responsavel)
+	VALUES ('468.797.810-04', '135.856.450-70');
+
+INSERT INTO dependente(
+	cpf, hospede_principal_responsavel)
+	VALUES ('867.154.530-04', '135.856.450-70');
+
+INSERT INTO dependente(
+	cpf, hospede_principal_responsavel)
+	VALUES ('101.561.170-29', '135.856.450-70');
