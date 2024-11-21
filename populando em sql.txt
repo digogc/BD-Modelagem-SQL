@@ -13149,3 +13149,171 @@ VALUES
     (3, 'subterrânea', 25, 20.00, '0000000003'),
     (4, 'coberta', 35, 18.00, '0000000004'),
     (5, 'subterrânea', 40, 22.00, '0000000005');
+
+-- inserindo tuplas na tabela "vaga"
+INSERT INTO public.vaga(for_numero, numero, status)
+VALUES 
+    -- Vagas para a Garagem 1
+    (1, 1, 'livre'),
+    (1, 2, 'reservada'),
+    (1, 3, 'livre'),
+    (1, 4, 'reservada'),
+    (1, 5, 'livre'),
+    (1, 6, 'reservada'),
+
+    -- Vagas para a Garagem 2
+    (2, 1, 'livre'),
+    (2, 2, 'reservada'),
+    (2, 3, 'livre'),
+    (2, 4, 'reservada'),
+    (2, 5, 'livre'),
+    (2, 6, 'reservada'),
+
+    -- Vagas para a Garagem 3
+    (3, 1, 'livre'),
+    (3, 2, 'reservada'),
+    (3, 3, 'livre'),
+    (3, 4, 'reservada'),
+    (3, 5, 'livre'),
+    (3, 6, 'reservada'),
+
+    -- Vagas para a Garagem 4
+    (4, 1, 'livre'),
+    (4, 2, 'reservada'),
+    (4, 3, 'livre'),
+    (4, 4, 'reservada'),
+    (4, 5, 'livre'),
+    (4, 6, 'reservada'),
+
+    -- Vagas para a Garagem 5
+    (5, 1, 'livre'),
+    (5, 2, 'reservada'),
+    (5, 3, 'livre'),
+    (5, 4, 'reservada'),
+    (5, 5, 'livre'),
+    (5, 6, 'reservada');
+
+-- Inserindo tuplas em "funcionario"
+
+INSERT INTO public.funcionario(
+    cpf, nome, data_nascimento, data_contratacao, genero, raca, cargo, autonomo, assalariado, numero)
+VALUES
+    -- Funcionários do Departamento 01 (Recepção - Hotel 0000000001)
+    ('973.811.420-90', 'João Silva', '1985-02-20', '2019-04-15', 'M', 'branco', 'Recepcionista', 0, 1, 01),
+    ('588.842.700-49', 'Maria Oliveira', '1990-06-15', '2018-11-10', 'F', 'pardo', 'Recepcionista', 0, 1, 01),
+    ('480.029.200-07', 'Carlos Pereira', '1980-12-05', '2020-07-22', 'M', 'negro', 'Recepcionista', 0, 1, 01),
+    ('474.200.460-42', 'Ana Souza', '1995-03-17', '2017-01-18', 'F', 'asiático', 'Recepcionista', 1, 0, 01),
+
+    -- Funcionários do Departamento 02 (Limpeza - Hotel 0000000001)
+    ('964.285.730-83', 'Cláudio Lima', '1992-11-25', '2020-09-05', 'M', 'negro', 'Faxineiro', 0, 1, 02),
+    ('698.609.850-22', 'Beatriz Costa', '1988-07-13', '2016-06-01', 'F', 'branco', 'Faxineira', 0, 1, 02),
+    ('894.744.860-50', 'Felipe Alves', '1994-05-09', '2021-03-15', 'M', 'pardo', 'Faxineiro', 1, 0, 02),
+    
+    -- Funcionários do Departamento 03 (Manutenção - Hotel 0000000001)
+    ('448.443.460-16', 'Ricardo Mendes', '1982-02-28', '2015-12-18', 'M', 'branco', 'Eletricista', 0, 1, 03),
+    ('528.746.030-90', 'Simone Rocha', '1990-04-14', '2022-02-10', 'F', 'pardo', 'Encanadora', 0, 1, 03),
+    ('668.715.620-95', 'Eduardo Martins', '1979-09-08', '2019-07-30', 'M', 'negro', 'Carpinteiro', 1, 0, 03),
+
+    -- Funcionários do Departamento 04 (Recepção - Hotel 0000000002)
+    ('569.381.290-10', 'Juliana Santos', '1987-01-20', '2020-08-25', 'F', 'branco', 'Recepcionista', 0, 1, 04),
+    ('631.886.730-94', 'Lucas Ferreira', '1992-12-03', '2016-05-18', 'M', 'pardo', 'Recepcionista', 0, 1, 04),
+    ('285.070.420-23', 'Mariana Silva', '1989-07-19', '2021-02-01', 'F', 'negro', 'Recepcionista', 1, 0, 04),
+    
+    -- Funcionários do Departamento 05 (Segurança - Hotel 0000000002)
+    ('935.199.730-81', 'Alexandre Pinto', '1980-10-30', '2019-01-11', 'M', 'pardo', 'Segurança', 0, 1, 05),
+    ('298.818.540-91', 'Vanessa Ribeiro', '1985-08-25', '2021-05-12', 'F', 'negro', 'Segurança', 0, 1, 05),
+    ('296.059.740-02', 'José Lima', '1991-03-15', '2017-10-17', 'M', 'branco', 'Segurança', 1, 0, 05),
+
+    -- Funcionários do Departamento 06 (Manutenção - Hotel 0000000002)
+    ('296.374.190-12', 'Carlos Augusto', '1984-11-07', '2020-05-04', 'M', 'branco', 'Eletricista', 0, 1, 06),
+    ('396.588.710-62', 'Sandra Costa', '1993-09-22', '2022-01-03', 'F', 'pardo', 'Encanadora', 0, 1, 06),
+
+    -- Funcionários do Departamento 07 (Cozinha - Hotel 0000000002)
+    ('890.241.480-90', 'Ricardo Vieira', '1994-02-05', '2018-11-12', 'M', 'negro', 'Cozinheiro', 1, 0, 07),
+    ('173.730.090-77', 'Renata Oliveira', '1986-03-28', '2020-09-30', 'F', 'branco', 'Cozinheira', 0, 1, 07),
+
+    -- Funcionários do Departamento 08 (Recepção - Hotel 0000000003)
+    ('195.191.650-61', 'Adriana Lima', '1990-07-20', '2017-01-10', 'F', 'negro', 'Recepcionista', 0, 1, 08),
+    ('916.053.030-89', 'Rafael Silva', '1985-03-02', '2022-03-10', 'M', 'branco', 'Recepcionista', 0, 1, 08),
+    
+    -- Funcionários do Departamento 09 (Limpeza - Hotel 0000000003)
+    ('007.774.160-93', 'Marta Santos', '1991-09-12', '2018-06-20', 'F', 'pardo', 'Faxineira', 0, 1, 09),
+    ('200.572.860-86', 'Carlos Ferreira', '1993-11-25', '2021-02-18', 'M', 'negro', 'Faxineiro', 1, 0, 09),
+
+    -- Funcionários do Departamento 10 (Manutenção - Hotel 0000000003)
+    ('602.876.210-57', 'José Pereira', '1982-05-13', '2019-10-10', 'M', 'branco', 'Carpinteiro', 0, 1, 10),
+    ('513.591.690-32', 'Beatriz Lima', '1990-03-22', '2017-09-11', 'F', 'negro', 'Encanadora', 1, 0, 10),
+
+    -- Funcionários do Departamento 11 (Recepção - Hotel 0000000004)
+    ('176.161.000-74', 'Eduardo Santos', '1987-05-04', '2020-04-22', 'M', 'branco', 'Recepcionista', 0, 1, 11),
+    ('504.417.850-00', 'Luciana Costa', '1991-02-10', '2019-03-25', 'F', 'pardo', 'Recepcionista', 0, 1, 11),
+
+    -- Funcionários do Departamento 12 (Segurança - Hotel 0000000004)
+    ('671.316.230-40', 'Felipe Lima', '1983-08-15', '2021-01-10', 'M', 'negro', 'Segurança', 1, 0, 12),
+    ('021.521.960-07', 'Carla Souza', '1995-10-05', '2022-07-14', 'F', 'asiático', 'Segurança', 0, 1, 12),
+
+    -- Funcionários do Departamento 13 (Limpeza - Hotel 0000000004)
+    ('441.434.400-08', 'Roberta Silva', '1988-11-22', '2020-05-20', 'F', 'branco', 'Faxineira', 1, 0, 13),
+    ('900.317.660-48', 'Rui Costa', '1994-03-17', '2019-12-12', 'M', 'negro', 'Faxineiro', 0, 1, 13),
+
+    -- Funcionários do Departamento 14 (Manutenção - Hotel 0000000004)
+    ('650.440.350-33', 'Simone Lima', '1992-01-10', '2016-10-18', 'F', 'pardo', 'Carpinteiro', 0, 1, 14),
+    ('862.227.330-00', 'Jonas Santos', '1985-06-01', '2022-03-05', 'M', 'branco', 'Encanador', 1, 0, 14),
+
+    -- Funcionários do Departamento 15 (Recepção - Hotel 0000000005)
+    ('668.523.360-50', 'José Costa', '1990-02-12', '2021-09-05', 'M', 'pardo', 'Recepcionista', 1, 0, 15),
+    ('821.297.660-21', 'Mário Oliveira', '1993-11-30', '2022-05-18', 'M', 'negro', 'Recepcionista', 0, 1, 15),
+
+    -- Funcionários do Departamento 16 (Segurança - Hotel 0000000005)
+    ('923.213.670-83', 'Aline Silva', '1984-06-22', '2019-08-15', 'F', 'pardo', 'Segurança', 0, 1, 16),
+    ('045.534.200-82', 'Ricardo Ferreira', '1992-04-10', '2021-12-05', 'M', 'branco', 'Segurança', 1, 0, 16),
+
+    -- Funcionários do Departamento 17 (Limpeza - Hotel 0000000005)
+    ('893.597.440-42', 'Ana Martins', '1991-09-05', '2020-04-30', 'F', 'negro', 'Faxineira', 0, 1, 17),
+    ('897.807.210-02', 'João Pereira', '1994-12-17', '2021-07-12', 'M', 'branco', 'Faxineiro', 1, 0, 17),
+
+    -- Funcionários do Departamento 18 (Manutenção - Hotel 0000000005)
+    ('674.068.640-86', 'Gustavo Costa', '1986-11-02', '2021-02-13', 'M', 'pardo', 'Eletricista', 1, 0, 18),
+    ('113.234.120-50', 'Michele Lima', '1990-05-24', '2020-08-06', 'F', 'negro', 'Encanadora', 0, 1, 18);
+
+-- inserindo tuplas na tabela "inclui"
+-- Garagem 1
+INSERT INTO public.inclui(for_numero, numero, i_a_numero, periodo)
+VALUES (1, 1, 7, '2024-11-20 a 2024-11-27'),
+       (1, 2, 8, '2024-11-19 a 2024-11-26'),
+       (1, 3, 9, '2024-11-20 a 2024-11-27'),
+       (1, 4, 11, '2024-11-21 a 2024-11-28');
+
+-- Garagem 2
+INSERT INTO public.inclui(for_numero, numero, i_a_numero, periodo)
+VALUES (2, 1, 21, '2024-11-22 a 2024-11-29'),
+       (2, 2, 22, '2024-11-20 a 2024-11-27'),
+       (2, 3, 25, '2024-11-19 a 2024-11-26');
+
+-- Garagem 3
+INSERT INTO public.inclui(for_numero, numero, i_a_numero, periodo)
+VALUES (3, 1, 37, '2024-11-23 a 2024-11-30'),
+       (3, 2, 38, '2024-11-21 a 2024-11-28'),
+       (3, 3, 40, '2024-11-18 a 2024-11-25');
+
+-- Garagem 4
+INSERT INTO public.inclui(for_numero, numero, i_a_numero, periodo)
+VALUES (4, 1, 51, '2024-11-19 a 2024-11-26'),
+       (4, 2, 52, '2024-11-20 a 2024-11-27'),
+       (4, 3, 53, '2024-11-22 a 2024-11-29'),
+       (4, 4, 54, '2024-11-21 a 2024-11-28');
+
+-- Garagem 5
+INSERT INTO public.inclui(for_numero, numero, i_a_numero, periodo)
+VALUES (5, 1, 64, '2024-11-23 a 2024-11-30'),
+       (5, 2, 65, '2024-11-19 a 2024-11-26'),
+       (5, 3, 66, '2024-11-20 a 2024-11-27'),
+       (5, 4, 63, '2024-11-20 a 2024-11-27');
+
+-- inserindo tuplas em "assalariado"
+INSERT INTO public.assalariado (cpf, horassemana, salario_mensal)
+SELECT cpf,
+       FLOOR(30 + (RANDOM() * 20))::int AS horassemana, -- Horas semanais entre 30 e 50
+       FLOOR(1500 + (RANDOM() * 1000))::int AS salario_mensal -- Salário mensal entre 1500 e 2500
+FROM public.funcionario
+WHERE assalariado = '1';
