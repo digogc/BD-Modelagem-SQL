@@ -89,8 +89,8 @@ create table beneficiado (
 create table Beneficiados (
 	CPF char(14) not null,
 	Numero numeric(10) not null,
-	Nome varchar(30) not null,
-	constraint ID_Beneficiados_ID primary key (CPF, Numero, Nome));
+	CPF_Beneficiado char(14) not null,
+	constraint ID_Beneficiados_ID primary key (CPF, Numero, CPF_Beneficiado));
 
 create table BENEFICIO (
 	Nome varchar(30) not null,
