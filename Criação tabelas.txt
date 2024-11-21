@@ -136,12 +136,13 @@ create table COMPRA (
 	constraint ID_COMPRA_ID primary key (Id));
 
 create table consome (
+	IdConsome char(10) not null,
 	Numero numeric(10) not null,
 	Id char(10) not null,
 	Dia date,
 	Horario char(6),
 	Quantidade numeric(2) not null,
-	constraint ID_consome_ID primary key (Id, Numero));
+	constraint ID_consome_ID primary key (IdConsome));
 
 create table DELIVERY (
 	Id char(10) not null,
