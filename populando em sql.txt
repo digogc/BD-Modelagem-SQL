@@ -2658,3 +2658,37 @@ INSERT INTO cafe_da_manha(
 INSERT INTO cafe_da_manha(
     id, reserva_de_mesa)
     VALUES ('0000000006', 20);
+
+-- inserindo tuplas na tabela 'servico_de_quarto'
+INSERT INTO servico_de_quarto(
+    id, item, data, entregador)
+    VALUES ('0000000007', 'Feijoada', '2024-11-25', 'Lucas Oliveira');
+
+INSERT INTO servico_de_quarto(
+    id, item, data, entregador)
+    VALUES ('0000000008', 'Frango à Parmegiana', '2024-11-26', 'Mariana Souza');
+
+INSERT INTO servico_de_quarto(
+    id, item, data, entregador)
+    VALUES ('0000000009', 'Risoto de Camarão', '2024-11-26', 'Pedro Gomes');
+
+INSERT INTO servico_de_quarto(
+    id, item, data, entregador)
+    VALUES ('0000000010', 'Lasanha', '2024-11-24', 'Ana Costa');
+
+INSERT INTO servico_de_quarto(
+    id, item, data, entregador)
+    VALUES ('0000000011', 'Pizza de Calabresa', '2024-11-25', 'Ricardo Lima');
+
+INSERT INTO servico_de_quarto(
+    id, item, data, entregador)
+    VALUES ('0000000012', 'Salmão Grelhado', '2024-11-27', 'Juliana Pereira');
+
+INSERT INTO servico_de_quarto(
+    id, item, data, entregador)
+    VALUES ('0000000013', 'Spaghetti à Carbonara', '2024-11-25', 'Carlos Henrique');
+
+INSERT INTO servico_de_quarto(
+    id, item, data, entregador)
+    VALUES ('0000000014', 'Hambúrguer Gourmet', '2024-11-26', 'Eduardo Costa');
+
