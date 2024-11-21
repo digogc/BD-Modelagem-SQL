@@ -2552,3 +2552,26 @@ INSERT INTO beneficiados(
 INSERT INTO beneficiados(
     cpf, numero, cpf_beneficiado)
     VALUES ('135.856.450-70', 66, '101.561.170-29');
+
+-- inserindo beneficidos em quartos separados dos principais
+-- principal 1
+INSERT INTO public.beneficiados(
+    cpf, numero, cpf_beneficiado)
+    VALUES ('282.303.600-81', 9, '503.022.220-06');
+
+INSERT INTO public.beneficiados(
+    cpf, numero, cpf_beneficiado)
+    VALUES ('282.303.600-81', 9, '222.652.340-52');
+
+-- principal 16
+INSERT INTO public.beneficiados(
+    cpf, numero, cpf_beneficiado)
+    VALUES ('135.856.450-70', 63, '867.154.530-04');
+
+INSERT INTO public.beneficiados(
+    cpf, numero, cpf_beneficiado)
+    VALUES ('135.856.450-70', 63, '468.797.810-04');
+
+INSERT INTO public.beneficiados(
+    cpf, numero, cpf_beneficiado)
+    VALUES ('135.856.450-70', 63, '316.502.700-54');
