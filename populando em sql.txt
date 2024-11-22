@@ -13777,4 +13777,101 @@ WITH tuplas_aleatorias AS (
 DELETE FROM public.usado_para
 WHERE (numero, nome) IN (SELECT numero, nome FROM tuplas_aleatorias);
 
+-- classificando os hoteis dentre as possiveis especializações
+-- hotel 1
+INSERT INTO public.hotel_para_adulto(
+	id, quantidade_bares, quantidade_saunas, quantidade_adegas, salao_de_jogos_adultos)
+	VALUES ('0000000001', 3, 0, 1, '1');
 
+INSERT INTO public.hotel_empresarial(
+	id, quantidade_salas_reuniao, qualidade_wifi)
+	VALUES ('0000000001', 5, '1GB');
+
+-- hotel 2
+INSERT INTO public.hotel_para_pets(
+	id, quantidade_patios, area_brinquedos_pets)
+	VALUES ('0000000002', 1, '1');
+
+INSERT INTO public.hotel_familiar(
+	id, brinquedos, salao_de_jogos_infantil)
+	VALUES ('0000000002', '1', '1');
+
+INSERT INTO public.hotel_para_adulto(
+	id, quantidade_bares, quantidade_saunas, quantidade_adegas, salao_de_jogos_adultos)
+	VALUES ('0000000002', 2, 2, 1, '1');
+
+-- hotel 3
+-- Inserir especialização para adulto
+INSERT INTO public.hotel_para_adulto(
+	id, quantidade_bares, quantidade_saunas, quantidade_adegas, salao_de_jogos_adultos)
+	VALUES ('0000000003', 2, 0, 1, '1');
+
+-- Inserir especialização para pet
+INSERT INTO public.hotel_para_pets(
+	id, quantidade_patios, area_brinquedos_pets)
+	VALUES ('0000000003', 2, '1');
+
+-- Inserir especialização para familiar
+INSERT INTO public.hotel_familiar(
+	id, brinquedos, salao_de_jogos_infantil)
+	VALUES ('0000000003', '1', '1');
+
+-- Inserir especialização empresarial
+INSERT INTO public.hotel_empresarial(
+	id, quantidade_salas_reuniao, qualidade_wifi)
+	VALUES ('0000000003', 6, '500MB');
+
+-- hotel 4
+-- Inserir especialização para adulto
+INSERT INTO public.hotel_para_adulto(
+	id, quantidade_bares, quantidade_saunas, quantidade_adegas, salao_de_jogos_adultos)
+	VALUES ('0000000004', 5, 4, 4, '1');
+
+-- Inserir especialização para pet
+INSERT INTO public.hotel_para_pets(
+	id, quantidade_patios, area_brinquedos_pets)
+	VALUES ('0000000004', 3, '1');
+
+-- Inserir especialização para familiar
+INSERT INTO public.hotel_familiar(
+	id, brinquedos, salao_de_jogos_infantil)
+	VALUES ('0000000004', '1', '1');
+
+-- hotel 5
+-- Inserir especialização para adulto
+INSERT INTO public.hotel_para_adulto(
+	id, quantidade_bares, quantidade_saunas, quantidade_adegas, salao_de_jogos_adultos)
+	VALUES ('0000000005', 2, 2, 2, '1');
+
+-- Inserir especialização para familiar
+INSERT INTO public.hotel_familiar(
+	id, brinquedos, salao_de_jogos_infantil)
+	VALUES ('0000000005', '1', '1');
+
+-- inserindo tuplas na tabela banho pet
+-- Para o hotel 2
+INSERT INTO public.banho_pet(
+	numero, nome_pet, telefone_dono, litros_agua_gastos, data, id)
+	VALUES
+	(8, 'Rex', '(11)987654321', 15, '2024-11-15', '0000000002'),
+	(11, 'Bella', '(11)987654322', 12, '2024-11-18', '0000000002');
+
+-- Para o hotel 3
+INSERT INTO public.banho_pet(
+	numero, nome_pet, telefone_dono, litros_agua_gastos, data, id)
+	VALUES
+	(2, 'Luna', '(11)998765432', 18, '2024-11-10', '0000000003'),
+	(4, 'Toby', '(11)998765433', 15, '2024-11-12', '0000000003'),
+	(6, 'Max', '(11)998765434', 20, '2024-11-14', '0000000003'),
+	(9, 'Milo', '(11)998765435', 18, '2024-11-16', '0000000003');
+
+-- Para o hotel 4
+INSERT INTO public.banho_pet(
+	numero, nome_pet, telefone_dono, litros_agua_gastos, data, id)
+	VALUES
+	(1, 'Charlie', '(11)976543210', 25, '2024-11-10', '0000000004'),
+	(3, 'Daisy', '(11)976543211', 18, '2024-11-11', '0000000004'),
+	(5, 'Buddy', '(11)976543212', 22, '2024-11-13', '0000000004'),
+	(7, 'Sadie', '(11)976543213', 16, '2024-11-14', '0000000004'),
+	(10, 'Rocky', '(11)976543214', 18, '2024-11-17', '0000000004'),
+	(12, 'Lily', '(11)976543215', 14, '2024-11-19', '0000000004');
