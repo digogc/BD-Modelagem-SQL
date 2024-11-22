@@ -10,7 +10,7 @@ create table ACADEMIA (
 create table ACOMODACAO (
 	Numero numeric(10) not null,
 	Tipo varchar(20) not null,
-	Valor numeric(7) not null,
+	Valor numeric(7,2) not null,
 	Ultima_limpeza date not null,
 	constraint ID_ACOMO_DEPEN_ID primary key (Numero));
 
@@ -76,7 +76,7 @@ create table BANHO_PET (
 	Numero numeric(10) not null,
 	Nome_Pet varchar(20),
 	Telefone_Dono char(13) not null,
-	m2_Agua_Gastos numeric(3),
+	litros_Agua_Gastos numeric(3),
 	Data date not null,
 	Id char(10) not null,
 	constraint ID_BANHO_PET_ID primary key (Numero));
@@ -104,7 +104,7 @@ create table CAFE_DA_MANHA (
 
 create table DATA_STATUS (
 	Numero numeric(10) not null,
-	Dia varchar(2) not null,
+	Dia numeric(2) not null,
 	Mes numeric(2) not null,
 	Status varchar(8) not null,
 	constraint ID_DATA_STATUS_ID primary key (Numero, Dia, Mes));
@@ -130,8 +130,8 @@ create table COMPRA (
 	Id char(10) not null,
 	Valor numeric(6,2) not null,
 	Horario char(6) not null,
-	SERVICO_DE_QUARTO char(10),
-	CAFE_DA_MANHA char(10),
+	SERVICO_DE_QUARTO char(1) not null,
+	CAFE_DA_MANHA char(1) not null,
 	Numero numeric(10) not null,
 	constraint ID_COMPRA_ID primary key (Id));
 
@@ -170,12 +170,12 @@ create table DEPENDENCIA (
 	Numero numeric(10) not null,
 	Data_Ultima_Manutencao date not null,
 	Id char(10) not null,
-	SALA_EVENTOS numeric(10),
-	RESTAURANTE numeric(10),
-	PISCINA numeric(10),
-	EMPRESA_TURISMO numeric(10),
-	ACOMODACAO numeric(10),
-	ACADEMIA numeric(10),
+	SALA_EVENTOS char(1) not null,
+	RESTAURANTE char(1) not null,
+	PISCINA char(1) not null,
+	EMPRESA_TURISMO char(1) not null,
+	ACOMODACAO char(1) not null,
+	ACADEMIA char(1) not null,
 	constraint ID_DEPENDENCIA_ID primary key (Numero));
 
 create table dispoe_de (
@@ -204,8 +204,8 @@ create table ESPACO (
 	Tamanho numeric(4) not null,
 	Valor numeric(7,2) not null,
 	Capacidade_Maxima numeric(4) not null,
-	SALA numeric(6),
-	AR_LIVRE numeric(6),
+	SALA char(1) not null,
+	AR_LIVRE char(1) not null,
 	Eng_Numero numeric(5) not null,
 	constraint ID_ESPACO_ID primary key (Numero));
 
@@ -221,9 +221,9 @@ create table ESTABELECIMENTO (
 	Nome varchar(30),
 	Faturamento_Mensal numeric(7,2),
 	Numero numeric(3) not null,
-	TEATRO char(10),
-	LOJA char(10),
-	LOCAL_ALIMENTACAO char(10),
+	TEATRO char(1) not null,
+	LOJA char(1) not null,
+	LOCAL_ALIMENTACAO char(1) not null,
 	constraint ID_ESTABELECIMENTO_ID primary key (Id));
 
 create table ESTADIA_ANTERIOR (
@@ -259,8 +259,8 @@ create table FUNCIONARIO (
 	Genero char(1),
 	Raca varchar(8),
 	Cargo varchar(30) not null,
-	AUTONOMO char(14),
-	ASSALARIADO char(14),
+	AUTONOMO char(1) not null,
+	ASSALARIADO char(1) not null,
 	Numero numeric(2) not null,
 	constraint ID_FUNCIONARIO_ID primary key (CPF));
 
@@ -274,7 +274,7 @@ create table GARAGEM (
 	Numero numeric(10) not null,
 	Tipo varchar(20) not null,
 	Capacidade_Maxima numeric(5) not null,
-	ValorDia numeric(2,2) not null,
+	ValorDia numeric(5,2) not null,
 	Id char(10) not null,
 	constraint ID_GARAGEM_ID primary key (Numero));
 
@@ -328,8 +328,8 @@ create table HOSPEDE (
 	Data_Nascimento date,
 	Genero char(1),
 	Pod_Cpf char(14),
-	PRINCIPAL char(14),
-	DEPENDENTE char(14),
+	PRINCIPAL char(1) not null,
+	DEPENDENTE char(1) not null,
 	CNPJ char(18) not null,
 	constraint ID_HOSPEDE_ID primary key (CPF));
 
@@ -337,7 +337,7 @@ create table inclui (
 	For_Numero numeric(10) not null,
 	Numero numeric(5) not null,
 	I_A_Numero numeric(10) not null,
-	Periodo numeric(3) not null,
+	Periodo varchar(30) not null,
 	constraint ID_inclu_VAGA_ID primary key (For_Numero, Numero),
 	constraint SID_inclu_ACOMO_ID unique (I_A_Numero));
 
@@ -383,8 +383,8 @@ create table MASSAGEM (
 create table NOTA_FISCAL (
 	Id char(10) not null,
 	Valor_Total numeric(8,2) not null,
-	Descontos numeric(8),
-	Multa numeric(8),
+	Descontos numeric(8,2),
+	Multa numeric(8,2),
 	Data_Limite date not null,
 	Quitada char not null,
 	CNPJ char(18) not null,
@@ -462,7 +462,7 @@ create table REDE_SOCIAL (
 
 create table REFEICAO (
 	Nome varchar(10) not null,
-	Horario char(13) not null,
+	Horario char(6) not null,
 	Valor numeric(4,2) not null,
 	constraint ID_REFEICAO_ID primary key (Nome));
 
