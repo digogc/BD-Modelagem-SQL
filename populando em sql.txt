@@ -13494,3 +13494,163 @@ WITH tuplas_aleatorias AS (
 )
 DELETE FROM public.armazena
 WHERE (a_a_id, id) IN (SELECT a_a_id, id FROM tuplas_aleatorias);
+
+-- pegar todas as dependências do hotel 01 (tabela dependência)
+-- dessas, pegar as que tem acomodacao = 1
+-- pegar tuplas em beneficiados com numero igual a alguma acomodação do hotel 1
+CREATE TEMP TABLE hospedes_1 AS
+SELECT cpf_beneficiado, numero
+FROM public.beneficiados
+WHERE numero IN (
+    SELECT numero
+    FROM public.dependencia
+    WHERE id = '0000000001' AND acomodacao = '1'
+);
+
+-- pegar o numero de todos os departamentos do hotel 01 (tabela departamentos) - id = 0000000001
+-- olhe a tabela funcionario e pegue o cpf dos funcionários que possuem na coluna numero o numero de um dos departamentos do hotel 1
+-- pegar o cpf desses funcionarios
+CREATE TEMP TABLE funcionarios_1 AS
+SELECT cpf
+FROM public.funcionario
+WHERE numero IN (
+    SELECT numero
+    FROM public.departamento
+    WHERE id = '0000000001'
+);
+
+-- Insere três requisições na tabela "requisição" - 2 de hospedes e uma de pool
+INSERT INTO public.requisicao(
+	id, unidade, origem, dependencia, data_inicio, data_fim, classificacao, complemento, registro_digital, cpf
+)
+VALUES
+	('0000000001', '0000000001', (SELECT cpf_beneficiado FROM hospedes_1 LIMIT 1 OFFSET 0), (SELECT numero FROM hospedes_1 LIMIT 1 OFFSET 0), '2024-11-20', '2024-11-21', 'Assistência ar-condicionado', 'Conserto do ar-condicionado', '0101010101', (SELECT cpf FROM funcionarios_1 LIMIT 1 OFFSET 0)),
+	('0000000002', '0000000001', (SELECT cpf_beneficiado FROM hospedes_1 LIMIT 1 OFFSET 1), (SELECT numero FROM hospedes_1 LIMIT 1 OFFSET 1), '2024-11-22', '2024-11-23', 'Trocar Lençóis', 'Solicitação de nova roupa de cama', '0101010101', (SELECT cpf FROM funcionarios_1 LIMIT 1 OFFSET 1)),
+	('0000000003', '0000000001', 'pool requisições', (SELECT numero FROM hospedes_1 LIMIT 1 OFFSET 2), '2024-11-24', '2024-11-25', 'Assistência Iluminação', 'Reparo em lâmpada com defeito', '0101010101', (SELECT cpf FROM funcionarios_1 LIMIT 1 OFFSET 2));
+
+-- pegar todas as dependências do hotel 02 (tabela dependência)
+-- dessas, pegar as que tem acomodacao = 1
+-- pegar tuplas em beneficiados com numero igual a alguma acomodação do hotel 2
+CREATE TEMP TABLE hospedes_2 AS
+SELECT cpf_beneficiado, numero
+FROM public.beneficiados
+WHERE numero IN (
+    SELECT numero
+    FROM public.dependencia
+    WHERE id = '0000000002' AND acomodacao = '1'
+);
+
+-- pegar o numero de todos os departamentos do hotel 02 (tabela departamentos) - id = 0000000002
+-- olhe a tabela funcionario e pegue o cpf dos funcionários que possuem na coluna numero o numero de um dos departamentos do hotel 2
+-- pegar o cpf desses funcionarios
+CREATE TEMP TABLE funcionarios_2 AS
+SELECT cpf
+FROM public.funcionario
+WHERE numero IN (
+    SELECT numero
+    FROM public.departamento
+    WHERE id = '0000000002'
+);
+
+-- Insere três requisições na tabela "requisição" para o hotel 2 - 2 de hospedes e uma de pool
+INSERT INTO public.requisicao(
+	id, unidade, origem, dependencia, data_inicio, data_fim, classificacao, complemento, registro_digital, cpf
+)
+VALUES
+	('0000000004', '0000000002', (SELECT cpf_beneficiado FROM hospedes_2 LIMIT 1 OFFSET 0), (SELECT numero FROM hospedes_2 LIMIT 1 OFFSET 0), '2024-11-20', '2024-11-21', 'Barulho', 'Reclamação sobre barulho proveniente de um quarto vizinho.', '0101010101', (SELECT cpf FROM funcionarios_2 LIMIT 1 OFFSET 0)),
+	('0000000005', '0000000002', (SELECT cpf_beneficiado FROM hospedes_2 LIMIT 1 OFFSET 1), (SELECT numero FROM hospedes_2 LIMIT 1 OFFSET 1), '2024-11-22', '2024-11-23', 'Assistência ar-condicionado', 'Ajuste no ar-condicionado para atingir a temperatura desejada.', '0101010101', (SELECT cpf FROM funcionarios_2 LIMIT 1 OFFSET 1)),
+	('0000000006', '0000000002', 'pool requisições', (SELECT numero FROM hospedes_2 LIMIT 1 OFFSET 2), '2024-11-24', '2024-11-25', 'Assistência Wi-Fi', 'Problemas na conexão de internet, necessitando de assistência.', '0101010101', (SELECT cpf FROM funcionarios_2 LIMIT 1 OFFSET 2));
+
+-- pegar todas as dependências do hotel 03 (tabela dependência)
+-- dessas, pegar as que tem acomodacao = 1
+-- pegar tuplas em beneficiados com numero igual a alguma acomodação do hotel 3
+CREATE TEMP TABLE hospedes_3 AS
+SELECT cpf_beneficiado, numero
+FROM public.beneficiados
+WHERE numero IN (
+    SELECT numero
+    FROM public.dependencia
+    WHERE id = '0000000003' AND acomodacao = '1'
+);
+
+-- Criar tabela temporária para funcionários do hotel 3
+CREATE TEMP TABLE funcionarios_3 AS
+SELECT cpf
+FROM public.funcionario
+WHERE numero IN (
+    SELECT numero
+    FROM public.departamento
+    WHERE id = '0000000003'
+);
+
+-- Insere três requisições na tabela "requisição" para o hotel 3 - 2 de hospedes e uma de pool
+INSERT INTO public.requisicao(
+	id, unidade, origem, dependencia, data_inicio, data_fim, classificacao, complemento, registro_digital, cpf
+)
+VALUES
+	('0000000007', '0000000003', (SELECT cpf_beneficiado FROM hospedes_3 LIMIT 1 OFFSET 0), (SELECT numero FROM hospedes_3 LIMIT 1 OFFSET 0), '2024-11-20', '2024-11-21', 'Mais Toalhas', 'Necessidade de toalhas extras.', '0101010101', (SELECT cpf FROM funcionarios_3 LIMIT 1 OFFSET 0)),
+	('0000000008', '0000000003', (SELECT cpf_beneficiado FROM hospedes_3 LIMIT 1 OFFSET 1), (SELECT numero FROM hospedes_3 LIMIT 1 OFFSET 1), '2024-11-22', '2024-11-23', 'Travesseiro Extra', 'Pedido de travesseiro extra devido a desconforto.', '0101010101', (SELECT cpf FROM funcionarios_3 LIMIT 1 OFFSET 1)),
+	('0000000009', '0000000003', 'pool requisições', (SELECT numero FROM hospedes_3 LIMIT 1 OFFSET 2), '2024-11-24', '2024-11-25', 'Assistência Aquecedor', 'Aquecedor do quarto não está funcionando, necessita de reparo.', '0101010101', (SELECT cpf FROM funcionarios_3 LIMIT 1 OFFSET 2));
+
+-- pegar todas as dependências do hotel 04 (tabela dependência)
+-- dessas, pegar as que tem acomodacao = 1
+-- pegar tuplas em beneficiados com numero igual a alguma acomodação do hotel 4
+CREATE TEMP TABLE hospedes_4 AS
+SELECT cpf_beneficiado, numero
+FROM public.beneficiados
+WHERE numero IN (
+    SELECT numero
+    FROM public.dependencia
+    WHERE id = '0000000004' AND acomodacao = '1'
+);
+
+-- Criar tabela temporária para funcionários do hotel 4
+CREATE TEMP TABLE funcionarios_4 AS
+SELECT cpf
+FROM public.funcionario
+WHERE numero IN (
+    SELECT numero
+    FROM public.departamento
+    WHERE id = '0000000004'
+);
+
+-- Insere três requisições na tabela "requisição" para o hotel 4 - 2 de hospedes e uma de pool
+INSERT INTO public.requisicao(
+	id, unidade, origem, dependencia, data_inicio, data_fim, classificacao, complemento, registro_digital, cpf
+)
+VALUES
+	('0000000010', '0000000004', (SELECT cpf_beneficiado FROM hospedes_4 LIMIT 1 OFFSET 0), (SELECT numero FROM hospedes_4 LIMIT 1 OFFSET 0), '2024-11-20', '2024-11-21', 'Assistência Wi-Fi', 'Problemas na conexão de internet, necessitando de assistência.', '0101010101', (SELECT cpf FROM funcionarios_4 LIMIT 1 OFFSET 0)),
+	('0000000011', '0000000004', (SELECT cpf_beneficiado FROM hospedes_4 LIMIT 1 OFFSET 1), (SELECT numero FROM hospedes_4 LIMIT 1 OFFSET 1), '2024-11-22', '2024-11-23', 'Assistência TV', 'Problema no controle remoto da TV, solicitando assistência.', '0101010101', (SELECT cpf FROM funcionarios_4 LIMIT 1 OFFSET 1)),
+	('0000000012', '0000000004', 'pool requisições', (SELECT numero FROM hospedes_4 LIMIT 1 OFFSET 2), '2024-11-24', '2024-11-25', 'Temperatura Água', 'Relato de falha no fornecimento de água quente no banheiro.', '0101010101', (SELECT cpf FROM funcionarios_4 LIMIT 1 OFFSET 2));
+
+-- pegar todas as dependências do hotel 05 (tabela dependência)
+-- dessas, pegar as que tem acomodacao = 1
+-- pegar tuplas em beneficiados com numero igual a alguma acomodação do hotel 5
+CREATE TEMP TABLE hospedes_5 AS
+SELECT cpf_beneficiado, numero
+FROM public.beneficiados
+WHERE numero IN (
+    SELECT numero
+    FROM public.dependencia
+    WHERE id = '0000000005' AND acomodacao = '1'
+);
+
+-- Criar tabela temporária para funcionários do hotel 5
+CREATE TEMP TABLE funcionarios_5 AS
+SELECT cpf
+FROM public.funcionario
+WHERE numero IN (
+    SELECT numero
+    FROM public.departamento
+    WHERE id = '0000000005'
+);
+
+-- Insere três requisições na tabela "requisição" para o hotel 5 - 2 de hospedes e uma de pool
+INSERT INTO public.requisicao(
+	id, unidade, origem, dependencia, data_inicio, data_fim, classificacao, complemento, registro_digital, cpf
+)
+VALUES
+	('0000000013', '0000000005', (SELECT cpf_beneficiado FROM hospedes_5 LIMIT 1 OFFSET 0), (SELECT numero FROM hospedes_5 LIMIT 1 OFFSET 0), '2024-11-20', '2024-11-21', 'Trocar Toalhas', 'Pedido de novas toalhas limpas.', '0101010101', (SELECT cpf FROM funcionarios_5 LIMIT 1 OFFSET 0)),
+	('0000000014', '0000000005', (SELECT cpf_beneficiado FROM hospedes_5 LIMIT 1 OFFSET 1), (SELECT numero FROM hospedes_5 LIMIT 1 OFFSET 1), '2024-11-22', '2024-11-23', 'Barulho', 'Ruído excessivo vindo do andar superior durante a noite.', '0101010101', (SELECT cpf FROM funcionarios_5 LIMIT 1 OFFSET 1)),
+	('0000000015', '0000000005', 'pool requisições', (SELECT numero FROM hospedes_5 LIMIT 1 OFFSET 2), '2024-11-24', '2024-11-25', 'Trocar Lençóis', 'Solicitação de nova roupa de cama', '0101010101', (SELECT cpf FROM funcionarios_5 LIMIT 1 OFFSET 2));
+
