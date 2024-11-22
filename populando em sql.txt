@@ -13731,3 +13731,16 @@ VALUES
     ('000003', 'Rejuvenescedora'),
     ('000006', 'Antiestresse'),
     ('000009', 'Shiatsu');
+
+-- inserindo tuplas na tabela 
+INSERT INTO public.limpeza_de_pele(
+    numero, produtos_usados)
+VALUES
+    ('000001', 'Gel de limpeza, Tônico adstringente'),
+    ('000002', 'Esfoliante, Creme calmante'),
+    ('000007', 'Leite de limpeza, Protetor solar'),
+    ('000008', 'Loção micelar, Máscara hidratante'),
+    ('000003', 'Sabonete facial, Creme nutritivo'),
+    ('000006', 'Gel esfoliante, Hidratante nutritivo'),
+    ('000009', 'Creme antiacne, Hidratante calmante');
+
