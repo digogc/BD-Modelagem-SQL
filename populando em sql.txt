@@ -13342,3 +13342,155 @@ VALUES
     ('Aposentadoria Privada', 350.00),
     ('Auxílio Paternidade', 200.00);
 
+-- inserindo tuplas na tabela "beneficio"
+WITH beneficios AS (
+    SELECT nome FROM public.beneficio -- selecionando os nomes de todos os benefícios
+),
+assalariados AS (
+    SELECT cpf FROM public.assalariado -- selecionando os CPFs dos assalariados
+)
+-- Inserir cada CPF associado a todos os benefícios
+INSERT INTO public.beneficiado(cpf, nome)
+SELECT 
+    a.cpf,
+    b.nome
+FROM assalariados a
+CROSS JOIN beneficios b
+ORDER BY a.cpf, b.nome;
+
+WITH tuplas_aleatorias AS (
+    SELECT cpf, nome
+    FROM public.beneficiado
+    ORDER BY RANDOM()  -- Embaralha as tuplas
+    LIMIT 50           -- Seleciona as 50 primeiras tuplas aleatórias
+)
+DELETE FROM public.beneficiado
+WHERE (cpf, nome) IN (SELECT cpf, nome FROM tuplas_aleatorias);
+
+-- inserindo tuplas na tabela estadia_anterior
+INSERT INTO public.estadia_anterior(
+	id, responsavel, data_check_in, data_check_out, tipo_de_hospede, valor_gasto, unidade, acomodacao, pontos_gerados, cnpj)
+VALUES 
+	('0000000001', '806.994.280-09', '2024-01-15', '2024-01-20', 'P', 1500.00, '0000000001', 101, 150, '12.345.678/9012-34'),
+	('0000000002', '558.005.770-99', '2024-02-10', '2024-02-15', 'D', 1250.00, '0000000002', 102, 125, '12.345.678/9012-34'),
+	('0000000003', '610.070.280-09', '2024-03-05', '2024-03-10', 'P', 2000.00, '0000000003', 103, 200, '12.345.678/9012-34'),
+	('0000000004', '892.733.860-08', '2024-04-12', '2024-04-18', 'D', 1750.00, '0000000004', 104, 175, '12.345.678/9012-34'),
+	('0000000005', '852.873.970-89', '2024-05-20', '2024-05-25', 'P', 1800.00, '0000000005', 105, 180, '12.345.678/9012-34'),
+	('0000000006', '984.252.910-03', '2024-06-05', '2024-06-10', 'D', 1600.00, '0000000001', 106, 160, '12.345.678/9012-34'),
+	('0000000007', '286.706.490-20', '2024-07-01', '2024-07-06', 'P', 1450.00, '0000000002', 107, 145, '12.345.678/9012-34'),
+	('0000000008', '851.606.610-00', '2024-07-20', '2024-07-25', 'D', 1900.00, '0000000003', 108, 190, '12.345.678/9012-34'),
+	('0000000009', '747.812.120-93', '2024-08-10', '2024-08-15', 'P', 1700.00, '0000000004', 109, 170, '12.345.678/9012-34'),
+	('0000000010', '915.684.370-48', '2024-08-25', '2024-08-30', 'D', 1600.00, '0000000005', 110, 160, '12.345.678/9012-34'),
+	('0000000011', '570.893.980-05', '2024-09-01', '2024-09-05', 'P', 1400.00, '0000000001', 111, 140, '12.345.678/9012-34'),
+	('0000000012', '617.750.180-08', '2024-09-10', '2024-09-15', 'D', 1750.00, '0000000002', 112, 175, '12.345.678/9012-34'),
+	('0000000013', '484.219.980-64', '2024-09-15', '2024-09-20', 'P', 1600.00, '0000000003', 113, 160, '12.345.678/9012-34'),
+	('0000000014', '950.578.650-64', '2024-10-05', '2024-10-10', 'D', 1500.00, '0000000004', 114, 150, '12.345.678/9012-34'),
+	('0000000015', '065.315.560-30', '2024-10-12', '2024-10-17', 'P', 1800.00, '0000000005', 115, 180, '12.345.678/9012-34'),
+	('0000000016', '682.305.090-00', '2024-10-18', '2024-10-23', 'D', 1450.00, '0000000001', 116, 145, '12.345.678/9012-34'),
+	('0000000017', '478.152.320-00', '2024-10-25', '2024-10-30', 'P', 1700.00, '0000000002', 117, 170, '12.345.678/9012-34'),
+	('0000000018', '116.493.650-63', '2024-11-01', '2024-11-05', 'D', 2000.00, '0000000003', 118, 200, '12.345.678/9012-34'),
+	('0000000019', '696.543.810-01', '2024-11-10', '2024-11-15', 'P', 1550.00, '0000000004', 119, 155, '12.345.678/9012-34'),
+	('0000000020', '649.989.570-90', '2024-11-15', '2024-11-20', 'D', 1600.00, '0000000005', 120, 160, '12.345.678/9012-34');
+
+-- seleciona hospedes atuais e inclui estadias anteriores
+-- Inserindo 2 tuplas com tipo_de_hospede 'D' (Dependente)
+INSERT INTO public.estadia_anterior(
+	id, responsavel, data_check_in, data_check_out, tipo_de_hospede, valor_gasto, unidade, acomodacao, pontos_gerados, cnpj)
+VALUES 
+	('0000000025', '222.652.340-52', '2024-06-05', '2024-06-10', 'D', 600.00, '0000000002', 110, 60, '12.345.678/9012-34'),
+	('0000000026', '083.042.220-00', '2024-05-12', '2024-05-17', 'D', 550.00, '0000000003', 101, 55, '12.345.678/9012-34');
+
+-- Inserindo 3 tuplas com tipo_de_hospede 'P' (Principal)
+INSERT INTO public.estadia_anterior(
+	id, responsavel, data_check_in, data_check_out, tipo_de_hospede, valor_gasto, unidade, acomodacao, pontos_gerados, cnpj)
+VALUES 
+	('0000000027', '011.573.640-98', '2024-04-01', '2024-04-05', 'P', 1300.00, '0000000001', 120, 110, '12.345.678/9012-34'),
+	('0000000028', '070.515.070-44', '2024-03-10', '2024-03-15', 'P', 1500.00, '0000000004', 130, 120, '12.345.678/9012-34'),
+	('0000000029', '424.807.890-20', '2024-02-20', '2024-02-25', 'P', 1100.00, '0000000005', 140, 115, '12.345.678/9012-34');
+
+INSERT INTO public.espaco_eventos(
+    numero, id, senha_wifi)
+VALUES
+    (00001, '0000000001', 'hotel123'),
+    (00002, '0000000002', 'segredo1'),
+    (00003, '0000000003', '98765'),
+    (00004, '0000000004', 'ninguemsabera'),
+    (00005, '0000000005', 'hotel5segredo');
+
+INSERT INTO public.espaco(
+    numero, nome, tamanho, valor, capacidade_maxima, sala, ar_livre, eng_numero)
+VALUES
+    (1, 'Espaço A', 100, 1500.00, 200, 1, 0, '0000000001'),
+    (2, 'Espaço B', 120, 2000.00, 250, 1, 0, '0000000001'),
+    (3, 'Espaço C', 80, 1000.00, 150, 0, 1, '0000000002'),
+    (4, 'Espaço D', 150, 2500.00, 300, 1, 0, '0000000003'),
+    (5, 'Espaço E', 200, 3000.00, 350, 0, 1, '0000000003'),
+    (6, 'Espaço F', 90, 1200.00, 180, 1, 0, '0000000004'),
+    (7, 'Espaço G', 110, 1800.00, 220, 0, 1, '0000000004'),
+    (8, 'Espaço H', 95, 1100.00, 170, 1, 0, '0000000005'),
+    (9, 'Espaço I', 130, 2100.00, 280, 0, 1, '0000000005'),
+    (10, 'Espaço J', 140, 2300.00, 300, 0, 1, '0000000005');
+
+INSERT INTO public.sala(
+    numero, quantidade_banheiros, cozinha, quantidade_televisao, quantidade_ventiladores, quantidade_ar_condicionado)
+VALUES 
+    (1, 2, '1', 1, 2, 1),
+    (2, 1, '0', 2, 3, 1),
+    (4, 2, '1', 1, 4, 2),
+    (6, 3, '1', 3, 5, 2),
+    (8, 1, '0', 2, 2, 1);
+
+INSERT INTO public.ar_livre(
+    numero, churrasqueira, forno_a_lenha, freezer)
+VALUES 
+    (3, '1', '0', '1'),
+    (5, '0', '1', '1'),
+    (7, '1', '0', '0'),
+    (9, '0', '0', '1'),
+    (10, '1', '1', '0');
+
+INSERT INTO public.alimento(
+    id, nome, quantidade_desejada, quantidade_existente)
+VALUES 
+    ('0000000001', 'Arroz', 500, 450),
+    ('0000000002', 'Feijão', 300, 290),
+    ('0000000003', 'Macarrão', 400, 380),
+    ('0000000004', 'Batata', 200, 180),
+    ('0000000005', 'Carne', 350, 300),
+    ('0000000006', 'Frango', 250, 230),
+    ('0000000007', 'Leite', 100, 90),
+    ('0000000008', 'Ovos', 180, 170),
+    ('0000000009', 'Queijo', 120, 110),
+    ('0000000010', 'Pão', 200, 190),
+    ('0000000011', 'Cenoura', 150, 140),
+    ('0000000012', 'Cebola', 130, 120),
+    ('0000000013', 'Tomate', 180, 160),
+    ('0000000014', 'Maçã', 220, 210),
+    ('0000000015', 'Banana', 250, 240),
+    ('0000000016', 'Café', 100, 90),
+    ('0000000017', 'Açúcar', 150, 140),
+    ('0000000018', 'Sal', 50, 50),
+    ('0000000019', 'Óleo', 60, 55),
+    ('0000000020', 'Manteiga', 70, 65);
+
+-- cria chatbot
+INSERT INTO public.chatbot(
+    registro_digital, cnpj, nome_avatar, versao)
+VALUES ('0101010101', '12.345.678/9012-34', 'Sonho Virtual', 'v2.4');
+
+INSERT INTO public.armazena(a_a_id, id)
+SELECT 
+    a.id,
+    b.id
+FROM alimento a
+CROSS JOIN hotel b
+ORDER BY a.id, b.id;
+
+WITH tuplas_aleatorias AS (
+    SELECT a_a_id, id
+    FROM public.armazena
+    ORDER BY RANDOM()  -- Embaralha as tuplas
+    LIMIT 60           -- Seleciona as 50 primeiras tuplas aleatórias
+)
+DELETE FROM public.armazena
+WHERE (a_a_id, id) IN (SELECT a_a_id, id FROM tuplas_aleatorias);
