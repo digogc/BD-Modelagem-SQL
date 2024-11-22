@@ -13654,3 +13654,80 @@ VALUES
 	('0000000014', '0000000005', (SELECT cpf_beneficiado FROM hospedes_5 LIMIT 1 OFFSET 1), (SELECT numero FROM hospedes_5 LIMIT 1 OFFSET 1), '2024-11-22', '2024-11-23', 'Barulho', 'Ruído excessivo vindo do andar superior durante a noite.', '0101010101', (SELECT cpf FROM funcionarios_5 LIMIT 1 OFFSET 1)),
 	('0000000015', '0000000005', 'pool requisições', (SELECT numero FROM hospedes_5 LIMIT 1 OFFSET 2), '2024-11-24', '2024-11-25', 'Trocar Lençóis', 'Solicitação de nova roupa de cama', '0101010101', (SELECT cpf FROM funcionarios_5 LIMIT 1 OFFSET 2));
 
+-- inserindo tuplas na tabela pagamento
+INSERT INTO public.pagamento(
+    id, cnpj_destinatario, valor, referencia, data_pagamento, cnpj)
+VALUES
+    ('0000000001', '12.345.678/0001-11', 5000.00, 'Aluguel de espaço', '2024-11-01', '12.345.678/9012-34'),
+    ('0000000002', '12.345.678/0002-22', 1200.50, 'Manutenção elétrica', '2024-11-02', '12.345.678/9012-34'),
+    ('0000000003', '12.345.678/0003-33', 850.75, 'Compra de alimentos', '2024-11-03', '12.345.678/9012-34'),
+    ('0000000004', '12.345.678/0001-11', 3000.00, 'Renovação de contrato', '2024-11-04', '12.345.678/9012-34'),
+    ('0000000005', '12.345.678/0004-44', 4500.00, 'Serviço de segurança', '2024-11-05', '12.345.678/9012-34'),
+    ('0000000006', '12.345.678/0005-55', 2750.25, 'Compra de móveis', '2024-11-06', '12.345.678/9012-34'),
+    ('0000000007', '12.345.678/0003-33', 1600.00, 'Abastecimento de cozinha', '2024-11-07', '12.345.678/9012-34'),
+    ('0000000008', '12.345.678/0002-22', 980.50, 'Troca de equipamentos', '2024-11-08', '12.345.678/9012-34'),
+    ('0000000009', '12.345.678/0005-55', 3100.00, 'Reparos gerais', '2024-11-09', '12.345.678/9012-34'),
+    ('0000000010', '12.345.678/0001-11', 2150.00, 'Limpeza e higienização', '2024-11-10', '12.345.678/9012-34');
+
+-- inserindo tuplas na tabela documento
+INSERT INTO public.documento(
+    id, e_r_id, tipo, data_emissao, data_vencimento)
+VALUES
+    ('0000000001', '0000000001', 'Nota Fiscal', '2024-10-25', '2024-11-05'),
+    ('0000000002', '0000000002', 'Fatura', '2024-10-26', '2024-11-06'),
+    ('0000000003', '0000000003', 'Comprovante', '2024-10-27', '2024-11-07'),
+    ('0000000004', '0000000004', 'Recibo', '2024-10-28', '2024-11-08'),
+    ('0000000005', '0000000005', 'Nota Fiscal', '2024-10-29', '2024-11-09'),
+    ('0000000006', '0000000006', 'Fatura', '2024-10-30', '2024-11-10'),
+    ('0000000007', '0000000007', 'Comprovante', '2024-10-31', '2024-11-11'),
+    ('0000000008', '0000000008', 'Recibo', '2024-11-01', '2024-11-12'),
+    ('0000000009', '0000000009', 'Nota Fiscal', '2024-11-02', '2024-11-13'),
+    ('0000000010', '0000000010', 'Fatura', '2024-11-03', '2024-11-14');
+
+INSERT INTO public.sessao_terapia_ocupacional(
+    data, horario, duracao, objetivo, capacidade_maxima, id)
+VALUES
+    ('2024-10-24', '10:00h', '01:00h', 'Relaxamento', 10, '0000000001'),
+    ('2024-11-25', '14:00h', '02:00h', 'Gerenciamento de Stress', 15, '0000000001'),
+    ('2024-11-26', '09:30h', '01:30h', 'Concentração', 12, '0000000003'),
+    ('2024-11-27', '15:00h', '02:00h', 'Habilidades Sociais', 20, '0000000003'),
+    ('2024-11-28', '08:00h', '01:00h', 'Autoconfiança', 10, '0000000004'),
+    ('2024-11-28', '11:00h', '01:30h', 'Relaxamento', 8, '0000000004'),
+    ('2024-11-29', '13:30h', '01:30h', 'Motivação', 18, '0000000005'),
+    ('2024-11-29', '16:00h', '01:00h', 'Planejamento', 12, '0000000005'),
+    ('2024-11-30', '10:30h', '01:30h', 'Habilidades Sociais', 14, '0000000001'),
+    ('2024-12-01', '15:30h', '02:00h', 'Concentração', 20, '0000000003');
+
+INSERT INTO public.spa(
+    numero, id, nome, valordia)
+VALUES
+    (1, '0000000001', 'Spa Relaxante', 90.50),
+    (2, '0000000002', 'Spa Tropical', 99.90),
+    (3, '0000000004', 'Spa Natural', 50.75),
+    (4, '0000000005', 'Spa da Tradição', 85.00);
+
+-- inserindo tuplas na tabela tratamento
+INSERT INTO public.tratamento(
+    numero, duracao, exe_numero)
+VALUES
+    ('000001', '01:00h', '0001'),
+    ('000002', '01:30h', '0002'),
+    ('000003', '02:00h', '0003'),
+    ('000004', '01:00h', '0001'),
+    ('000005', '01:30h', '0002'),
+    ('000006', '02:00h', '0003'),
+    ('000007', '01:00h', '0001'),
+    ('000008', '01:30h', '0004'),
+    ('000009', '02:00h', '0003'),
+    ('000010', '01:00h', '0002');
+
+-- inserindo tuplas na tabela massagem
+INSERT INTO public.massagem(
+    numero, tipo)
+VALUES
+    ('000004', 'Relaxante'),
+    ('000005', 'Desportiva'),
+    ('000010', 'Terapêutica'),
+    ('000003', 'Rejuvenescedora'),
+    ('000006', 'Antiestresse'),
+    ('000009', 'Shiatsu');
