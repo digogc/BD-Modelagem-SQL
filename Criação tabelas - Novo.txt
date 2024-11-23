@@ -451,7 +451,7 @@ create table REQUISICAO (
 	Id varchar(10) not null,
 	Unidade varchar(30) not null,
 	Origem varchar(18) not null,
-	Dependencia varchar(30) not null,
+	Dependencia numeric(10) not null,
 	Data_Inicio date not null,
 	Data_Fim date,
 	Classificacao varchar(30) not null,
