@@ -13735,23 +13735,15 @@ VALUES
     ('Eventos culturais', 'livre'),
     ('Lançamentos de produtos', '18');
 
--- inserindo tuplas na tabela usado para
+-- inserindo tuplas na tabela "usado_para"
 INSERT INTO public.usado_para(numero, nome)
 SELECT 
     e.numero,
     u.nome
-FROM espaco e
-CROSS JOIN uso u
-ORDER BY e.numero, u.nome;
-
-WITH tuplas_aleatorias AS (
-    SELECT numero, nome
-    FROM public.usado_para
-    ORDER BY RANDOM()  -- Embaralha as tuplas
-    LIMIT 20           -- Seleciona as 50 primeiras tuplas aleatórias
-)
-DELETE FROM public.usado_para
-WHERE (numero, nome) IN (SELECT numero, nome FROM tuplas_aleatorias);
+FROM public.espaco e
+CROSS JOIN public.uso u
+ORDER BY RANDOM()
+LIMIT 80;
 
 -- classificando os hoteis dentre as possiveis especializações
 -- hotel 1
