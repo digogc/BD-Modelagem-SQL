@@ -130,8 +130,6 @@ create table COMPRA (
 	Id char(10) not null,
 	Valor numeric(6,2) not null,
 	Horario char(6) not null,
-	SERVICO_DE_QUARTO char(1) not null,
-	CAFE_DA_MANHA char(1) not null,
 	Numero numeric(10) not null,
 	constraint ID_COMPRA_ID primary key (Id));
 
