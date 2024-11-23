@@ -13488,7 +13488,7 @@ INSERT INTO public.requisicao(
 VALUES
 	('0000000004', '0000000002', '781.718.920-00', 21, '2024-11-20', '2024-11-21', 'Barulho', 'Reclamação sobre barulho proveniente de um quarto vizinho.', '0101010101', '569.381.290-10'),
 	('0000000005', '0000000002', '070.515.070-44', 22, '2024-11-22', '2024-11-23', 'Assistência ar-condicionado', 'Ajuste no ar-condicionado para atingir a temperatura desejada.', '0101010101', '631.886.730-94'),
-	('0000000006', '0000000002', 'pool requisições', (SELECT numero FROM hospedes_2 LIMIT 1 OFFSET 2), '2024-11-24', '2024-11-25', 'Assistência Wi-Fi', 'Problemas na conexão de internet, necessitando de assistência.', '0101010101', '285.070.420-23');
+	('0000000006', '0000000002', 'pool requisições', 25, '2024-11-24', '2024-11-25', 'Assistência Wi-Fi', 'Problemas na conexão de internet, necessitando de assistência.', '0101010101', '285.070.420-23');
 
 -- Insere três requisições na tabela "requisição" para o hotel 3 - 2 de hospedes e uma de pool
 INSERT INTO public.requisicao(
