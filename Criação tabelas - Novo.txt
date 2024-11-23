@@ -246,8 +246,6 @@ create table FUNCIONARIO (
 	Genero char(1),
 	Raca varchar(8),
 	Cargo varchar(30) not null,
-	AUTONOMO char(1) not null,
-	ASSALARIADO char(1) not null,
 	Numero numeric(2) not null,
 	constraint ID_FUNCIONARIO_ID primary key (CPF));
 
@@ -440,8 +438,6 @@ create table REDE_SOCIAL (
 	Perfil varchar(30) not null,
 	Numero_Seguidores numeric(8),
 	Media_Curtidas numeric(8),
-	YOUTUBE varchar(30),
-	INSTAGRAM varchar(30),
 	CNPJ char(18) not null,
 	constraint ID_REDE_SOCIAL_ID primary key (Nome));
 
