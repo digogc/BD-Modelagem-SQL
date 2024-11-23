@@ -2578,61 +2578,61 @@ INSERT INTO public.beneficiados(
 
 -- inserindo tuplas na tabela "compra"
 INSERT INTO compra(
-    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
-    VALUES ('0000000001', 60.00, '08:00', '0', '1', 7);
+    id, valor, horario, numero)
+    VALUES ('0000000001', 60.00, '08:00', 7);
 
 INSERT INTO compra(
-    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
-    VALUES ('0000000002', 60.00, '08:00', '0', '1', 11);
+    id, valor, horario, numero)
+    VALUES ('0000000002', 60.00, '08:00', 11);
 
 INSERT INTO compra(
-    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
-    VALUES ('0000000003', 60.00, '08:00', '0', '1', 25);
+    id, valor, horario, numero)
+    VALUES ('0000000003', 60.00, '08:00', 25);
 
 INSERT INTO compra(
-    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
-    VALUES ('0000000004', 60.00, '08:00', '0', '1', 40);
+    id, valor, horario, numero)
+    VALUES ('0000000004', 60.00, '08:00', 40);
 
 INSERT INTO compra(
-    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
-    VALUES ('0000000005', 60.00, '08:00', '0', '1', 51);
+    id, valor, horario, numero)
+    VALUES ('0000000005', 60.00, '08:00', 51);
 
 INSERT INTO compra(
-    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
-    VALUES ('0000000006', 60.00, '08:00', '0', '1', 54);
+    id, valor, horario, numero)
+    VALUES ('0000000006', 60.00, '08:00', 54);
 
 -- Serviço de quarto (id 7 a 14)
 INSERT INTO compra(
-    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
-    VALUES ('0000000007', 45.00, '13:00', '1', '0', 8);
+    id, valor, horario, numero)
+    VALUES ('0000000007', 45.00, '13:00', 8);
 
 INSERT INTO compra(
-    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
-    VALUES ('0000000008', 55.00, '14:00', '1', '0', 21);
+    id, valor, horario, numero)
+    VALUES ('0000000008', 55.00, '14:00', 21);
 
 INSERT INTO compra(
-    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
-    VALUES ('0000000009', 75.00, '10:00', '1', '0', 22);
+    id, valor, horario, numero)
+    VALUES ('0000000009', 75.00, '10:00', 22);
 
 INSERT INTO compra(
-    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
-    VALUES ('0000000010', 95.00, '23:00', '1', '0', 37);
+    id, valor, horario, numero)
+    VALUES ('0000000010', 95.00, '23:00', 37);
 
 INSERT INTO compra(
-    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
-    VALUES ('0000000011', 60.00, '13:00', '1', '0', 38);
+    id, valor, horario, numero)
+    VALUES ('0000000011', 60.00, '13:00', 38);
 
 INSERT INTO compra(
-    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
-    VALUES ('0000000012', 80.00, '21:00', '1', '0', 52);
+    id, valor, horario, numero)
+    VALUES ('0000000012', 80.00, '21:00', 52);
 
 INSERT INTO compra(
-    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
-    VALUES ('0000000013', 100.00, '19:00', '1', '0', 53);
+    id, valor, horario, numero)
+    VALUES ('0000000013', 100.00, '19:00', 53);
 
 INSERT INTO compra(
-    id, valor, horario, servico_de_quarto, cafe_da_manha, numero)
-    VALUES ('0000000014', 110.00, '22:00', '1', '0', 64);
+    id, valor, horario, numero)
+    VALUES ('0000000014', 110.00, '22:00', 64);
 
 -- inserindo tuplas na tabela cafe da manha
 INSERT INTO cafe_da_manha(
