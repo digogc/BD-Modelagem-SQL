@@ -13348,16 +13348,8 @@ SELECT
     b.nome
 FROM public.assalariado a
 CROSS JOIN public.beneficio b
-ORDER BY a.cpf, b.nome;
-
--- Excluindo 50 tuplas aleatórias da tabela "beneficiado"
-DELETE FROM public.beneficiado
-WHERE (cpf, nome) IN (
-    SELECT cpf, nome
-    FROM public.beneficiado
-    ORDER BY RANDOM()
-    LIMIT 50
-);
+ORDER BY RANDOM()
+LIMIT 355;
 
 -- inserindo tuplas na tabela estadia_anterior
 INSERT INTO public.estadia_anterior(
