@@ -211,9 +211,6 @@ create table ESTABELECIMENTO (
 	Nome varchar(30),
 	Faturamento_Mensal numeric(7,2),
 	Numero numeric(3) not null,
-	TEATRO char(1) not null,
-	LOJA char(1) not null,
-	LOCAL_ALIMENTACAO char(1) not null,
 	constraint ID_ESTABELECIMENTO_ID primary key (Id));
 
 create table ESTADIA_ANTERIOR (
