@@ -2050,72 +2050,72 @@ INSERT INTO dispoe_de(
 -- Inserindo hóspedes principais
 -- hotel 1
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('282.303.600-81', 'Lucas Martins', 'lucas.martins@gmail.com', '1990-04-23', 'M', '227.193.860-06','1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('282.303.600-81', 'Lucas Martins', 'lucas.martins@gmail.com', '1990-04-23', 'M', '227.193.860-06', '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('113.611.030-51', 'Gabriel Santos', 'gabriel.santos@gmail.com', '1995-11-03', 'M', '969.292.610-92','1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('113.611.030-51', 'Gabriel Santos', 'gabriel.santos@gmail.com', '1995-11-03', 'M', '969.292.610-92', '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('598.004.440-09', 'Isabella Lima', 'isabella.lima@gmail.com', '1992-01-27', 'F', NULL,'1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('598.004.440-09', 'Isabella Lima', 'isabella.lima@gmail.com', '1992-01-27', 'F', NULL, '12.345.678/9012-34');
 
 -- hotel 2
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('781.718.920-00', 'João Pedro Rocha', 'joao.pedro@gmail.com', '1987-12-05', 'M', '178.934.670-37','1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('781.718.920-00', 'João Pedro Rocha', 'joao.pedro@gmail.com', '1987-12-05', 'M', '178.934.670-37', '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('070.515.070-44', 'Fernanda Barros', 'fernanda.barros@gmail.com', '1994-07-16', 'F', '875.375.910-91','1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('070.515.070-44', 'Fernanda Barros', 'fernanda.barros@gmail.com', '1994-07-16', 'F', '875.375.910-91', '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('436.052.300-91', 'Carlos Henrique Mendes', 'carlos.henrique@gmail.com', '1989-05-19', 'M', NULL,'1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('436.052.300-91', 'Carlos Henrique Mendes', 'carlos.henrique@gmail.com', '1989-05-19', 'M', NULL, '12.345.678/9012-34');
 
 -- hotel 3
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('140.347.620-98', 'Lara Moreira', 'lara.moreira@gmail.com', '1996-02-11', 'F', '966.738.450-07','1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('140.347.620-98', 'Lara Moreira', 'lara.moreira@gmail.com', '1996-02-11', 'F', '966.738.450-07', '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('262.047.650-00', 'Miguel Fernandes', 'miguel.fernandes@gmail.com', '1984-10-30', 'M', '966.738.450-07','1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('262.047.650-00', 'Miguel Fernandes', 'miguel.fernandes@gmail.com', '1984-10-30', 'M', '966.738.450-07', '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('541.037.770-28', 'Alice Cunha', 'alice.cunha@gmail.com', '1999-12-14', 'F', NULL,'1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('541.037.770-28', 'Alice Cunha', 'alice.cunha@gmail.com', '1999-12-14', 'F', NULL, '12.345.678/9012-34');
 
 -- hotel 4
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('191.078.770-13', 'Pedro Lucas Vieira', 'pedro.lucas@gmail.com', '1986-03-04', 'M', '820.738.090-06','1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('191.078.770-13', 'Pedro Lucas Vieira', 'pedro.lucas@gmail.com', '1986-03-04', 'M', '820.738.090-06', '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('011.573.640-98', 'Victor Nascimento', 'victor.nascimento@gmail.com', '1981-11-11', 'M', NULL,'1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('011.573.640-98', 'Victor Nascimento', 'victor.nascimento@gmail.com', '1981-11-11', 'M', NULL, '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('533.698.280-65', 'Mariana Santos', 'mariana.santos@gmail.com', '1997-04-29', 'F', '820.738.090-06','1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('533.698.280-65', 'Mariana Santos', 'mariana.santos@gmail.com', '1997-04-29', 'F', '820.738.090-06', '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('267.540.010-62', 'Diego Rocha', 'diego.rocha@gmail.com', '1980-08-10', 'M', NULL,'1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('267.540.010-62', 'Diego Rocha', 'diego.rocha@gmail.com', '1980-08-10', 'M', NULL, '12.345.678/9012-34');
 
 -- hotel 5
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('511.950.800-69', 'Juliana Ferreira', 'juliana.ferreira@gmail.com', '1990-03-18', 'F', '384.930.440-08','1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('511.950.800-69', 'Juliana Ferreira', 'juliana.ferreira@gmail.com', '1990-03-18', 'F', '384.930.440-08', '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('424.807.890-20', 'André Costa', 'andre.costa@gmail.com', '1985-12-08', 'M', '021.754.780-09','1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('424.807.890-20', 'André Costa', 'andre.costa@gmail.com', '1985-12-08', 'M', '021.754.780-09', '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('135.856.450-70', 'Renata Souza', 'renata.souza@gmail.com', '1993-10-25', 'F', NULL,'1','0', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('135.856.450-70', 'Renata Souza', 'renata.souza@gmail.com', '1993-10-25', 'F', NULL, '12.345.678/9012-34');
 
 -- inserindo tuplas na tabela nota fiscal
 INSERT INTO nota_fiscal(
@@ -2185,16 +2185,16 @@ INSERT INTO nota_fiscal(
 -- Inserindo dependentes
 -- criando dependentes do hospede 1
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('222.652.340-52', 'Gabriel Almeida', 'gabriel.almeida@gmail.com', '2012-05-10', 'M', NULL, '0', '1', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('222.652.340-52', 'Gabriel Almeida', 'gabriel.almeida@gmail.com', '2012-05-10', 'M', NULL, '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('813.421.560-21', 'Ana Clara Silva', 'ana.clara@gmail.com', '1990-11-22', 'F', '227.193.860-06', '0', '1', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('813.421.560-21', 'Ana Clara Silva', 'ana.clara@gmail.com', '1990-11-22', 'F', '227.193.860-06', '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('503.022.220-06', 'Lucas Junior', 'lucas.junior@gmail.com', '2010-08-15', 'M', NULL, '0', '1', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('503.022.220-06', 'Lucas Junior', 'lucas.junior@gmail.com', '2010-08-15', 'M', NULL, '12.345.678/9012-34');
 
 -- inserindo a dependencia na tabela
 INSERT INTO dependente(
@@ -2211,8 +2211,8 @@ INSERT INTO dependente(
 
 -- criando dependente do hospede 3
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('188.660.940-30', 'Ana Souza', 'ana.souza@example.com', '1993-08-15', 'F', NULL, '0', '1', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('188.660.940-30', 'Ana Souza', 'ana.souza@example.com', '1993-08-15', 'F', NULL, '12.345.678/9012-34');
 
 -- criando relação de dependencia
 INSERT INTO dependente(
@@ -2221,16 +2221,16 @@ INSERT INTO dependente(
 
 -- criando dependente do hospede 5
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('683.866.450-08', 'Lucas Almeida', 'lucas.almeida@example.com', '2012-03-21', 'M', NULL, '0', '1', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('683.866.450-08', 'Lucas Almeida', 'lucas.almeida@example.com', '2012-03-21', 'M', NULL, '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('639.188.290-81', 'Mariana Oliveira', 'mariana.oliveira@example.com', '2011-07-05', 'F', NULL, '0', '1', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('639.188.290-81', 'Mariana Oliveira', 'mariana.oliveira@example.com', '2011-07-05', 'F', NULL, '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('117.572.290-19', 'Pedro Santos', 'pedro.santos@example.com', '1997-10-18', 'M', '875.375.910-91', '0', '1', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('117.572.290-19', 'Pedro Santos', 'pedro.santos@example.com', '1997-10-18', 'M', '875.375.910-91', '12.345.678/9012-34');
 
 -- criando a relação de dependencia
 INSERT INTO dependente(
@@ -2247,8 +2247,8 @@ INSERT INTO dependente(
 
 -- criando dependente do hospede 9
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('085.619.640-14', 'Beatriz Ferreira', 'beatriz.ferreira@example.com', '2014-01-30', 'F', NULL, '0', '1', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('085.619.640-14', 'Beatriz Ferreira', 'beatriz.ferreira@example.com', '2014-01-30', 'F', NULL, '12.345.678/9012-34');
 
 -- criando relação de dependencia
 INSERT INTO dependente(
@@ -2257,12 +2257,12 @@ INSERT INTO dependente(
 
 -- criando dependentes do hospede 13
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('083.042.220-00', 'Felipe Costa', 'felipe.costa@example.com', '2015-06-12', 'M', NULL, '0', '1', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('083.042.220-00', 'Felipe Costa', 'felipe.costa@example.com', '2015-06-12', 'M', NULL, '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('112.722.370-44', 'Carolina Rocha', 'carolina.rocha@example.com', '1984-09-23', 'F', NULL, '0', '1', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('112.722.370-44', 'Carolina Rocha', 'carolina.rocha@example.com', '1984-09-23', 'F', NULL, '12.345.678/9012-34');
 
 -- criando relação de dependência
 INSERT INTO dependente(
@@ -2276,20 +2276,20 @@ INSERT INTO dependente(
 
 -- criando dependentes do hospede 16
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('316.502.700-54', 'Gabriel Almeida', 'gabriel.almeida@example.com', '2016-02-18', 'M', NULL, '0', '1', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('316.502.700-54', 'Gabriel Almeida', 'gabriel.almeida@example.com', '2016-02-18', 'M', NULL, '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('468.797.810-04', 'Isabela Martins', 'isabela.martins@example.com', '1994-11-04', 'F', NULL, '0', '1', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('468.797.810-04', 'Isabela Martins', 'isabela.martins@example.com', '1994-11-04', 'F', NULL, '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('867.154.530-04', 'Rafael Souza', 'rafael.souza@example.com', '2000-05-27', 'M', NULL, '0', '1', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('867.154.530-04', 'Rafael Souza', 'rafael.souza@example.com', '2000-05-27', 'M', NULL, '12.345.678/9012-34');
 
 INSERT INTO hospede(
-	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, principal, dependente, cnpj)
-	VALUES ('101.561.170-29', 'Julia Lima', 'julia.lima@example.com', '2017-12-09', 'F', NULL, '0', '1', '12.345.678/9012-34');
+	cpf, nome, e_mail, data_nascimento, genero, pod_cpf, cnpj)
+	VALUES ('101.561.170-29', 'Julia Lima', 'julia.lima@example.com', '2017-12-09', 'F', NULL, '12.345.678/9012-34');
 
 -- criando a relação de dependência
 INSERT INTO dependente(
