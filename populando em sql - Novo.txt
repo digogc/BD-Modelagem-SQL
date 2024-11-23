@@ -13342,30 +13342,22 @@ VALUES
     ('Aposentadoria Privada', 350.00),
     ('Auxílio Paternidade', 200.00);
 
--- inserindo tuplas na tabela "beneficio"
-WITH beneficios AS (
-    SELECT nome FROM public.beneficio -- selecionando os nomes de todos os benefícios
-),
-assalariados AS (
-    SELECT cpf FROM public.assalariado -- selecionando os CPFs dos assalariados
-)
--- Inserir cada CPF associado a todos os benefícios
 INSERT INTO public.beneficiado(cpf, nome)
 SELECT 
     a.cpf,
     b.nome
-FROM assalariados a
-CROSS JOIN beneficios b
+FROM public.assalariado a
+CROSS JOIN public.beneficio b
 ORDER BY a.cpf, b.nome;
 
-WITH tuplas_aleatorias AS (
+-- Excluindo 50 tuplas aleatórias da tabela "beneficiado"
+DELETE FROM public.beneficiado
+WHERE (cpf, nome) IN (
     SELECT cpf, nome
     FROM public.beneficiado
-    ORDER BY RANDOM()  -- Embaralha as tuplas
-    LIMIT 50           -- Seleciona as 50 primeiras tuplas aleatórias
-)
-DELETE FROM public.beneficiado
-WHERE (cpf, nome) IN (SELECT cpf, nome FROM tuplas_aleatorias);
+    ORDER BY RANDOM()
+    LIMIT 50
+);
 
 -- inserindo tuplas na tabela estadia_anterior
 INSERT INTO public.estadia_anterior(
