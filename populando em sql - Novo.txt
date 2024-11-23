@@ -12928,28 +12928,28 @@ VALUES
 -- Inserindo tuplas em Estabelecimento.
 
 INSERT INTO public.estabelecimento(
-    id, nome, faturamento_mensal, numero, teatro, loja, local_alimentacao)
+    id, nome, faturamento_mensal, numero)
 VALUES
     -- Teatros
-    ('0000000001', 'Teatro Central', 15000.00, 001, 1, 0, 0),
-    ('0000000002', 'Teatro Elegance', 12000.00, 002, 1, 0, 0),
-    ('0000000003', 'Teatro Sunset', 18000.00, 003, 1, 0, 0),
-    ('0000000004', 'Teatro Broadway', 20000.00, 004, 1, 0, 0),
-    ('0000000005', 'Teatro Majestic', 17000.00, 001, 1, 0, 0),
+    ('0000000001', 'Teatro Central', 15000.00, 001),
+    ('0000000002', 'Teatro Elegance', 12000.00, 002),
+    ('0000000003', 'Teatro Sunset', 18000.00, 003),
+    ('0000000004', 'Teatro Broadway', 20000.00, 004),
+    ('0000000005', 'Teatro Majestic', 17000.00, 001),
 
     -- Lojas
-    ('0000000006', 'Loja Fashion', 25000.00, 002, 0, 1, 0),
-    ('0000000007', 'Loja Tech', 30000.00, 003, 0, 1, 0),
-    ('0000000008', 'Loja Gourmet', 28000.00, 004, 0, 1, 0),
-    ('0000000009', 'Loja Décor', 22000.00, 001, 0, 1, 0),
-    ('0000000010', 'Loja Books', 26000.00, 002, 0, 1, 0),
+    ('0000000006', 'Loja Fashion', 25000.00, 002),
+    ('0000000007', 'Loja Tech', 30000.00, 003),
+    ('0000000008', 'Loja Gourmet', 28000.00, 004),
+    ('0000000009', 'Loja Décor', 22000.00, 001),
+    ('0000000010', 'Loja Books', 26000.00, 002),
 
     -- Locais de alimentação
-    ('0000000011', 'Restaurante Delícia', 35000.00, 003, 0, 0, 1),
-    ('0000000012', 'Cafeteria Aroma', 15000.00, 004, 0, 0, 1),
-    ('0000000013', 'Sorveteria Ice', 14000.00, 001, 0, 0, 1),
-    ('0000000014', 'Churrascaria Grill', 40000.00, 002, 0, 0, 1),
-    ('0000000015', 'Pizzaria Italiana', 32000.00, 003, 0, 0, 1);
+    ('0000000011', 'Restaurante Delícia', 35000.00, 003),
+    ('0000000012', 'Cafeteria Aroma', 15000.00, 004),
+    ('0000000013', 'Sorveteria Ice', 14000.00, 001),
+    ('0000000014', 'Churrascaria Grill', 40000.00, 002),
+    ('0000000015', 'Pizzaria Italiana', 32000.00, 003);
 
 -- Inserindo tuplas de teatro.
 
