@@ -13418,18 +13418,18 @@ VALUES
     (00005, '0000000005', 'hotel5segredo');
 
 INSERT INTO public.espaco(
-    numero, nome, tamanho, valor, capacidade_maxima, sala, ar_livre, eng_numero)
+    numero, nome, tamanho, valor, capacidade_maxima, eng_numero)
 VALUES
-    (1, 'Espaço A', 100, 1500.00, 200, 1, 0, '0000000001'),
-    (2, 'Espaço B', 120, 2000.00, 250, 1, 0, '0000000001'),
-    (3, 'Espaço C', 80, 1000.00, 150, 0, 1, '0000000002'),
-    (4, 'Espaço D', 150, 2500.00, 300, 1, 0, '0000000003'),
-    (5, 'Espaço E', 200, 3000.00, 350, 0, 1, '0000000003'),
-    (6, 'Espaço F', 90, 1200.00, 180, 1, 0, '0000000004'),
-    (7, 'Espaço G', 110, 1800.00, 220, 0, 1, '0000000004'),
-    (8, 'Espaço H', 95, 1100.00, 170, 1, 0, '0000000005'),
-    (9, 'Espaço I', 130, 2100.00, 280, 0, 1, '0000000005'),
-    (10, 'Espaço J', 140, 2300.00, 300, 0, 1, '0000000005');
+    (1, 'Espaço A', 100, 1500.00, 200, '0000000001'),
+    (2, 'Espaço B', 120, 2000.00, 250, '0000000001'),
+    (3, 'Espaço C', 80, 1000.00, 150, '0000000002'),
+    (4, 'Espaço D', 150, 2500.00, 300, '0000000003'),
+    (5, 'Espaço E', 200, 3000.00, 350, '0000000003'),
+    (6, 'Espaço F', 90, 1200.00, 180, '0000000004'),
+    (7, 'Espaço G', 110, 1800.00, 220, '0000000004'),
+    (8, 'Espaço H', 95, 1100.00, 170, '0000000005'),
+    (9, 'Espaço I', 130, 2100.00, 280, '0000000005'),
+    (10, 'Espaço J', 140, 2300.00, 300, '0000000005');
 
 INSERT INTO public.sala(
     numero, quantidade_banheiros, cozinha, quantidade_televisao, quantidade_ventiladores, quantidade_ar_condicionado)
