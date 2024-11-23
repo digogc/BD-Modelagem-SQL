@@ -170,12 +170,6 @@ create table DEPENDENCIA (
 	Numero numeric(10) not null,
 	Data_Ultima_Manutencao date not null,
 	Id char(10) not null,
-	SALA_EVENTOS char(1) not null,
-	RESTAURANTE char(1) not null,
-	PISCINA char(1) not null,
-	EMPRESA_TURISMO char(1) not null,
-	ACOMODACAO char(1) not null,
-	ACADEMIA char(1) not null,
 	constraint ID_DEPENDENCIA_ID primary key (Numero));
 
 create table dispoe_de (
@@ -328,8 +322,6 @@ create table HOSPEDE (
 	Data_Nascimento date,
 	Genero char(1),
 	Pod_Cpf char(14),
-	PRINCIPAL char(1) not null,
-	DEPENDENTE char(1) not null,
 	CNPJ char(18) not null,
 	constraint ID_HOSPEDE_ID primary key (CPF));
 
