@@ -590,7 +590,7 @@ INSERT INTO consome(
 
 INSERT INTO consome(
 	idconsome, numero, id, dia, horario, quantidade)
-	VALUES ('0000000002', 10, '0000000004', '25-11-2024', '16:00h','1');
+	VALUES ('0000000002', 10, '0000000004', '25-11-2024', '16:00h', 1);
 
 -- hotel 2
 INSERT INTO consome(
@@ -599,7 +599,7 @@ INSERT INTO consome(
 
 INSERT INTO consome(
 	idconsome, numero, id, dia, horario, quantidade)
-	VALUES ('0000000004', 23, '0000000005', '26-11-2024', '19:00h','1');
+	VALUES ('0000000004', 23, '0000000005', '26-11-2024', '19:00h', 1);
 
 -- hotel 3
 INSERT INTO consome(
@@ -617,7 +617,7 @@ INSERT INTO consome(
 
 INSERT INTO consome(
 	idconsome, numero, id, dia, horario, quantidade)
-	VALUES ('0000000008', 54, '0000000003', '26-11-2024', '17:00h','1');
+	VALUES ('0000000008', 54, '0000000003', '26-11-2024', '17:00h', 1);
 
 -- hotel 5
 INSERT INTO consome(
@@ -626,7 +626,7 @@ INSERT INTO consome(
 
 INSERT INTO consome(
 	idconsome, numero, id, dia, horario, quantidade)
-	VALUES ('0000000010', 66, '0000000006', '24-11-2024', '16:00h','1');
+	VALUES ('0000000010', 66, '0000000006', '24-11-2024', '16:00h', 1);
 
 -- inserindo tuplas na tabela "empresa_turismo"
 INSERT INTO empresa_turismo(
@@ -13310,19 +13310,20 @@ VALUES (5, 1, 64, '2024-11-23 a 2024-11-30'),
        (5, 3, 66, '2024-11-20 a 2024-11-27'),
        (5, 4, 63, '2024-11-20 a 2024-11-27');
 
--- inserindo tuplas em "assalariado"
+-- Inserindo as 27 primeiras tuplas de "funcionario" na tabela "assalariado"
 INSERT INTO public.assalariado (cpf, horassemana, salario_mensal)
 SELECT cpf,
        FLOOR(30 + (RANDOM() * 20))::int AS horassemana, -- Horas semanais entre 30 e 50
        FLOOR(1500 + (RANDOM() * 1000))::int AS salario_mensal -- Salário mensal entre 1500 e 2500
 FROM public.funcionario
-WHERE assalariado = '1';
+LIMIT 27;
 
+-- Inserindo tuplas em "autonomo" a partir do funcionário de número 28
 INSERT INTO public.autonomo (cpf, valorhora)
 SELECT cpf,
        FLOOR(20 + (RANDOM() * 30))::numeric(10,2) AS valorhora -- Gera valor por hora entre 20 e 50
 FROM public.funcionario
-WHERE autonomo = '1';
+OFFSET 27;  -- Ignora os primeiros 27 funcionários e começa a partir do 28º
 
 INSERT INTO public.beneficio (nome, valor)
 VALUES
