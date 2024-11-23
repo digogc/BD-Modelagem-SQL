@@ -147,309 +147,309 @@ INSERT INTO hotel(
 -- primeiro hotel
 -- inserindo do tipo 'sala_eventos'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (1, '08-11-2024', '0000000001','1','0','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (1, '08-11-2024', '0000000001');
 
 -- inserindo do tipo 'restaurante'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (2, '11-10-2024', '0000000001','0','1','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (2, '11-10-2024', '0000000001');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (3, '22-11-2024', '0000000001','0','1','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (3, '22-11-2024', '0000000001');
 
 -- inserindo do tipo 'piscina'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (4, '11-11-2024', '0000000001','0','0','1','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (4, '11-11-2024', '0000000001');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (5, '22-11-2024', '0000000001','0','0','1','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (5, '22-11-2024', '0000000001');
 
 -- inserindo do tipo 'empresa_turismo'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (6, '07-10-2024', '0000000001','0','0','0','1','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (6, '07-10-2024', '0000000001');
 
 -- inserindo do tipo 'acomodação'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (7, '22-11-2024', '0000000001','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (7, '22-11-2024', '0000000001');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (8, '21-11-2024', '0000000001','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (8, '21-11-2024', '0000000001');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (9, '25-11-2024', '0000000001','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (9, '25-11-2024', '0000000001');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (10, '22-11-2024', '0000000001','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (10, '22-11-2024', '0000000001');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (11, '23-11-2024', '0000000001','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (11, '23-11-2024', '0000000001');
 
 -- inserindo do tipo 'academia'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (12, '22-11-2024', '0000000001','0','0','0','0','0','1');
+	numero, data_ultima_manutencao, id)
+	VALUES (12, '22-11-2024', '0000000001');
 
 -- segundo hotel
 -- inserindo do tipo 'sala_eventos'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (13, '08-11-2024', '0000000002','1','0','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (13, '08-11-2024', '0000000002');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (14, '08-11-2024', '0000000002','1','0','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (14, '08-11-2024', '0000000002');
 
 -- inserindo do tipo 'restaurante'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (15, '18-11-2024', '0000000002','0','1','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (15, '18-11-2024', '0000000002');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (16, '20-11-2024', '0000000002','0','1','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (16, '20-11-2024', '0000000002');
 
 -- inserindo do tipo 'piscina'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (17, '24-11-2024', '0000000002','0','0','1','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (17, '24-11-2024', '0000000002');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (18, '26-11-2024', '0000000002','0','0','1','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (18, '26-11-2024', '0000000002');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (19, '22-11-2024', '0000000002','0','0','1','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (19, '22-11-2024', '0000000002');
 
 -- inserindo do tipo 'empresa_turismo'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (20, '04-10-2024', '0000000002','0','0','0','1','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (20, '04-10-2024', '0000000002');
 
 -- inserindo do tipo 'acomodação'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (21, '22-11-2024', '0000000002','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (21, '22-11-2024', '0000000002');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (22, '21-11-2024', '0000000002','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (22, '21-11-2024', '0000000002');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (23, '25-11-2024', '0000000002','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (23, '25-11-2024', '0000000002');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (24, '22-11-2024', '0000000002','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (24, '22-11-2024', '0000000002');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (25, '23-11-2024', '0000000002','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (25, '23-11-2024', '0000000002');
 
 -- inserindo do tipo 'academia'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (26, '22-11-2024', '0000000002','0','0','0','0','0','1');
+	numero, data_ultima_manutencao, id)
+	VALUES (26, '22-11-2024', '0000000002');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (27, '02-11-2024', '0000000002','0','0','0','0','0','1');
+	numero, data_ultima_manutencao, id)
+	VALUES (27, '02-11-2024', '0000000002');
 
 -- terceiro hotel
 -- inserindo do tipo 'sala_eventos'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (28, '18-10-2024', '0000000003','1','0','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (28, '18-10-2024', '0000000003');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (29, '20-10-2024', '0000000003','1','0','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (29, '20-10-2024', '0000000003');
 
 -- inserindo do tipo 'restaurante'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (30, '24-11-2024', '0000000003','0','1','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (30, '24-11-2024', '0000000003');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (31, '19-11-2024', '0000000003','0','1','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (31, '19-11-2024', '0000000003');
 
 -- inserindo do tipo 'piscina'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (32, '20-11-2024', '0000000003','0','0','1','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (32, '20-11-2024', '0000000003');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (33, '18-11-2024', '0000000003','0','0','1','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (33, '18-11-2024', '0000000003');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (34, '21-11-2024', '0000000003','0','0','1','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (34, '21-11-2024', '0000000003');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (35, '20-11-2024', '0000000003','0','0','1','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (35, '20-11-2024', '0000000003');
 
 -- inserindo do tipo 'empresa_turismo'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (36, '15-10-2024', '0000000003','0','0','0','1','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (36, '15-10-2024', '0000000003');
 
 -- inserindo do tipo 'acomodação'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (37, '21-11-2024', '0000000003','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (37, '21-11-2024', '0000000003');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (38, '20-11-2024', '0000000003','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (38, '20-11-2024', '0000000003');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (39, '23-11-2024', '0000000003','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (39, '23-11-2024', '0000000003');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (40, '26-11-2024', '0000000003','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (40, '26-11-2024', '0000000003');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (41, '24-11-2024', '0000000003','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (41, '24-11-2024', '0000000003');
 
 -- inserindo do tipo 'academia'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (42, '10-11-2024', '0000000003','0','0','0','0','0','1');
+	numero, data_ultima_manutencao, id)
+	VALUES (42, '10-11-2024', '0000000003');
 
 -- quarto hotel
 -- inserindo do tipo 'sala_eventos'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (43, '19-10-2024', '0000000004','1','0','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (43, '19-10-2024', '0000000004');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (44, '28-10-2024', '0000000004','1','0','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (44, '28-10-2024', '0000000004');
 
 -- inserindo do tipo 'restaurante'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (45, '20-11-2024', '0000000004','0','1','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (45, '20-11-2024', '0000000004');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (46, '23-11-2024', '0000000004','0','1','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (46, '23-11-2024', '0000000004');
 
 -- inserindo do tipo 'piscina'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (47, '22-11-2024', '0000000004','0','0','1','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (47, '22-11-2024', '0000000004');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (48, '23-11-2024', '0000000004','0','0','1','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (48, '23-11-2024', '0000000004');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (49, '25-11-2024', '0000000004','0','0','1','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (49, '25-11-2024', '0000000004');
 
 -- inserindo do tipo 'empresa_turismo'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (50, '14-10-2024', '0000000004','0','0','0','1','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (50, '14-10-2024', '0000000004');
 
 -- inserindo do tipo 'acomodação'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (51, '23-11-2024', '0000000004','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (51, '23-11-2024', '0000000004');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (52, '24-11-2024', '0000000004','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (52, '24-11-2024', '0000000004');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (53, '20-11-2024', '0000000004','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (53, '20-11-2024', '0000000004');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (54, '26-11-2024', '0000000004','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (54, '26-11-2024', '0000000004');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (55, '20-11-2024', '0000000004','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (55, '20-11-2024', '0000000004');
 
 -- inserindo do tipo 'academia'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (56, '15-11-2024', '0000000004','0','0','0','0','0','1');
+	numero, data_ultima_manutencao, id)
+	VALUES (56, '15-11-2024', '0000000004');
 
 -- quinto hotel
 -- inserindo do tipo 'sala_eventos'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (57, '20-10-2024', '0000000005','1','0','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (57, '20-10-2024', '0000000005');
 
 -- inserindo do tipo 'restaurante'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (58, '23-11-2024', '0000000005','0','1','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (58, '23-11-2024', '0000000005');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (59, '18-11-2024', '0000000005','0','1','0','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (59, '18-11-2024', '0000000005');
 
 -- inserindo do tipo 'piscina'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (60, '22-11-2024', '0000000005','0','0','1','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (60, '22-11-2024', '0000000005');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (61, '18-11-2024', '0000000005','0','0','1','0','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (61, '18-11-2024', '0000000005');
 
 -- inserindo do tipo 'empresa_turismo'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (62, '14-10-2024', '0000000005','0','0','0','1','0','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (62, '14-10-2024', '0000000005');
 
 -- inserindo do tipo 'acomodação'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (63, '24-11-2024', '0000000005','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (63, '24-11-2024', '0000000005');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (64, '20-11-2024', '0000000005','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (64, '20-11-2024', '0000000005');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (65, '17-11-2024', '0000000005','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (65, '17-11-2024', '0000000005');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (66, '23-11-2024', '0000000005','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (66, '23-11-2024', '0000000005');
 
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (67, '20-11-2024', '0000000005','0','0','0','0','1','0');
+	numero, data_ultima_manutencao, id)
+	VALUES (67, '20-11-2024', '0000000005');
 
 -- inserindo do tipo 'academia'
 INSERT INTO dependencia(
-	numero, data_ultima_manutencao, id, sala_eventos, restaurante, piscina, empresa_turismo, acomodacao, academia)
-	VALUES (68, '15-11-2024', '0000000005','0','0','0','0','0','1');
+	numero, data_ultima_manutencao, id)
+	VALUES (68, '15-11-2024', '0000000005');
 
 -- inserindo tuplas na tabela 'acomodação'
 -- acomodações no hotel 1
