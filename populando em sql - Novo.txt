@@ -13466,18 +13466,10 @@ INSERT INTO public.armazena(a_a_id, id)
 SELECT 
     a.id,
     b.id
-FROM alimento a
-CROSS JOIN hotel b
-ORDER BY a.id, b.id;
-
-WITH tuplas_aleatorias AS (
-    SELECT a_a_id, id
-    FROM public.armazena
-    ORDER BY RANDOM()  -- Embaralha as tuplas
-    LIMIT 60           -- Seleciona as 50 primeiras tuplas aleatórias
-)
-DELETE FROM public.armazena
-WHERE (a_a_id, id) IN (SELECT a_a_id, id FROM tuplas_aleatorias);
+FROM public.alimento a
+CROSS JOIN public.hotel b
+ORDER BY RANDOM()
+LIMIT 40;
 
 -- pegar todas as dependências do hotel 01 (tabela dependência)
 -- dessas, pegar as que tem acomodacao = 1
