@@ -196,8 +196,6 @@ create table ESPACO (
 	Tamanho numeric(4) not null,
 	Valor numeric(7,2) not null,
 	Capacidade_Maxima numeric(4) not null,
-	SALA char(1) not null,
-	AR_LIVRE char(1) not null,
 	Eng_Numero numeric(5) not null,
 	constraint ID_ESPACO_ID primary key (Numero));
 
