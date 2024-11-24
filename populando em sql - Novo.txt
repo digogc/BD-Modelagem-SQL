@@ -13403,6 +13403,11 @@ INSERT INTO public.estadia_anterior (
     id, responsavel, data_check_in, data_check_out, tipo_de_hospede, valor_gasto, unidade, acomodacao, pontos_gerados, cnpj)
 VALUES ('0000000031', '101.561.170-29', '2024-04-10', '2024-04-15', 'D', 1650.00, '0000000003', 8, 120, '12.345.678/9012-34');
 
+-- hopede com personal e com duas estadias anteriores
+INSERT INTO public.estadia_anterior (
+    id, responsavel, data_check_in, data_check_out, tipo_de_hospede, valor_gasto, unidade, acomodacao, pontos_gerados, cnpj)
+VALUES ('0000000032', '070.515.070-44', '2024-05-05', '2024-05-10', 'P', 1720.00, '0000000004', 9, 130, '12.345.678/9012-34');
+
 
 INSERT INTO public.espaco_eventos(
     numero, id, senha_wifi)
