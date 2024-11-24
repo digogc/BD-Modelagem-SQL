@@ -13408,6 +13408,32 @@ INSERT INTO public.estadia_anterior (
     id, responsavel, data_check_in, data_check_out, tipo_de_hospede, valor_gasto, unidade, acomodacao, pontos_gerados, cnpj)
 VALUES ('0000000032', '070.515.070-44', '2024-05-05', '2024-05-10', 'P', 1720.00, '0000000004', 9, 130, '12.345.678/9012-34');
 
+-- cpf que possui duas estadias anteriores, mas não é um hospede atualmente
+INSERT INTO public.estadia_anterior (
+	id, responsavel, data_check_in, data_check_out, tipo_de_hospede, valor_gasto, unidade, acomodacao, pontos_gerados, cnpj)
+VALUES ('0000000033', '806.994.280-09', '2024-06-01', '2024-06-05', 'P', 1800.00, '0000000005', 10, 140, '12.345.678/9012-34');
+
+-- inserindo mais duas estadias anteriores para um hospede sem personal
+INSERT INTO public.estadia_anterior (
+	id, responsavel, data_check_in, data_check_out, tipo_de_hospede, valor_gasto, unidade, acomodacao, pontos_gerados, cnpj)
+VALUES ('0000000034', '011.573.640-98', '2024-06-10', '2024-06-15', 'P', 1850.00, '0000000003', 11, 150, '12.345.678/9012-34');
+
+INSERT INTO public.estadia_anterior (
+	id, responsavel, data_check_in, data_check_out, tipo_de_hospede, valor_gasto, unidade, acomodacao, pontos_gerados, cnpj)
+VALUES ('0000000035', '011.573.640-98', '2024-06-20', '2024-06-25', 'P', 1900.00, '0000000004', 12, 160, '12.345.678/9012-34');
+
+-- inserindo cpfs que são hospedes e não possuem personal
+INSERT INTO public.estadia_anterior (
+	id, responsavel, data_check_in, data_check_out, tipo_de_hospede, valor_gasto, unidade, acomodacao, pontos_gerados, cnpj)
+VALUES ('0000000036', '083.042.220-00', '2024-05-10', '2024-05-15', 'D', 1750.00, '0000000001', 13, 145, '12.345.678/9012-34');
+
+INSERT INTO public.estadia_anterior (
+	id, responsavel, data_check_in, data_check_out, tipo_de_hospede, valor_gasto, unidade, acomodacao, pontos_gerados, cnpj)
+VALUES ('0000000037', '541.037.770-28', '2024-04-01', '2024-04-06', 'P', 1600.00, '0000000002', 14, 135, '12.345.678/9012-34');
+
+INSERT INTO public.estadia_anterior (
+    id, responsavel, data_check_in, data_check_out, tipo_de_hospede, valor_gasto, unidade, acomodacao, pontos_gerados, cnpj)
+VALUES ('0000000038', '101.561.170-29', '2024-03-05', '2024-03-10', 'D', 1550.00, '0000000003', 15, 125, '12.345.678/9012-34');
 
 INSERT INTO public.espaco_eventos(
     numero, id, senha_wifi)
