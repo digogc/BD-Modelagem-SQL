@@ -13393,6 +13393,17 @@ VALUES
 	('0000000028', '070.515.070-44', '2024-03-10', '2024-03-15', 'P', 1500.00, '0000000004', 130, 120, '12.345.678/9012-34'),
 	('0000000029', '424.807.890-20', '2024-02-20', '2024-02-25', 'P', 1100.00, '0000000005', 140, 115, '12.345.678/9012-34');
 
+-- inserindo tuplas na tabela estadia anterior para que a consulta fique melhor
+INSERT INTO public.estadia_anterior (
+    id, responsavel, data_check_in, data_check_out, tipo_de_hospede, valor_gasto, unidade, acomodacao, pontos_gerados, cnpj)
+VALUES ('0000000030', '541.037.770-28', '2024-03-15', '2024-03-20', 'P', 1480.00, '0000000002', 7, 100, '12.345.678/9012-34');
+
+
+INSERT INTO public.estadia_anterior (
+    id, responsavel, data_check_in, data_check_out, tipo_de_hospede, valor_gasto, unidade, acomodacao, pontos_gerados, cnpj)
+VALUES ('0000000031', '101.561.170-29', '2024-04-10', '2024-04-15', 'D', 1650.00, '0000000003', 8, 120, '12.345.678/9012-34');
+
+
 INSERT INTO public.espaco_eventos(
     numero, id, senha_wifi)
 VALUES
