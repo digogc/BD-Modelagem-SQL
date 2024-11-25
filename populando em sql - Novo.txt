@@ -2721,113 +2721,113 @@ INSERT INTO robo_social(
 -- Robô 1
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000001', 'Restaurante Bella Italia', '2024-11-22', '13:00h', 50.00, 'Alimento', '0000000001', 7);
+    VALUES ('0000000001', 'Restaurante Bella Italia', '2024-11-22', '13:40h', 50.00, 'Alimento', '0000000001', 7);
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000002', 'Café da Esquina', '2024-11-22', '17:00h', 45.00, 'Alimento', '0000000001', 8);
+    VALUES ('0000000002', 'Café da Esquina', '2024-11-22', '17:35h', 45.00, 'Alimento', '0000000001', 8);
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000003', 'Sushi House', '2024-11-23', '15:00h', 70.00, 'Alimento', '0000000001', 9);
+    VALUES ('0000000003', 'Sushi House', '2024-11-23', '15:20h', 70.00, 'Alimento', '0000000001', 9);
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000004', 'Pizzeria Napoli', '2024-11-23', '22:00h', 80.00, 'Alimento', '0000000001', 11);
+    VALUES ('0000000004', 'Pizzeria Napoli', '2024-11-23', '22:22h', 80.00, 'Alimento', '0000000001', 11);
 
 -- Robô 2
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000005', 'Restaurante Verde Mar', '2024-11-22', '21:00h', 55.00, 'Alimento', '0000000002', 21);
+    VALUES ('0000000005', 'Restaurante Verde Mar', '2024-11-22', '21:15h', 55.00, 'Alimento', '0000000002', 21);
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000006', 'Churrascaria Rio Sul', '2024-11-22', '17:00h', 90.00, 'Alimento', '0000000002', 22);
+    VALUES ('0000000006', 'Churrascaria Rio Sul', '2024-11-22', '17:05h', 90.00, 'Alimento', '0000000002', 22);
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000007', 'Hamburgueria Go', '2024-11-23', '13:00h', 65.00, 'Alimento', '0000000002', 25);
+    VALUES ('0000000007', 'Hamburgueria Go', '2024-11-23', '13:30h', 65.00, 'Alimento', '0000000002', 25);
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000008', 'Restaurante Azzurra', '2024-11-23', '10:00h', 50.00, 'Alimento', '0000000002', 21);
+    VALUES ('0000000008', 'Restaurante Azzurra', '2024-11-23', '10:15h', 50.00, 'Alimento', '0000000002', 21);
 
 -- Robô 3
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000009', 'Café Colonial', '2024-11-22', '17:00h', 60.00, 'Alimento', '0000000003', 37);
+    VALUES ('0000000009', 'Café Colonial', '2024-11-22', '17:50h', 60.00, 'Alimento', '0000000003', 37);
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000010', 'Bistro Gourmet', '2024-11-22', '13:00h', 75.00, 'Alimento', '0000000003', 38);
+    VALUES ('0000000010', 'Bistro Gourmet', '2024-11-22', '13:14h', 75.00, 'Alimento', '0000000003', 38);
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000011', 'Cozinha de Família', '2024-11-23', '22:00h', 85.00, 'Alimento', '0000000003', 40);
+    VALUES ('0000000011', 'Cozinha de Família', '2024-11-23', '22:11h', 85.00, 'Alimento', '0000000003', 40);
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000012', 'Restaurante Solar', '2024-11-23', '11:00h', 50.00, 'Alimento', '0000000003', 37);
+    VALUES ('0000000012', 'Restaurante Solar', '2024-11-23', '11:45h', 50.00, 'Alimento', '0000000003', 37);
 
 -- Robô 4
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000013', 'Restaurante do Lago', '2024-11-22', '17:00h', 90.00, 'Alimento', '0000000004', 51);
+    VALUES ('0000000013', 'Restaurante do Lago', '2024-11-22', '17:20h', 90.00, 'Alimento', '0000000004', 51);
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000014', 'Café da Manhã Especial', '2024-11-22', '13:00h', 60.00, 'Alimento', '0000000004', 52);
+    VALUES ('0000000014', 'Café da Manhã Especial', '2024-11-22', '13:20h', 60.00, 'Alimento', '0000000004', 52);
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000015', 'Delícias do Mar', '2024-11-23', '21:00h', 100.00, 'Alimento', '0000000004', 53);
+    VALUES ('0000000015', 'Delícias do Mar', '2024-11-23', '21:40h', 100.00, 'Alimento', '0000000004', 53);
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000016', 'Espaço Gourmet', '2024-11-23', '10:00h', 70.00, 'Alimento', '0000000004', 54);
+    VALUES ('0000000016', 'Espaço Gourmet', '2024-11-23', '10:25h', 70.00, 'Alimento', '0000000004', 54);
 
 -- Robô 5
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000017', 'Pão de Queijo do Centro', '2024-11-22', '16:00h', 55.00, 'Alimento', '0000000005', 63);
+    VALUES ('0000000017', 'Pão de Queijo do Centro', '2024-11-22', '16:30h', 55.00, 'Alimento', '0000000005', 63);
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000018', 'Sabor do Sertão', '2024-11-22', '1:00h', 85.00, 'Alimento', '0000000005', 64);
+    VALUES ('0000000018', 'Sabor do Sertão', '2024-11-22', '11:50h', 85.00, 'Alimento', '0000000005', 64);
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000019', 'Chocolateria ChocoLovers', '2024-11-23', '19:00h', 30.00, 'Alimento', '0000000005', 65);
+    VALUES ('0000000019', 'Chocolateria ChocoLovers', '2024-11-23', '19:10h', 30.00, 'Alimento', '0000000005', 65);
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000020', 'Crepes & Cia', '2024-11-23', '10:00h', 40.00, 'Alimento', '0000000005', 66);
+    VALUES ('0000000020', 'Crepes & Cia', '2024-11-23', '10:05h', 40.00, 'Alimento', '0000000005', 66);
 
 -- Tuplas de outros tipos
 -- Robô 1
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000021', 'Loja Bella Moda', '2024-11-23', '19:00h', 50.00, 'Roupa', '0000000001', 7);
+    VALUES ('0000000021', 'Loja Bella Moda', '2024-11-23', '19:07h', 50.00, 'Roupa', '0000000001', 7);
 
 -- Robô 2
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000022', 'Loja Estilo Verde', '2024-11-23', '15:00h', 60.00, 'Roupa', '0000000002', 21);
+    VALUES ('0000000022', 'Loja Estilo Verde', '2024-11-23', '15:10h', 60.00, 'Roupa', '0000000002', 21);
 
 -- Robô 3
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000023', 'Loja de Roupas Colonial', '2024-11-22', '15:00h', 35.00, 'Roupa', '0000000003', 37);
+    VALUES ('0000000023', 'Loja de Roupas Colonial', '2024-11-22', '15:20h', 35.00, 'Roupa', '0000000003', 37);
 
 -- Robô 4
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000024', 'Loja do Lago Fashion', '2024-11-23', '22:00h', 40.00, 'Roupa', '0000000004', 51);
+    VALUES ('0000000024', 'Loja do Lago Fashion', '2024-11-23', '22:40h', 40.00, 'Roupa', '0000000004', 51);
 
 -- Robô 5
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
-    VALUES ('0000000025', 'Loja de Roupas Pão de Queijo', '2024-11-22', '13:00h', 45.00, 'Roupa', '0000000005', 63);
+    VALUES ('0000000025', 'Loja de Roupas Pão de Queijo', '2024-11-22', '13:23h', 45.00, 'Roupa', '0000000005', 63);
 
 -- inserindo tuplas na tabela 'data_status'
 -- acomodação numero 7
