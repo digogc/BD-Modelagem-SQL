@@ -14193,7 +14193,11 @@ VALUES
 
     -- Funcionários do Departamento 18 (Manutenção - Hotel 0000000005)
     ('674.068.640-86', 'Gustavo Costa', '1986-11-02', '2021-02-13', 'M', 'pardo', 'Eletricista', 18),
-    ('113.234.120-50', 'Michele Lima', '1990-05-24', '2020-08-06', 'F', 'negro', 'Encanadora', 18);
+    ('113.234.120-50', 'Michele Lima', '1990-05-24', '2020-08-06', 'F', 'negro', 'Encanadora', 18),
+
+    -- Funcionários do Departamento 19 (Limpeza - Hotel 0000000002)
+    ('541.200.420-22', 'Carlos Silva', '1990-07-25', '2020-06-01', 'M', 'pardo', 'Faxineiro', 19),
+    ('860.929.930-90', 'Beatriz Lima', '1982-11-05', '2021-03-20', 'F', 'branco', 'Faxineira', 19);
 
 -- inserindo tuplas na tabela "inclui"
 -- Garagem 1
