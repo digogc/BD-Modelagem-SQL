@@ -2119,68 +2119,68 @@ INSERT INTO hospede(
 
 -- inserindo tuplas na tabela nota fiscal
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000001', 1700.00, 50.00, 0, '2024-11-28', '1', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000001', 50.00, 0, '2024-11-28', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000002', 1840.00, 20.00, 10.00, '2024-12-01', '0', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000002', 20.00, 10.00, '2024-12-01', '0', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000003', 2061.00, 80.00, 0, '2024-12-05', '1', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000003', 80.00, 0, '2024-12-05', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000004', 3000.00, 100.00, 300.00, '2024-11-30', '0', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000004', 100.00, 300.00, '2024-11-30', '0', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000005', 1760.00, 0, 0, '2024-12-02', '1', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000005', 0, 0, '2024-12-02', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000006', 2240.00, 0, 0, '2024-12-06', '1', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000006', 0, 0, '2024-12-06', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000007', 1980.00, 50.00, 15.00, '2024-12-04', '0', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000007', 50.00, 15.00, '2024-12-04', '0', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000008', 1700.00, 30.00, 0, '2024-11-29', '1', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000008', 30.00, 0, '2024-11-29', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000009', 2460.00, 70.00, 10.00, '2024-12-07', '0', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000009', 70.00, 10.00, '2024-12-07', '0', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000010', 2700.00, 50.00, 0, '2024-12-03', '1', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000010', 50.00, 0, '2024-12-03', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000011', 1760.00, 20.00, 5.00, '2024-12-01', '1', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000011', 20.00, 5.00, '2024-12-01', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000012', 2400.00, 40.00, 0, '2024-11-28', '0', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000012', 40.00, 0, '2024-11-28', '0', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000013', 1740.00, 0, 0, '2024-12-05', '1', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000013', 0, 0, '2024-12-05', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000014', 2600.00, 100.00, 0, '2024-12-02', '1', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000014', 100.00, 0, '2024-12-02', '1', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000015', 2100.00, 80.00, 210.00, '2024-11-30', '0', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000015', 80.00, 210.00, '2024-11-30', '0', '12.345.678/9012-34');
 
 INSERT INTO nota_fiscal(
-	id, valor_total, descontos, multa, data_limite, quitada, cnpj)
-	VALUES ('0000000016', 4000.00, 10.00, 0, '2024-12-06', '1', '12.345.678/9012-34');
+	id, descontos, multa, data_limite, quitada, cnpj)
+	VALUES ('0000000016', 10.00, 0, '2024-12-06', '1', '12.345.678/9012-34');
 
 -- Inserindo dependentes
 -- criando dependentes do hospede 1

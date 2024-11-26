@@ -365,7 +365,6 @@ create table MASSAGEM (
 
 create table NOTA_FISCAL (
 	Id char(10) not null,
-	Valor_Total numeric(8,2) not null,
 	Descontos numeric(8,2),
 	Multa numeric(8,2),
 	Data_Limite date not null,
