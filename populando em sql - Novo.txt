@@ -6,10 +6,10 @@ VALUES
 	('12.345.678/9012-34', 'Turismo Company SA', 'Viver para Sonhar');
 
 -- Inserindo tuplas na tabela "rede_social".
-INSERT INTO rede_social (nome, perfil, numero_seguidores, media_curtidas, cnpj)
+INSERT INTO rede_social (nome, perfil, media_curtidas, cnpj)
 VALUES
-	('Instagram', 'Rede Sonhar para Viver', 10547, 687, '12.345.678/9012-34'),
-	('Youtube', 'Veja Sonhar para Viver', 8412, 157, '12.345.678/9012-34');
+	('Instagram', 'Rede Sonhar para Viver', 687, '12.345.678/9012-34'),
+	('Youtube', 'Veja Sonhar para Viver', 157, '12.345.678/9012-34');
 
 -- Inserindo tuplas na tabela "youtube".
 INSERT INTO youtube(nome, frequencia_videos)

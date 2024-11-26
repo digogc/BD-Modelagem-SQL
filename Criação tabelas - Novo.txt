@@ -435,7 +435,6 @@ create table REDE (
 create table REDE_SOCIAL (
 	Nome varchar(30) not null,
 	Perfil varchar(30) not null,
-	Numero_Seguidores numeric(8),
 	Media_Curtidas numeric(8),
 	CNPJ char(18) not null,
 	constraint ID_REDE_SOCIAL_ID primary key (Nome));
