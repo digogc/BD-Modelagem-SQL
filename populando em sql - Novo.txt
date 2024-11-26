@@ -2763,6 +2763,10 @@ INSERT INTO delivery(
 
 INSERT INTO delivery(
     id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
+    VALUES ('0000000026', 'Cozinha de Família', '2024-11-23', '14:00h', 90.00, 'Alimento', '0000000003', 40);
+
+INSERT INTO delivery(
+    id, empresa_associada, data, horario, valor, tipo, fei_id, numero)
     VALUES ('0000000012', 'Restaurante Solar', '2024-11-23', '11:45h', 50.00, 'Alimento', '0000000003', 37);
 
 -- Robô 4
