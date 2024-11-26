@@ -441,7 +441,7 @@ create table REDE_SOCIAL (
 
 create table REFEICAO (
 	Nome varchar(10) not null,
-	Horario char(6) not null,
+	Horario char(15) not null,
 	Valor numeric(4,2) not null,
 	constraint ID_REFEICAO_ID primary key (Nome));
 

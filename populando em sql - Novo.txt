@@ -13124,18 +13124,26 @@ VALUES
     (08, 'Recepção', '0000000003'),
     (09, 'Limpeza', '0000000003'),
     (10, 'Manutenção', '0000000003'),
-    (11, 'Cozinha', '0000000003'),
-    (12, 'Estacionamento', '0000000003'),
 
     -- Departamentos do Hotel 0000000004
-    (13, 'Recepção', '0000000004'),
+    (11, 'Recepção', '0000000004'),
+    (12, 'Segurança', '0000000004'),
+    (13, 'Limpeza', '0000000004'),
     (14, 'Segurança', '0000000004'),
-    (15, 'Limpeza', '0000000004'),
 
     -- Departamentos do Hotel 0000000005
-    (16, 'Recepção', '0000000005'),
-    (17, 'Manutenção', '0000000005'),
-    (18, 'Cozinha', '0000000005');
+    (15, 'Recepção', '0000000005'),
+    (16, 'Segurança', '0000000005'),
+    (17, 'Limpeza', '0000000005'),
+    (18, 'Manutenção', '0000000005');
+
+-- Criando novos departamentos visando a consulta com 4 tabelas
+
+INSERT INTO public.departamento(
+    numero, nome, id)
+VALUES
+    (19, 'Limpeza', '0000000005'),
+    (20, 'Limpeza', '0000000002');
 
 -- inserindo tuplas na tabela "garagem"
 INSERT INTO public.garagem(numero, tipo, capacidade_maxima, valordia, id)
