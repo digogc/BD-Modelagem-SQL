@@ -13146,8 +13146,7 @@ VALUES
 INSERT INTO public.departamento(
     numero, nome, id)
 VALUES
-    (19, 'Limpeza', '0000000005'),
-    (20, 'Limpeza', '0000000002');
+    (19, 'Limpeza', '0000000002');
 
 -- inserindo tuplas na tabela "garagem"
 INSERT INTO public.garagem(numero, tipo, capacidade_maxima, valordia, id)
