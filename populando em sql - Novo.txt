@@ -122,6 +122,15 @@ INSERT INTO seguidor(
 	e_mail, perfil, nome)
 	VALUES ('rosasamira@gmail.com', 'samirosa', 'Samira Rosa');
 
+INSERT INTO public.acumula(
+	nome, perfil) 
+	VALUES 
+		('Youtube', 'zir_corr'),
+		('Instagram', 'y_barreto'),
+		('Youtube', 'xavi_b'),
+		('Instagram', 'wil_mat'),
+		('Instagram', 'vini_jorge');
+
 -- inserindo tuplas na tabela "hotel"
 INSERT INTO hotel(
 	id, categoria, estado, cidade, bairro, rua, numero, cep, nome_real, nome_fantasia, capacidade_maxima, area_m2, data_inauguracao, cnpj)

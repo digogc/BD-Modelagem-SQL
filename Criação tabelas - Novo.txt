@@ -16,8 +16,8 @@ create table ACOMODACAO (
 
 create table acumula (
 	Nome varchar(30) not null,
-	E_mail varchar(30) not null,
-	constraint ID_acumula_ID primary key (E_mail, Nome));
+	Perfil varchar(30) not null,
+	constraint ID_acumula_ID primary key (Perfil, Nome));
 
 create table ALIMENTO (
 	Id char(10) not null,
@@ -572,7 +572,7 @@ alter table ACADEMIA add constraint ID_ACADE_DEPEN_FK     foreign key (Numero)  
 
 alter table ACOMODACAO add constraint ID_ACOMO_DEPEN_FK     foreign key (Numero)     references DEPENDENCIA;
 
-alter table acumula add constraint EQU_acumu_SEGUI     foreign key (E_mail)     references SEGUIDOR;
+alter table acumula add constraint EQU_acumu_SEGUI     foreign key (Perfil)     references SEGUIDOR;
 
 alter table acumula add constraint REF_acumu_REDE__FK     foreign key (Nome)     references REDE_SOCIAL;
 
