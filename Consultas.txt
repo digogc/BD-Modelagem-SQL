@@ -1,0 +1,123 @@
+-- Consultas
+
+-- LIKE
+-- Enunciado: A Rede Hoteleira quer entender o comportamento dos Hóspedes em relação às refeições feitas dentro do Hotel: será que eles preferem comer no Restaurante ou pedir Delivery?
+-- Entre todas as acomodações de todos os Hotéis da Rede, quais delas pediram Delivery de um item Alimentício no mesmo horário de alguma das Refeições oferecida pelo Restaurante do Hotel.
+
+SELECT DISTINCT	-- o DISTINCT é necessário uma vez que pode haver mais de um restaurante onde a mesma refeição é oferecida no mesmo hotel, o que geraria a mesma saída
+	dep_restaurante.id AS identificador_hotel,
+	D.numero AS numero_acomodacao,
+	R.nome AS refeicao_nome,
+	R.horario AS refeicao_horario,
+	D.horario AS delivery_horario,
+	D.id AS identificador_delivery
+
+FROM 	((((delivery D JOIN dependencia dep_delivery ON d.numero = dep_delivery.numero) -- Une delivery com dependencia para obter o ID do hotel do delivery
+	JOIN dependencia dep_restaurante ON dep_delivery.id = dep_restaurante.id) -- Une o hotel do delivery com o hotel do restaurante
+	JOIN oferece O ON dep_restaurante.numero = O.numero) -- Associa o restaurante do hotel com as refeições oferecidas
+	JOIN refeicao R ON O.nome = R.nome) -- Verifica se o restaurante oferece a refeição específica
+
+WHERE   D.tipo = 'Alimento' 
+    	AND (
+        (((D.horario LIKE '10:__h') OR D.horario = '11:00h') AND R.horario LIKE '10:__h - 11:00h') -- Lanche da manhã
+        OR (((D.horario LIKE '13:__h') OR D.horario = '14:00h') AND R.horario LIKE '13:__h - 14:00h') -- Almoço
+        OR (((D.horario LIKE '16:__h') OR D.horario = '17:00h') AND R.horario LIKE '16:__h - 17:00h') -- Lanche da tarde
+        OR (((D.horario LIKE '19:__h') OR D.horario = '20:00h') AND R.horario LIKE '19:__h - 20:00h') -- Jantar
+        OR (((D.horario LIKE '22:__h') OR D.horario = '23:00h') AND R.horario LIKE '22:__h - 23:00h') -- Lanche da noite
+    );
+
+-- tem uma delivery que acontece no mesmo horário de uma refeição, mas o hotel 5 não oferece essa refeição
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- PERTINÊNCIA A CONJUNTOS (IN)
+-- Enunciado: A Rede quer dar uma atenção especial aos Hóspedes atuais que já se hospedaram ao menos duas vezes na Rede no passado. A ideia é que, para esses hóspedes, seja oferecido um Personal Trainer gratuitamente (caso ainda não tenham contratado esse serviço).
+-- CÓDIGO SEM UTILIZAR TABELAS TEMPORÁRIAS
+
+SELECT	Hospede.cpf, Hospede.nome
+FROM 	Hospede
+WHERE 	Hospede.pod_cpf IS NULL
+AND 	Hospede.cpf IN	(
+			SELECT responsavel
+    			FROM Estadia_Anterior
+    			GROUP BY responsavel
+    			HAVING COUNT(*) > 1
+			);
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- JUNÇÃO EXTERNA
+-- Enunciado: A Rede Hoteleira está planejando um grande evento para todos os seus hóspedes atuais. Os convites funcionarão da seguinte forma: cada Hóspede Principal receberá um convite; caso ele não tenha Hóspedes Dependentes, apenas seu nome estará no convite; caso ele tenha Hóspedes Dependentes, os nomes dos Dependentes também estarão no convite do Principal. Hóspedes Dependentes não recebem convites próprios. Dessa forma, a Rede Hoteleira precisará visualizar o nome de cada Hóspede Principal e, caso haja Hóspedes Dependentes associado a ele, observá-lo na mesma Tupla.
+
+SELECT		principal.cpf AS responsavel_cpf,
+		hospede_principal.nome AS responsavel_nome,
+    		STRING_AGG(hospede_dependente.nome, ', ') AS dependentes -- STRING_AGG não é obrigatório, porém faz com que cada principal apareça apenas uma vez, e na mesma tupla de seus dependentes, como desejado pelo enunciado
+
+FROM 		(((principal LEFT OUTER JOIN dependente ON principal.cpf = dependente.hospede_principal_responsavel) -- obtem os hospedes principais que possuem dependentes e os que não possuem são agregados depois
+		JOIN hospede AS hospede_principal ON principal.cpf = hospede_principal.cpf) -- obtem a tupla na tabela hospede que corresponde ao hospede principal (usado para obter nome)
+		LEFT OUTER JOIN hospede AS hospede_dependente ON dependente.cpf = hospede_dependente.cpf) -- obtem as tuplas na tabela de hospede que correspondem aos hospedes dependentes (usado para obter nome)
+
+GROUP BY	principal.cpf, hospede_principal.nome;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- cláusula HAVING
+-- Enunciado: A Rede Hoteleira está planejando realizar eventos para promover a boa relação entre os hoteis e a comunidade local dos hoteis. O dono da rede planeja convidar 50 moradores da região para o evento, e gostaria de garantir que houvesse vagas na garagem para que todos pudessem estacionar. Portanto, só será possível realizar esses eventos em hoteis onde existem mais de 50 vagas livres.
+
+-- selecione a chave estrangeira da tabela garagem que representa o hotel e o total de vagas livres
+SELECT		garagem.id AS hotel_id, 
+		COUNT(vaga) AS vagas_livres
+
+-- da junção das vagas com a garagem
+FROM		(garagem JOIN vaga ON garagem.numero = vaga.for_numero)
+
+WHERE 		vaga.status = 'livre'
+
+-- agrupe pela chave estrangeira que representa o hotel e retorne as que possuem mais de 50 vagas livres
+GROUP BY	garagem.id
+HAVING 		COUNT(vaga) > 49;
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- consulta utilizando 4 relações do banco
+-- Enunciado: A rede precisa realizar limpezas nas piscinas, para isso, é necessário saber qual piscina não é limpa a mais de 7 dias (período que uma limpeza continua muito efetiva) e também designar um funcionário dos departamentos de limpeza para essa tarefa.
+-- Para as piscinas que não são limpas a mais de 7 dias, encontre um funcionário para realizar essa tarefa
+
+SELECT 
+	f.cpf AS funcionario_cpf,
+	f.nome AS funcionario_nome,
+	h.id as hotel_id,
+	h.nome_fantasia AS hotel_nome,
+	STRING_AGG(p.numero::TEXT, ', ') AS piscinas_ids -- Concatena os IDs das piscinas que podem ser limpas pelo funcionário em uma string
+
+FROM 
+	((((piscina p JOIN dependencia dep_piscina ON p.numero = dep_piscina.numero)
+	JOIN hotel h ON dep_piscina.id = h.id)
+	JOIN departamento d ON d.id = h.id AND d.nome = 'Limpeza')
+	JOIN funcionario f ON f.numero = d.numero)
+
+WHERE 
+	p.data_ultima_limpeza < '2024-11-19' -- 7 dias antes de 26/11/2024
+
+GROUP BY 
+	f.cpf, f.nome, h.id, h.nome_fantasia;
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- consulta utilizando uma relação com dois papéis
+-- Enunciado: A rede realizou um estudo e foi constatado que hospedes com dependentes tendem a gastar mais e dar mais lucro para a rede. Portanto, a fim de incentivar cada vez mais a existência de hospedes dependentes na rede, foi decidido que haverá um desconto de 100 reais a cada hospede dependente menor de idade e 200 reais a cada hospede dependente maior de idade a qual o principal for asssociado. Será necessário obter o email do principal, para informar da promoção e mandar uma mensagem incentivando um retorno com mais dependentes.
+
+SELECT    	P.cpf AS cpf_principal,
+		P.e_mail AS email_hospede_principal,
+    		SUM(	CASE -- se o hospede tiver mais de 18 anos, o desconto é maior
+            		WHEN DATE_PART('year', AGE(D.data_nascimento)) >= 18 THEN 200 -- método DATE_PART utilizado para obter a idade do hospede dependente, mas poderia ser utilizada uma aproximação com base no ano de nascimento no lugar
+            		ELSE 100
+        		END
+    			) AS desconto_total
+
+FROM		(((hospede P JOIN principal PR ON P.cpf = PR.cpf) -- join que pega os atributos da tabela hospede para os principais (o email é importante, será utilizado)
+			JOIN dependente dp ON PR.cpf = DP.hospede_principal_responsavel) -- join que conecta os hospedes principais (já com atributos de hospedes) com seus dependentes
+			JOIN hospede D ON DP.cpf = D.cpf) -- join que obtem os atributos da tabela hospede para os dependentes (a idade é importante, será utilizada)
+
+GROUP BY 	P.cpf;
+
