@@ -6,3 +6,16 @@ Para a realizar a confecção do modelo Entidade-Relacionamento, do modelo Relac
 
 # PostgreSQL
 Como maneira de popular o banco de dados e realizar consultas, foi utilizado o código disponibilizado no arquivo .txt na ferramenta PostgreSQL
+
+# Descrição dos arquivos
+### Consultas
+Cada consulta possui a utilização de alguns requisitos especificados no seus respectivos títulos
+
+### Criação tabelas
+Script Utilizado para a criação das tabelas no banco de dados
+
+### Populacao do banco
+Scripts utilizados para popular o banco de dados
+
+### Pdfs
+Visualização do Banco de Dados modelado
