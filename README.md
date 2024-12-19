@@ -17,7 +17,7 @@ Cada consulta SQL possui a utilização de alguns requisitos especificados no se
 ### Criação tabelas - Responsabilidade de Gabriela Alcaide
 Script SQL utilizado para a criação das tabelas no banco de dados.
 
-### Populacao do banco - Responsabilidade de Rodrigo Cardoso
+### População do banco - Responsabilidade de Rodrigo Cardoso
 Scripts SQL utilizados para popular o banco de dados.
 
 ### Pdfs
